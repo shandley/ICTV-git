@@ -9,6 +9,11 @@
   <a href="https://github.com/shandley/ICTV-git/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
   <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python Version"></a>
   <a href="https://github.com/shandley/ICTV-git/issues"><img src="https://img.shields.io/github/issues/shandley/ICTV-git.svg" alt="Issues"></a>
+  <a href="https://shandley.github.io/ICTV-git/"><img src="https://img.shields.io/badge/docs-online-blue.svg" alt="Documentation"></a>
+</p>
+
+<p align="center">
+  <strong>📚 <a href="https://shandley.github.io/ICTV-git/">View Documentation</a> | 🦠 <a href="https://github.com/shandley/ICTV-git">GitHub Repository</a></strong>
 </p>
 
 ## 🦠 Revolutionizing Viral Taxonomy with Version Control
