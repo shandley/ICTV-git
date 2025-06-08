@@ -1,0 +1,34 @@
+{
+  "source_version": "msl36",
+  "target_version": "msl37",
+  "total_species": 14058,
+  "summary": {
+    "unchanged": 9007,
+    "moved": 355,
+    "removed": 0,
+    "added": 4696
+  },
+  "changes_by_rank": {
+    "order": 95,
+    "family": 172,
+    "subfamily": 317,
+    "genus": 6
+  },
+  "family_migrations": {
+    "Myoviridae": {
+      "Unknown": 6,
+      "Straboviridae": 6
+    },
+    "Siphoviridae": {
+      "Unknown": 40,
+      "Mesyanzhinovviridae": 12,
+      "Vilmaviridae": 3,
+      "Zierdtviridae": 4,
+      "Casjensviridae": 4
+    },
+    "Reoviridae": {
+      "Sedoreoviridae": 39,
+      "Spinareoviridae": 58
+    }
+  }
+}

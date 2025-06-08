@@ -1,0 +1,6 @@
+sample_id,species,family,genus,host,isolation_date,genome_length
+SAMPLE001,Escherichia virus T4,Myoviridae,Tequatrovirus,Escherichia coli,2020-01-15,168903
+SAMPLE002,Salmonella virus Chi,Siphoviridae,Chivirus,Salmonella enterica,2020-02-20,59407
+SAMPLE003,Bacillus virus G,Myoviridae,Gbacillus,Bacillus megaterium,2020-03-10,497513
+SAMPLE004,Pseudomonas virus gh1,Podoviridae,Ghvirus,Pseudomonas putida,2020-04-05,37368
+SAMPLE005,Lactococcus virus bIL67,Siphoviridae,Bilsevenvirus,Lactococcus lactis,2020-05-12,23823
