@@ -95,11 +95,11 @@ class MSLDownloader:
             # Find all Excel file links
             excel_links = {}
             
-            # Look for links containing 'Master_Species_List' and ending with .xlsx
+            # Look for links containing 'Master_Species_List' and ending with .xlsx or .xls
             for link in soup.find_all('a', href=True):
                 href = link['href']
                 
-                if 'Master_Species_List' in href and href.endswith('.xlsx'):
+                if 'Master_Species_List' in href and (href.endswith('.xlsx') or href.endswith('.xls')):
                     # Extract MSL version number
                     match = re.search(r'MSL(\d+)', href)
                     if match:
@@ -164,7 +164,7 @@ class MSLDownloader:
     
     def list_downloaded_files(self) -> List[str]:
         """List all downloaded MSL files."""
-        excel_files = list(self.data_dir.glob("*.xlsx"))
+        excel_files = list(self.data_dir.glob("*.xlsx")) + list(self.data_dir.glob("*.xls"))
         return sorted([f.name for f in excel_files])
 
 
