@@ -1,0 +1,67 @@
+# Pre-commit hooks for ICTV-git
+# See https://pre-commit.com for more information
+
+repos:
+  # General formatting and cleanup
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+        args: ['--maxkb=1000']
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: debug-statements
+      - id: mixed-line-ending
+      - id: check-case-conflict
+
+  # Python code formatting
+  - repo: https://github.com/psf/black
+    rev: 24.3.0
+    hooks:
+      - id: black
+        language_version: python3
+        args: ['--line-length=88']
+
+  # Python imports sorting
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        args: ['--profile=black']
+
+  # Python linting
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+        args: ['--max-line-length=88', '--extend-ignore=E203,W503']
+        additional_dependencies: [flake8-docstrings]
+
+  # Security checks
+  - repo: https://github.com/pycqa/bandit
+    rev: 1.7.8
+    hooks:
+      - id: bandit
+        args: ['-ll', '-i', '-x', 'tests/']
+
+  # YAML formatting
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+        args: ['-d', '{extends: default, rules: {line-length: {max: 120}}}']
+
+# Local hooks
+  - repo: local
+    hooks:
+      - id: pytest-check
+        name: pytest-check
+        entry: python -m pytest tests/ -x -v --tb=short
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [push]
