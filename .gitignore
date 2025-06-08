@@ -173,3 +173,6 @@ settings.local.py
 temp/
 tmp/
 scratch/
+
+# Output directories with generated git repos
+output/
