@@ -1,0 +1,51 @@
+Species,Genus,Family,Order,Class,Phylum,Kingdom,Realm,Genome_Composition,Host_Source
+Tobacco mosaic virus,Tobamovirus,Virgaviridae,Martellivirales,Alsuviricetes,Kitrinoviricota,Orthornavirae,Riboviria,ssRNA(+),Plants
+Severe acute respiratory syndrome-related coronavirus,Betacoronavirus,Coronaviridae,Nidovirales,Pisoniviricetes,Pisuviricota,Orthornavirae,Riboviria,ssRNA(+),Vertebrates
+Human immunodeficiency virus 1,Lentivirus,Retroviridae,Ortervirales,Revtraviricetes,Artverviricota,Pararnavirae,Riboviria,ssRNA-RT,Vertebrates
+Escherichia phage T4,Tequatrovirus,Straboviridae,Caudovirales,Caudoviricetes,Uroviricota,Heunggongvirae,Duplodnaviria,dsDNA,Bacteria
+Influenza A virus,Alphainfluenzavirus,Orthomyxoviridae,Articulavirales,Insthoviricetes,Negarnaviricota,Orthornavirae,Riboviria,ssRNA(-),Vertebrates
+Adeno-associated virus 2,Dependoparvovirus,Parvoviridae,Piccovirales,Quintoviricetes,Cossaviricota,Shotokuvirae,Monodnaviria,ssDNA,Vertebrates
+Bacillus phage phi29,Salasvirus,Salasmaviridae,Caudovirales,Caudoviricetes,Uroviricota,Heunggongvirae,Duplodnaviria,dsDNA,Bacteria
+Hepatitis B virus,Orthohepadnavirus,Hepadnaviridae,Blubervirales,Revtraviricetes,Artverviricota,Pararnavirae,Riboviria,dsDNA-RT,Vertebrates
+Measles virus,Morbillivirus,Paramyxoviridae,Mononegavirales,Monjiviricetes,Negarnaviricota,Orthornavirae,Riboviria,ssRNA(-),Vertebrates
+Cauliflower mosaic virus,Caulimovirus,Caulimoviridae,Ortervirales,Revtraviricetes,Artverviricota,Pararnavirae,Riboviria,dsDNA-RT,Plants
+Human adenovirus 2,Mastadenovirus,Adenoviridae,Rowavirales,Tectiliviricetes,Preplasmiviricota,Bamfordvirae,Varidnaviria,dsDNA,Vertebrates
+Tomato spotted wilt virus,Orthotospovirus,Tospoviridae,Bunyavirales,Ellioviricetes,Negarnaviricota,Orthornavirae,Riboviria,ssRNA(-),Plants
+Herpes simplex virus 1,Simplexvirus,Orthoherpesviridae,Herpesvirales,Herviviricetes,Peploviricota,Heunggongvirae,Duplodnaviria,dsDNA,Vertebrates
+Dengue virus,Flavivirus,Flaviviridae,Amarillovirales,Flasuviricetes,Kitrinoviricota,Orthornavirae,Riboviria,ssRNA(+),Invertebrates
+Rotavirus A,Rotavirus,Sedoreoviridae,Reovirales,Resentoviricetes,Duplornaviricota,Orthornavirae,Riboviria,dsRNA,Vertebrates
+Bacteriophage MS2,Emesvirus,Fiersviridae,Norzivirales,Leviviricetes,Lenarviricota,Orthornavirae,Riboviria,ssRNA(+),Bacteria
+Human papillomavirus 16,Alphapapillomavirus,Papillomaviridae,Zurhausenvirales,Papovaviricetes,Cossaviricota,Shotokuvirae,Monodnaviria,dsDNA,Vertebrates
+Ebola virus,Orthoebolavirus,Filoviridae,Mononegavirales,Monjiviricetes,Negarnaviricota,Orthornavirae,Riboviria,ssRNA(-),Vertebrates
+Poliovirus,Enterovirus,Picornaviridae,Picornavirales,Pisoniviricetes,Pisuviricota,Orthornavirae,Riboviria,ssRNA(+),Vertebrates
+Bacteriophage lambda,Lambdavirus,Siphoviridae,Caudovirales,Caudoviricetes,Uroviricota,Heunggongvirae,Duplodnaviria,dsDNA,Bacteria
+Zika virus,Flavivirus,Flaviviridae,Amarillovirales,Flasuviricetes,Kitrinoviricota,Orthornavirae,Riboviria,ssRNA(+),Vertebrates
+Respiratory syncytial virus,Orthopneumovirus,Pneumoviridae,Mononegavirales,Monjiviricetes,Negarnaviricota,Orthornavirae,Riboviria,ssRNA(-),Vertebrates
+Cucumber mosaic virus,Cucumovirus,Bromoviridae,Martellivirales,Alsuviricetes,Kitrinoviricota,Orthornavirae,Riboviria,ssRNA(+),Plants
+Bacteriophage P1,Punavirus,Myoviridae,Caudovirales,Caudoviricetes,Uroviricota,Heunggongvirae,Duplodnaviria,dsDNA,Bacteria
+Norovirus GII,Norovirus,Caliciviridae,Picornavirales,Pisoniviricetes,Pisuviricota,Orthornavirae,Riboviria,ssRNA(+),Vertebrates
+Yellow fever virus,Flavivirus,Flaviviridae,Amarillovirales,Flasuviricetes,Kitrinoviricota,Orthornavirae,Riboviria,ssRNA(+),Vertebrates
+Epstein-Barr virus,Lymphocryptovirus,Orthoherpesviridae,Herpesvirales,Herviviricetes,Peploviricota,Heunggongvirae,Duplodnaviria,dsDNA,Vertebrates
+West Nile virus,Flavivirus,Flaviviridae,Amarillovirales,Flasuviricetes,Kitrinoviricota,Orthornavirae,Riboviria,ssRNA(+),Vertebrates
+Rabies virus,Lyssavirus,Rhabdoviridae,Mononegavirales,Monjiviricetes,Negarnaviricota,Orthornavirae,Riboviria,ssRNA(-),Vertebrates
+Potato virus Y,Potyvirus,Potyviridae,Patatavirales,Stelpaviricetes,Pisuviricota,Orthornavirae,Riboviria,ssRNA(+),Plants
+Bacteriophage T7,Teseptimavirus,Autographiviridae,Caudovirales,Caudoviricetes,Uroviricota,Heunggongvirae,Duplodnaviria,dsDNA,Bacteria
+Japanese encephalitis virus,Flavivirus,Flaviviridae,Amarillovirales,Flasuviricetes,Kitrinoviricota,Orthornavirae,Riboviria,ssRNA(+),Vertebrates
+Mumps virus,Orthorubulavirus,Paramyxoviridae,Mononegavirales,Monjiviricetes,Negarnaviricota,Orthornavirae,Riboviria,ssRNA(-),Vertebrates
+Beet yellows virus,Closterovirus,Closteroviridae,Martellivirales,Alsuviricetes,Kitrinoviricota,Orthornavirae,Riboviria,ssRNA(+),Plants
+Bacteriophage M13,Inovirus,Inoviridae,Tubulavirales,Faserviricetes,Hofneiviricota,Loebvirae,Monodnaviria,ssDNA,Bacteria
+Chikungunya virus,Alphavirus,Togaviridae,Martellivirales,Alsuviricetes,Kitrinoviricota,Orthornavirae,Riboviria,ssRNA(+),Vertebrates
+Foot-and-mouth disease virus,Aphthovirus,Picornaviridae,Picornavirales,Pisoniviricetes,Pisuviricota,Orthornavirae,Riboviria,ssRNA(+),Vertebrates
+Tomato yellow leaf curl virus,Begomovirus,Geminiviridae,Geplafuvirales,Repensiviricetes,Cressdnaviricota,Shotokuvirae,Monodnaviria,ssDNA,Plants
+Bacteriophage Qbeta,Qubevirus,Fiersviridae,Norzivirales,Leviviricetes,Lenarviricota,Orthornavirae,Riboviria,ssRNA(+),Bacteria
+Hepatitis C virus,Hepacivirus,Flaviviridae,Amarillovirales,Flasuviricetes,Kitrinoviricota,Orthornavirae,Riboviria,ssRNA(+),Vertebrates
+Marburg virus,Marburgvirus,Filoviridae,Mononegavirales,Monjiviricetes,Negarnaviricota,Orthornavirae,Riboviria,ssRNA(-),Vertebrates
+Plum pox virus,Potyvirus,Potyviridae,Patatavirales,Stelpaviricetes,Pisuviricota,Orthornavirae,Riboviria,ssRNA(+),Plants
+Bacteriophage P2,Peduovirus,Myoviridae,Caudovirales,Caudoviricetes,Uroviricota,Heunggongvirae,Duplodnaviria,dsDNA,Bacteria
+Lassa virus,Mammarenavirus,Arenaviridae,Bunyavirales,Ellioviricetes,Negarnaviricota,Orthornavirae,Riboviria,ssRNA(-),Vertebrates
+Varicella-zoster virus,Varicellovirus,Orthoherpesviridae,Herpesvirales,Herviviricetes,Peploviricota,Heunggongvirae,Duplodnaviria,dsDNA,Vertebrates
+Rice yellow mottle virus,Sobemovirus,Solemoviridae,Sobelivirales,Stelpaviricetes,Pisuviricota,Orthornavirae,Riboviria,ssRNA(+),Plants
+Synechococcus phage S-PM2,Prochlorovirus,Myoviridae,Caudovirales,Caudoviricetes,Uroviricota,Heunggongvirae,Duplodnaviria,dsDNA,Bacteria
+Crimean-Congo hemorrhagic fever virus,Orthonairovirus,Nairoviridae,Bunyavirales,Ellioviricetes,Negarnaviricota,Orthornavirae,Riboviria,ssRNA(-),Vertebrates
+Rubella virus,Rubivirus,Matonaviridae,Hepelivirales,Alsuviricetes,Kitrinoviricota,Orthornavirae,Riboviria,ssRNA(+),Vertebrates
+African swine fever virus,Asfivirus,Asfarviridae,Asfuvirales,Pokkesviricetes,Nucleocytoviricota,Bamfordvirae,Varidnaviria,dsDNA,Vertebrates

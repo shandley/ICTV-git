@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+title: "ICTV-git: Git-based Viral Taxonomy Management"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - given-names: Scott
+    family-names: Handley
+    email: shandley@wustl.edu
+    affiliation: Washington University School of Medicine
+    orcid: 'https://orcid.org/0000-0000-0000-0000'
+repository-code: 'https://github.com/shandley/ICTV-git'
+url: 'https://github.com/shandley/ICTV-git'
+repository-artifact: 'https://zenodo.org/record/XXXXXXX'
+abstract: >-
+  ICTV-git transforms the International Committee on Taxonomy of 
+  Viruses (ICTV) classification system into a transparent, versioned, 
+  and community-driven platform using git version control principles. 
+  This solves the reproducibility crisis in virology research by 
+  enabling researchers to track taxonomic changes over 20 years 
+  (2005-2024), automatically migrate datasets between versions, 
+  and generate proper citations for specific taxonomy versions.
+keywords:
+  - virology
+  - taxonomy
+  - bioinformatics
+  - version control
+  - reproducibility
+  - viral genomics
+  - ICTV
+license: MIT
+version: 1.0.0
+date-released: '2024-12-08'
+references:
+  - type: article
+    title: "Recent changes to virus taxonomy ratified by the International Committee on Taxonomy of Viruses (2023)"
+    authors:
+      - family-names: Zerbini
+        given-names: F. Murilo
+      - family-names: Siddell
+        given-names: Stuart G.
+      - family-names: Lefkowitz
+        given-names: Elliot J.
+    journal: Archives of Virology
+    volume: 168
+    year: 2023
+    doi: 10.1007/s00705-023-05796-5

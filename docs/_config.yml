@@ -1,0 +1,32 @@
+# Jekyll configuration for GitHub Pages
+theme: jekyll-theme-minimal
+title: ICTV-git Documentation
+description: Git-based Viral Taxonomy Management System
+logo: /assets/logo.png
+show_downloads: true
+google_analytics: 
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Getting Started
+    url: /getting-started
+  - title: API Reference
+    url: /api_usage_examples
+  - title: Migration Guide
+    url: /migration_guide
+  - title: GitHub
+    url: https://github.com/shandley/ICTV-git
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-github-metadata
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

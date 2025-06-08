@@ -1,95 +1,169 @@
-# ICTV-git: Git-Based Version Control for Viral Taxonomy
+# ICTV-git: Git-based Viral Taxonomy Management
 
-## Overview
+<p align="center">
+  <a href="https://github.com/shandley/ICTV-git/actions"><img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Build Status"></a>
+  <a href="https://github.com/shandley/ICTV-git/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python Version"></a>
+  <a href="https://github.com/shandley/ICTV-git/issues"><img src="https://img.shields.io/github/issues/shandley/ICTV-git.svg" alt="Issues"></a>
+</p>
 
-ICTV-git revolutionizes viral taxonomy management by applying git version control principles to the International Committee on Taxonomy of Viruses (ICTV) classification system. This project addresses critical issues in current taxonomy management including breaking changes without migration paths, lost institutional knowledge, and version incompatibility between publications.
+## 🦠 Revolutionizing Viral Taxonomy with Version Control
 
-## The Problem
+**ICTV-git** transforms the International Committee on Taxonomy of Viruses (ICTV) classification system into a transparent, versioned, and community-driven platform using git version control principles. This solves the reproducibility crisis in virology research by enabling researchers to track taxonomic changes, migrate datasets between versions, and cite specific taxonomy versions.
 
-The recent Caudovirales reclassification exemplifies the crisis in viral taxonomy:
-- 50+ years of ecological and phenotypic data associations were broken overnight
-- Three morphology-based families (Myoviridae, Podoviridae, Siphoviridae) were abolished
-- Replaced with 22 new genomics-based families with no clear migration path
-- Thousands of research papers now reference obsolete classifications
-- Databases updated inconsistently, creating chaos across platforms
+### 🎯 The Problem We Solve
 
-## The Solution
+Current viral taxonomy management suffers from:
+- **Breaking changes without migration paths** - The Caudovirales reclassification eliminated 50+ years of ecological data associations
+- **Version incompatibility** - 18 MSL releases since 2005, each incompatible with the others
+- **Lost institutional knowledge** - When families split, historical reasoning disappears
+- **Reproducibility crisis** - Papers published months apart use incompatible taxonomies
 
-Git-based taxonomy management provides:
-- **Full version history** - Track every taxonomic change with complete provenance
-- **Branching workflows** - Propose and test alternative classifications
-- **Semantic diffs** - Visualize meaningful taxonomic changes
-- **Community collaboration** - Fork, modify, and propose improvements
-- **Automated migration** - Convert between taxonomy versions programmatically
-- **Evidence linking** - Connect classifications to supporting data
+### ✨ Key Features
 
-## Project Structure
+- 📊 **Complete History**: 20 years of ICTV taxonomy (2005-2024) under git version control
+- 🔄 **Automatic Migration**: Update datasets between any taxonomy versions with validation
+- 🌐 **Multiple Interfaces**: Interactive web browser, REST API, Python library, and CLI tools
+- 📖 **Smart Citations**: Generate version-specific citations with git commit tracking
+- 🔍 **Semantic Diffs**: Distinguish reclassifications from nomenclature changes
+- 📈 **Research Analytics**: Discover patterns in viral diversity evolution
 
-```
-viral-taxonomy/
-├── realms/              # Taxonomic hierarchy as directory structure
-│   └── riboviria/       # Each virus stored as YAML with full metadata
-├── evidence/            # Supporting phylogenies, genomes, proposals
-└── tools/               # Conversion and analysis utilities
-```
-
-## Key Features
-
-### Version Control
-- Complete history of all taxonomic changes since 2008
-- Git commits document rationale for each reclassification
-- Branches for proposals and working group development
-
-### Transparent Decision Making
-- Every classification linked to evidence (phylogenies, genomes, publications)
-- Proposal documents integrated into commit messages
-- Community can review and comment on changes
-
-### Automated Tools
-- Convert between MSL versions automatically
-- Generate migration reports for database updates
-- API for programmatic access to any taxonomy version
-
-## Getting Started
-
-### Prerequisites
-- Python 3.8+
-- Git
-- Basic understanding of viral taxonomy
+## 🚀 Quick Start
 
 ### Installation
+
 ```bash
+# Clone the repository
 git clone https://github.com/shandley/ICTV-git.git
 cd ICTV-git
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Download all MSL data (or use existing data/)
+python scripts/download_msl.py
 ```
 
-### Quick Example
+### Basic Usage
+
+```bash
+# Convert MSL files to git structure
+python scripts/convert_msl_to_git.py data/MSL38.xlsx
+
+# Compare two versions
+python src/community_tools/version_comparator.py output/git_taxonomy --version1 MSL37 --version2 MSL38
+
+# Start the interactive web browser
+streamlit run scripts/run_taxonomy_browser.py
+
+# Start the REST API server
+python scripts/run_taxonomy_api.py
+```
+
+## 📸 Screenshots
+
+### Interactive Taxonomy Browser
+Browse viral taxonomy across 20 years with interactive visualizations:
+- Hierarchical tree exploration
+- Statistical dashboards
+- Evolution timelines
+- Advanced search and filtering
+
+### REST API
+Programmatic access with comprehensive endpoints:
+- Species lookup and search
+- Version comparison
+- Bulk data export (JSON/CSV/YAML)
+- Citation generation
+
+## 🎓 Research Applications
+
+### For Virologists
+- Track how your virus of interest has been classified over time
+- Update legacy datasets to current taxonomy automatically
+- Generate proper citations for reproducible research
+- Understand the impact of major reorganizations
+
+### For Bioinformaticians
 ```python
-# Access any historical taxonomy version
-from ictv_git import TaxonomyRepo
+# Example: Track species through history
+import requests
 
-repo = TaxonomyRepo()
-classification = repo.get_classification("Escherichia phage T4", version="MSL36")
-# Returns: {"family": "Myoviridae", "genus": "T4virus"}
-
-classification = repo.get_classification("Escherichia phage T4", version="MSL37")  
-# Returns: {"family": "Straboviridae", "genus": "Tequatrovirus"}
-
-# Generate migration mapping
-migration = repo.map_family("Myoviridae", from_version="MSL36", to_version="MSL37")
-# Returns mapping to all descendant families
+response = requests.get("http://localhost:8000/api/v1/history/Tobacco mosaic virus")
+history = response.json()
+print(f"First appeared: {history['first_appearance']}")
+print(f"Classification changes: {len([h for h in history['history'] if h['found']])}")
 ```
 
-## Project Status
+### For Taxonomists
+- Visualize the impact of classification proposals
+- Identify unstable taxonomic groups
+- Track nomenclature standardization
+- Analyze discovery patterns
 
-**Current Phase**: Data Analysis & Proof of Concept
+## 📊 Key Discoveries
 
-- [x] Project architecture design
-- [ ] Historical MSL data collection
-- [ ] Caudovirales case study development
-- [ ] Prototype implementation
-- [ ] Community feedback collection
+Our analysis of 20 years of ICTV data revealed:
+
+- **1,296.6%** increase in viral species (1,898 → 26,507)
+- **5× acceleration** in discovery rate after 2015 (genomics revolution)
+- **Peak discovery**: 6,433 species added in 2023 alone
+- **Caudovirales clarification**: Order restructured, not abolished
+
+## 🛠️ System Architecture
+
+```
+ICTV-git/
+├── src/                    # Core library code
+│   ├── parsers/           # MSL file parsers
+│   ├── converters/        # Git conversion tools
+│   ├── utils/             # Analysis utilities
+│   └── community_tools/   # Web/API interfaces
+├── scripts/               # CLI tools
+├── data/                  # MSL Excel files
+├── output/                # Generated git taxonomy
+└── docs/                  # Documentation
+```
+
+## 📚 Documentation
+
+- [Getting Started Guide](docs/getting-started.md)
+- [API Reference](docs/api_usage_examples.md)
+- [Dataset Migration Guide](docs/migration_guide.md)
+- [Contributing Guidelines](CONTRIBUTING.md)
+
+## 🤝 Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+Areas where we especially need help:
+- Testing with different research workflows
+- Integration with bioinformatics pipelines
+- Visualization improvements
+- Documentation and tutorials
+
+## 📄 Citation
+
+If you use ICTV-git in your research, please cite:
+
+```bibtex
+@software{ictv-git,
+  author = {Handley, Scott},
+  title = {ICTV-git: Git-based Viral Taxonomy Management},
+  year = {2024},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  url = {https://github.com/shandley/ICTV-git}
+}
+```
+
+Manuscript in preparation for submission to Nature Methods.
+
+## 🔗 Links
+
+- [ICTV Official Site](https://ictv.global)
+- [Master Species Lists](https://ictv.global/msl)
+- [Project Issues](https://github.com/shandley/ICTV-git/issues)
 
 ## Use Cases
 

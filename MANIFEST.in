@@ -1,0 +1,35 @@
+# Include documentation
+include README.md
+include LICENSE
+include CONTRIBUTING.md
+include CITATION.cff
+
+# Include requirements files
+include requirements.txt
+include requirements-dev.txt
+
+# Include package data
+recursive-include src *.py *.yaml *.yml *.json
+recursive-include data/sample *.csv *.md
+recursive-include docs *.md *.yml *.rst
+
+# Include scripts
+recursive-include scripts *.py
+
+# Include examples
+recursive-include examples *.py *.ipynb
+
+# Include tests
+recursive-include tests *.py
+
+# Exclude compiled files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude __pycache__
+global-exclude .DS_Store
+
+# Exclude large data files
+global-exclude *.xlsx
+global-exclude *.xls
+exclude data/raw/*
+exclude output/*
