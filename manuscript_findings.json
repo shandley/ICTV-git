@@ -82,6 +82,37 @@
       },
       "significance": "Provides evolutionary framework for viral diversity",
       "manuscript_section": "Results - Hierarchical Evolution"
+    },
+    {
+      "id": "MF006",
+      "category": "stability",
+      "title": "Viral Classification Instability Quantified",
+      "key_stat": "727 species (2.7%) have unstable classifications",
+      "details": {
+        "total_unstable": 727,
+        "percentage": "2.7%",
+        "family_changes": 645,
+        "order_changes": 96,
+        "genus_changes": 80,
+        "most_unstable_families": {
+          "Rhabdoviridae": 189,
+          "Picornaviridae": 156,
+          "Siphoviridae": 127,
+          "Reoviridae": 97,
+          "Myoviridae": 27,
+          "Podoviridae": 20
+        },
+        "extreme_case": "Caudovirales dissolution affecting 210 bacteriophages",
+        "double_reclassifications": "Multiple Streptomyces phages changed twice in 2 years"
+      },
+      "significance": "First quantification of taxonomic volatility in virology",
+      "implications": [
+        "Literature consistency compromised across thousands of papers",
+        "Database synchronization challenges",
+        "Need for AI-assisted classification warnings",
+        "Research reproducibility impacts"
+      ],
+      "manuscript_section": "Results - Taxonomic Stability Analysis"
     }
   ],
   "technical_achievements": [
