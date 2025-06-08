@@ -1,0 +1,69 @@
+================================================================================
+CAUDOVIRALES RECLASSIFICATION ANALYSIS
+================================================================================
+
+SUMMARY BY MSL VERSION:
+--------------------------------------------------------------------------------
+
+MSL35:
+  Total species: 6,590
+  Caudovirales species: 1,967
+  Old morphology-based families:
+    - Myoviridae: 434 species
+    - Podoviridae: 132 species
+    - Siphoviridae: 783 species
+  New genomics-based families: 6
+
+MSL36:
+  Total species: 9,110
+  Caudovirales species: 2,814
+  Old morphology-based families:
+    - Myoviridae: 625 species
+    - Podoviridae: 130 species
+    - Siphoviridae: 1166 species
+  New genomics-based families: 11
+
+MSL37:
+  Total species: 10,434
+  Caudovirales species: 0
+
+MSL38:
+  Total species: 11,273
+  Caudovirales species: 0
+
+================================================================================
+THE BIG CHANGE: MSL36 → MSL37
+================================================================================
+
+BEFORE (MSL36):
+  Total species in old families: 1921
+    - Myoviridae: 625 species
+    - Podoviridae: 130 species
+    - Siphoviridae: 1166 species
+
+AFTER (MSL37):
+  Old morphology-based families: COMPLETELY ABOLISHED
+
+================================================================================
+EXAMPLE SPECIES RECLASSIFICATIONS
+================================================================================
+
+Campylobacter virus IBB35:
+  MSL36: Myoviridae → MSL37: None
+  Genus: Firehammervirus → Firehammervirus
+
+Escherichia virus CF2:
+  MSL36: Myoviridae → MSL37: Straboviridae
+  Genus: Tequatrovirus → Tequatrovirus
+
+Escherichia virus slur04:
+  MSL36: Myoviridae → MSL37: Straboviridae
+  Genus: Tequatrovirus → Tequatrovirus
+
+Shigella virus SHBML501:
+  MSL36: Myoviridae → MSL37: Straboviridae
+  Genus: Tequatrovirus → Tequatrovirus
+
+Shigella virus SHBML-50-1:
+  MSL36: Myoviridae → MSL37: Straboviridae
+  Genus: Tequatrovirus → Tequatrovirus
