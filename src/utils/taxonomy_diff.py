@@ -21,12 +21,16 @@ logger = logging.getLogger(__name__)
 class TaxonomicChange:
     """Represents a change in taxonomic classification."""
     species_name: str
-    change_type: str  # 'moved', 'added', 'removed', 'renamed'
+    change_type: str  # Primary change type
+    change_subtype: str = None  # Detailed change subtype
     old_classification: Optional[Dict] = None
     new_classification: Optional[Dict] = None
     old_path: Optional[str] = None
     new_path: Optional[str] = None
     details: Dict = field(default_factory=dict)
+    severity: str = 'normal'  # 'minor', 'normal', 'major', 'critical'
+    validation_status: str = 'valid'  # 'valid', 'warning', 'error'
+    validation_notes: List[str] = field(default_factory=list)
 
 
 @dataclass 
@@ -115,6 +119,10 @@ class TaxonomyDiff:
                     new_path=species_v2[species_name]['path']
                 ))
         
+        # Import the classifier here to avoid circular imports
+        from .change_classifier import ChangeClassifier
+        classifier = ChangeClassifier()
+        
         # Find moved/reclassified species
         for species_name in species_v1:
             if species_name in species_v2:
@@ -122,6 +130,12 @@ class TaxonomyDiff:
                 new_class = species_v2[species_name]['classification']
                 
                 if old_class != new_class:
+                    # Classify the change
+                    change_type, change_subtype, severity = classifier.classify_change(old_class, new_class)
+                    validation_status, validation_notes = classifier.validate_change(
+                        old_class, new_class, change_type, change_subtype
+                    )
+                    
                     # Determine what changed
                     changed_ranks = []
                     for rank in ['realm', 'kingdom', 'phylum', 'class', 'order', 
@@ -131,12 +145,21 @@ class TaxonomyDiff:
                     
                     change = TaxonomicChange(
                         species_name=species_name,
-                        change_type='classification_changed',
+                        change_type=change_type,
+                        change_subtype=change_subtype,
                         old_classification=old_class,
                         new_classification=new_class,
                         old_path=species_v1[species_name]['path'],
                         new_path=species_v2[species_name]['path'],
-                        details={'changed_ranks': changed_ranks}
+                        details={
+                            'changed_ranks': changed_ranks,
+                            'description': classifier.get_change_description(
+                                change_type, change_subtype, changed_ranks
+                            )
+                        },
+                        severity=severity,
+                        validation_status=validation_status,
+                        validation_notes=validation_notes
                     )
                     
                     changes['classification_changed'].append(change)
