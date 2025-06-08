@@ -7,11 +7,14 @@ Converts natural language to structured queries and formats results naturally.
 
 import re
 import json
+import hashlib
+import pickle
+import time
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
 from pathlib import Path
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
 
 try:
     import openai
@@ -55,6 +58,90 @@ class QueryResult:
     def __post_init__(self):
         if self.warnings is None:
             self.warnings = []
+
+
+class QueryCache:
+    """Caching layer for common queries to improve performance"""
+    
+    def __init__(self, cache_dir: str = ".nlq_cache", cache_ttl_hours: int = 24):
+        self.cache_dir = Path(cache_dir)
+        self.cache_dir.mkdir(exist_ok=True)
+        self.cache_ttl = timedelta(hours=cache_ttl_hours)
+        self.hit_count = 0
+        self.miss_count = 0
+    
+    def _get_cache_key(self, query: str) -> str:
+        """Generate cache key from query"""
+        return hashlib.md5(query.lower().strip().encode()).hexdigest()
+    
+    def _get_cache_file(self, cache_key: str) -> Path:
+        """Get cache file path for key"""
+        return self.cache_dir / f"{cache_key}.pkl"
+    
+    def get(self, query: str) -> Optional[str]:
+        """Get cached result for query"""
+        cache_key = self._get_cache_key(query)
+        cache_file = self._get_cache_file(cache_key)
+        
+        if not cache_file.exists():
+            self.miss_count += 1
+            return None
+        
+        try:
+            with open(cache_file, 'rb') as f:
+                cached_data = pickle.load(f)
+            
+            # Check if cache is still valid
+            if datetime.now() - cached_data['timestamp'] < self.cache_ttl:
+                self.hit_count += 1
+                return cached_data['result']
+            else:
+                # Cache expired, remove file
+                cache_file.unlink()
+                self.miss_count += 1
+                return None
+        
+        except Exception as e:
+            print(f"Cache read error: {e}")
+            self.miss_count += 1
+            return None
+    
+    def put(self, query: str, result: str):
+        """Cache query result"""
+        cache_key = self._get_cache_key(query)
+        cache_file = self._get_cache_file(cache_key)
+        
+        try:
+            cached_data = {
+                'query': query,
+                'result': result,
+                'timestamp': datetime.now()
+            }
+            
+            with open(cache_file, 'wb') as f:
+                pickle.dump(cached_data, f)
+        
+        except Exception as e:
+            print(f"Cache write error: {e}")
+    
+    def clear(self):
+        """Clear all cached data"""
+        for cache_file in self.cache_dir.glob("*.pkl"):
+            cache_file.unlink()
+        self.hit_count = 0
+        self.miss_count = 0
+    
+    def get_stats(self) -> Dict[str, Any]:
+        """Get cache statistics"""
+        total_queries = self.hit_count + self.miss_count
+        hit_rate = (self.hit_count / total_queries * 100) if total_queries > 0 else 0
+        
+        return {
+            'hit_count': self.hit_count,
+            'miss_count': self.miss_count,
+            'hit_rate_percent': round(hit_rate, 1),
+            'cache_files': len(list(self.cache_dir.glob("*.pkl")))
+        }
 
 
 class QueryIntentParser:
@@ -338,15 +425,29 @@ class StructuredQueryTranslator:
 class NaturalLanguageQuery:
     """Main interface for natural language querying"""
     
-    def __init__(self, git_repo_path: str, use_openai: bool = False):
+    def __init__(self, git_repo_path: str, use_openai: bool = False, enable_cache: bool = True, cache_ttl_hours: int = 24):
         self.git_repo_path = git_repo_path
         self.parser = QueryIntentParser(use_openai=use_openai)
         self.translator = StructuredQueryTranslator(git_repo_path)
         self.executor = QueryExecutor(git_repo_path)
         self.formatter = ResponseFormatter()
         
+        # Initialize cache
+        self.enable_cache = enable_cache
+        if enable_cache:
+            cache_dir = Path(git_repo_path) / ".nlq_cache"
+            self.cache = QueryCache(cache_dir=str(cache_dir), cache_ttl_hours=cache_ttl_hours)
+        else:
+            self.cache = None
+        
     def query(self, natural_language_query: str) -> str:
         """Process natural language query and return natural language response"""
+        # Check cache first if enabled
+        if self.enable_cache and self.cache:
+            cached_result = self.cache.get(natural_language_query)
+            if cached_result:
+                return cached_result + "\n\n📄 (Cached result)"
+        
         start_time = datetime.now()
         
         try:
@@ -370,10 +471,29 @@ class NaturalLanguageQuery:
                 confidence=0.8  # TODO: Implement confidence scoring
             )
             
-            return self.formatter.format_response(result, natural_language_query)
+            response = self.formatter.format_response(result, natural_language_query)
+            
+            # Cache the result if caching is enabled
+            if self.enable_cache and self.cache:
+                self.cache.put(natural_language_query, response)
+            
+            return response
             
         except Exception as e:
-            return f"Sorry, I couldn't process your query. Error: {str(e)}"
+            error_response = f"Sorry, I couldn't process your query. Error: {str(e)}"
+            # Don't cache error responses
+            return error_response
+    
+    def clear_cache(self):
+        """Clear query cache"""
+        if self.cache:
+            self.cache.clear()
+    
+    def get_cache_stats(self) -> Dict[str, Any]:
+        """Get cache performance statistics"""
+        if self.cache:
+            return self.cache.get_stats()
+        return {"cache_enabled": False}
 
 
 class QueryExecutor:
