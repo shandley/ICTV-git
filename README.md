@@ -1,6 +1,10 @@
 # ICTV-git: Git-based Viral Taxonomy Management
 
 <p align="center">
+  <img src="ICTV-GIT.png" alt="ICTV-git Logo" width="300">
+</p>
+
+<p align="center">
   <a href="https://github.com/shandley/ICTV-git/actions"><img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Build Status"></a>
   <a href="https://github.com/shandley/ICTV-git/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
   <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python Version"></a>
