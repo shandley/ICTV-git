@@ -1,0 +1,26 @@
+FAMILY SIZE MANAGEMENT FRAMEWORK
+============================================================
+Evidence-based guidelines for viral taxonomy management
+
+SIZE ZONES AND ACTIONS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Range        Zone            Action Required               
+------------------------------------------------------------
+0-50         🔴 TOO SMALL     Insufficient for comparative studies
+50-300       🟢 OPTIMAL       Ideal for management and research
+300-500      🟡 REVIEW        Monitor phylogeny, consider subfamilies
+500-1000     🟠 ACTION        Reorganization likely needed  
+1000+        🔴 CRISIS        Immediate attention required  
+
+REAL EXAMPLE - CAUDOVIRALES:
+  Before: ~1,847 species (CRISIS ZONE)
+  Action: Split into 15 families
+  After: Families average 50-150 species (OPTIMAL ZONE)
+
+BEST PRACTICES:
+  • Regular phylogenetic review when family exceeds 300 species
+  • Consider subfamily creation before family splitting
+  • Maintain monophyletic groupings as primary criterion
+  • Document splitting rationale in formal proposals
+
+CONTEXT: 14.8x species growth requires proactive management

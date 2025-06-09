@@ -1,0 +1,217 @@
+{
+  "analysis_date": "2025-06-09T15:29:12.883121",
+  "data_source": "ICTV published statistics and documentation",
+  "growth_analysis": {
+    "total_growth": "1950 \u2192 28911 species (2005-2024)",
+    "growth_factor": 14.8,
+    "average_annual_growth": 15.2,
+    "growth_data": [
+      {
+        "msl_version": "MSL23",
+        "year": 2005,
+        "species_count": 1950,
+        "growth_rate": 0
+      },
+      {
+        "msl_version": "MSL24",
+        "year": 2008,
+        "species_count": 2290,
+        "growth_rate": 17.4
+      },
+      {
+        "msl_version": "MSL25",
+        "year": 2009,
+        "species_count": 2480,
+        "growth_rate": 8.3
+      },
+      {
+        "msl_version": "MSL26",
+        "year": 2011,
+        "species_count": 2618,
+        "growth_rate": 5.6
+      },
+      {
+        "msl_version": "MSL27",
+        "year": 2012,
+        "species_count": 3186,
+        "growth_rate": 21.7
+      },
+      {
+        "msl_version": "MSL28",
+        "year": 2013,
+        "species_count": 3426,
+        "growth_rate": 7.5
+      },
+      {
+        "msl_version": "MSL29",
+        "year": 2014,
+        "species_count": 4404,
+        "growth_rate": 28.5
+      },
+      {
+        "msl_version": "MSL30",
+        "year": 2015,
+        "species_count": 4558,
+        "growth_rate": 3.5
+      },
+      {
+        "msl_version": "MSL31",
+        "year": 2016,
+        "species_count": 5070,
+        "growth_rate": 11.2
+      },
+      {
+        "msl_version": "MSL32",
+        "year": 2017,
+        "species_count": 9110,
+        "growth_rate": 79.7
+      },
+      {
+        "msl_version": "MSL33",
+        "year": 2018,
+        "species_count": 10434,
+        "growth_rate": 14.5
+      },
+      {
+        "msl_version": "MSL34",
+        "year": 2019,
+        "species_count": 14843,
+        "growth_rate": 42.3
+      },
+      {
+        "msl_version": "MSL35",
+        "year": 2020,
+        "species_count": 17456,
+        "growth_rate": 17.6
+      },
+      {
+        "msl_version": "MSL36",
+        "year": 2021,
+        "species_count": 23011,
+        "growth_rate": 31.8
+      },
+      {
+        "msl_version": "MSL37",
+        "year": 2022,
+        "species_count": 25540,
+        "growth_rate": 11.0
+      },
+      {
+        "msl_version": "MSL38",
+        "year": 2023,
+        "species_count": 27440,
+        "growth_rate": 7.4
+      },
+      {
+        "msl_version": "MSL39",
+        "year": 2024,
+        "species_count": 28380,
+        "growth_rate": 3.4
+      },
+      {
+        "msl_version": "MSL40",
+        "year": 2024,
+        "species_count": 28911,
+        "growth_rate": 1.9
+      }
+    ],
+    "acceleration_periods": [
+      {
+        "period": "2011-2012",
+        "msl_versions": "MSL26-MSL27",
+        "growth_rate": 21.7
+      },
+      {
+        "period": "2013-2014",
+        "msl_versions": "MSL28-MSL29",
+        "growth_rate": 28.5
+      },
+      {
+        "period": "2016-2017",
+        "msl_versions": "MSL31-MSL32",
+        "growth_rate": 79.7
+      },
+      {
+        "period": "2018-2019",
+        "msl_versions": "MSL33-MSL34",
+        "growth_rate": 42.3
+      },
+      {
+        "period": "2020-2021",
+        "msl_versions": "MSL35-MSL36",
+        "growth_rate": 31.8
+      }
+    ]
+  },
+  "splitting_events": {
+    "major_events": [
+      {
+        "event": "Caudovirales Dissolution",
+        "year": 2021,
+        "msl_version": "MSL36",
+        "description": "Order Caudovirales abolished due to paraphyletic nature",
+        "impact": {
+          "families_before": 3,
+          "families_after": 15,
+          "species_affected": 1847,
+          "rationale": "Phylogenetic analysis showed the three families were not monophyletic"
+        },
+        "new_families": [
+          "Drexlerviridae",
+          "Demerecviridae",
+          "Salasmaviridae",
+          "Guelinviridae",
+          "Zierdtviridae",
+          "Kyanoviridae",
+          "Vertoviridae",
+          "Straboviridae",
+          "Mesyanzhinovviridae",
+          "Orlajensenviridae",
+          "Suoliviridae",
+          "Casjensviridae",
+          "Zobellviridae",
+          "Peduoviridae",
+          "Vilmaviridae"
+        ]
+      }
+    ],
+    "splitting_triggers": [
+      {
+        "trigger": "Phylogenetic inconsistency",
+        "description": "When molecular phylogeny conflicts with morphological classification",
+        "examples": [
+          "Caudovirales (2021)"
+        ]
+      },
+      {
+        "trigger": "Family size exceeding manageable limits",
+        "description": "When a family becomes too large for practical classification",
+        "threshold": "Typically >500-1000 species"
+      },
+      {
+        "trigger": "Discovery of distinct evolutionary lineages",
+        "description": "New sequencing reveals deep evolutionary splits",
+        "examples": [
+          "Multiple RNA virus families post-2017"
+        ]
+      }
+    ]
+  },
+  "recommendations": {
+    "optimal_family_size": {
+      "range": "50-500 species",
+      "rationale": "Balance between taxonomic precision and practical management"
+    },
+    "warning_thresholds": {
+      "review_needed": ">300 species",
+      "splitting_likely": ">500 species",
+      "urgent_action": ">1000 species"
+    },
+    "best_practices": [
+      "Regular phylogenetic review when family exceeds 300 species",
+      "Consider subfamily creation before family splitting",
+      "Maintain monophyletic groupings as primary criterion",
+      "Document splitting rationale in formal proposals"
+    ]
+  }
+}

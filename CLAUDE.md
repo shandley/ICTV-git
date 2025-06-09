@@ -1,5 +1,8 @@
 # ICTV Git-Based Taxonomy System
 
+## CRITICAL DATA POLICY
+**🚫 NO MOCK OR SIMULATED DATA**: This project uses ONLY real ICTV MSL data. Never generate synthetic data, mock analyses, or simulated results. If real data is not available for an analysis, the analysis should not be performed. All findings must be traceable to actual MSL files.
+
 ## Project Overview
 A revolutionary approach to scientific data management applying git version control principles to viral taxonomy. This project transforms the International Committee on Taxonomy of Viruses (ICTV) classification system into a transparent, versioned, and community-driven platform.
 
@@ -191,6 +194,13 @@ COLUMN_VARIATIONS = {
 8. **Biogeographic Patterns**: Does geography correlate with taxonomy?
 
 ## Development Guidelines
+
+### Data Integrity Policy
+1. **Use ONLY Real Data**: All analyses must use actual MSL Excel files from ICTV
+2. **No Mock Data**: Never create simulated species, families, or statistics
+3. **Traceable Results**: All findings must be reproducible from source MSL files
+4. **Missing Data**: If data is unavailable, document it as missing rather than simulating
+5. **External Data**: When external data is needed (e.g., sequences), obtain from real databases or mark analysis as "pending data"
 
 ### MVP Implementation (Phase 1)
 ```python

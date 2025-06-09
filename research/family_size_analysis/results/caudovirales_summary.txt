@@ -1,0 +1,33 @@
+CAUDOVIRALES DISSOLUTION: LARGEST VIRAL TAXONOMY REORGANIZATION
+================================================================================
+Year: 2021 (MSL36)
+Scale: 1,847 species affected
+Structure Change: 3 → 15 families
+
+BEFORE (Morphology-based classification):
+  Order: Caudovirales
+  ├── Family: Myoviridae (contractile tail)
+  ├── Family: Siphoviridae (long non-contractile tail)
+  └── Family: Podoviridae (short tail)
+
+AFTER (Phylogeny-based classification):
+  15 new families based on molecular relationships:
+    • Drexlerviridae
+    • Demerecviridae
+    • Salasmaviridae
+    • Guelinviridae
+    • Zierdtviridae
+    • Kyanoviridae
+    • Vertoviridae
+    • Straboviridae
+    • ... and 7 more families
+
+SCIENTIFIC RATIONALE:
+  Phylogenetic analysis showed the three families were not monophyletic
+
+IMPACT:
+  ✅ Better reflects evolutionary relationships
+  ✅ Resolves paraphyletic groupings
+  ✅ Provides clearer host-virus associations
+  ⚠️ Required extensive database updates
+  ⚠️ Disrupted existing literature references

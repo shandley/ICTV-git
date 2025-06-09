@@ -1,0 +1,18 @@
+ICTV Family Size Analysis Summary
+============================================================
+
+Growth Analysis:
+- Total growth: 1950 → 28911 species (2005-2024)
+- Growth factor: 14.8x
+- Average annual growth: 15.2%
+
+Major Splitting Events:
+- Caudovirales Dissolution (2021): 3 → 15 families
+  Affected 1847 species
+
+Recommendations:
+- Optimal family size: 50-500 species
+- Warning thresholds:
+  * review_needed: >300 species
+  * splitting_likely: >500 species
+  * urgent_action: >1000 species
