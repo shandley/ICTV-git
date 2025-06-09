@@ -1,0 +1,32 @@
+# ICTV-Git API Requirements
+# Core REST API dependencies for serving 20-year taxonomy data
+
+# Web framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# Data processing
+pyyaml>=6.0.1
+pydantic>=2.0.0
+
+# Optional AI dependencies (with fallbacks)
+# Natural Language Processing
+openai>=1.0.0  # For NLQ interface
+spacy>=3.7.0   # For text processing
+
+# Machine Learning
+scikit-learn>=1.3.0  # For classification AI
+numpy>=1.24.0        # ML support
+pandas>=2.0.0        # Data manipulation
+
+# Database/HTTP for sync features
+aiohttp>=3.9.0       # Async HTTP client
+asyncio-throttle>=1.0.2  # Rate limiting
+
+# Development and testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+httpx>=0.25.0        # For testing FastAPI
+
+# Deployment
+gunicorn>=21.2.0     # Production WSGI server
