@@ -2,10 +2,17 @@
 
 Welcome to ICTV-git! This guide will help you get up and running with the git-based viral taxonomy system.
 
+## 🚀 What's New
+
+- **Complete 20-Year Git Repository**: All 18 MSL releases (2005-2024) with full history
+- **Production REST API**: 30+ endpoints with AI-powered features
+- **Natural Language Queries**: Ask questions about taxonomy in plain English
+- **Advanced Search**: Faceted search across 28,911 species
+
 ## Prerequisites
 
 Before you begin, ensure you have:
-- Python 3.8 or higher
+- Python 3.9 or higher
 - Git installed on your system
 - Basic familiarity with command line operations
 - ~2GB of free disk space for the complete taxonomy data
@@ -25,16 +32,16 @@ We recommend using a virtual environment:
 
 ```bash
 # Create virtual environment
-python -m venv venv
+python3 -m venv ictv_api_env
 
 # Activate it
 # On macOS/Linux:
-source venv/bin/activate
+source ictv_api_env/bin/activate
 # On Windows:
-venv\Scripts\activate
+ictv_api_env\Scripts\activate
 
-# Install dependencies
-pip install -r requirements.txt
+# Install API dependencies
+pip install -r requirements_api.txt
 ```
 
 ### 3. Download Taxonomy Data
@@ -54,15 +61,19 @@ python scripts/download_msl.py --versions MSL38 MSL37 MSL36
 
 ## Quick Start Tutorial
 
-### Step 1: Convert MSL to Git Format
+### Step 1: Build Complete 20-Year Repository
 
-Convert an MSL Excel file to git-structured YAML files:
+Build the complete historical git repository with all 18 MSL releases:
 
 ```bash
-python scripts/convert_msl_to_git.py data/MSL38.xlsx
+python scripts/complete_20_year_conversion.py
 ```
 
-This creates a hierarchical directory structure in `output/git_taxonomy/MSL38/` with one YAML file per species.
+This creates a complete git repository at `output/ictv_complete_20_year_taxonomy/` with:
+- All MSL releases from MSL23 (2005) to MSL40 (2024)
+- Full git history with proper chronological commits
+- 18 git tags for easy version navigation
+- Species evolution from 1,950 to 28,911
 
 ### Step 2: Explore the Data
 
@@ -80,26 +91,36 @@ Open your browser to http://localhost:8501 to:
 - View statistics and visualizations
 - Compare versions
 
-#### Using the REST API
+#### Using the Production REST API
 
-Start the API server:
+Start the enhanced API server:
 
 ```bash
-python scripts/run_taxonomy_api.py
+python scripts/run_api_server.py --dev
 ```
 
-The API will be available at http://localhost:8000 with documentation at http://localhost:8000/docs.
+The API will be available at http://localhost:8000 with auto-generated documentation at http://localhost:8000/docs.
 
 Example API calls:
 ```bash
+# Natural language query
+curl -X POST http://localhost:8000/ai/query \
+  -H "Content-Type: application/json" \
+  -d '{"query": "What happened to Caudovirales in 2019?"}'
+
 # Get species information
-curl http://localhost:8000/api/v1/species/MSL38/Tobacco%20mosaic%20virus
+curl http://localhost:8000/taxonomy/species/Tobacco%20Mosaic%20Virus
 
-# Search for viruses
-curl "http://localhost:8000/api/v1/search?q=coronavirus&version=MSL38"
+# Search with filters
+curl -X POST http://localhost:8000/search/species \
+  -H "Content-Type: application/json" \
+  -d '{"query": "coronavirus", "family_filter": "Coronaviridae"}'
 
-# Compare versions
-curl http://localhost:8000/api/v1/compare/MSL37/MSL38
+# Compare historical releases
+curl http://localhost:8000/historical/compare/MSL35/MSL40
+
+# Get timeline summary
+curl http://localhost:8000/historical/timeline
 ```
 
 ### Step 3: Track Changes Between Versions

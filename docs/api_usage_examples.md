@@ -1,21 +1,60 @@
-# ICTV Taxonomy API Usage Examples
+# ICTV-git API Usage Examples
+
+> **Note**: We've significantly upgraded our API! For the complete REST API documentation with 30+ endpoints, see [api_reference.md](api_reference.md).
 
 ## Starting the API Server
 
 ```bash
-# Start with default settings
-python scripts/run_taxonomy_api.py
+# Create virtual environment (if not already done)
+python3 -m venv ictv_api_env
+source ictv_api_env/bin/activate
 
-# Start with custom port
-python scripts/run_taxonomy_api.py --port 8080
+# Install dependencies
+pip install -r requirements_api.txt
 
-# Start with specific repository
-python scripts/run_taxonomy_api.py output/git_taxonomy --host localhost --port 8000
+# Start the production API server
+python scripts/run_api_server.py --dev
+
+# API will be available at:
+# http://localhost:8000
+# Interactive docs: http://localhost:8000/docs
 ```
 
-The API will be available at `http://localhost:8000` with interactive documentation at `http://localhost:8000/docs`.
+## New API Features
 
-## API Endpoints
+Our production REST API now includes:
+- **30+ endpoints** across 4 modules (Taxonomy, Historical, AI, Search)
+- **AI-powered natural language queries** - Ask questions in plain English
+- **20-year historical tracking** - All MSL releases from 2005-2024
+- **Advanced search** with faceted filtering
+- **Auto-generated documentation** at `/docs`
+
+## Quick Examples
+
+### Natural Language Query
+```bash
+curl -X POST http://localhost:8000/ai/query \
+  -H "Content-Type: application/json" \
+  -d '{"query": "What happened to Caudovirales in 2019?"}'
+```
+
+### Search with Filters
+```bash
+curl -X POST http://localhost:8000/search/species \
+  -H "Content-Type: application/json" \
+  -d '{"query": "coronavirus", "family_filter": "Coronaviridae", "limit": 10}'
+```
+
+### Historical Comparison
+```bash
+curl http://localhost:8000/historical/compare/MSL35/MSL40
+```
+
+For complete API documentation, see [api_reference.md](api_reference.md).
+
+---
+
+## Legacy API Examples (for reference)
 
 ### 1. Get Available Versions
 
