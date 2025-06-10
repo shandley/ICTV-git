@@ -16,6 +16,7 @@ import plotly.graph_objects as go
 from pathlib import Path
 import sys
 import json
+from datetime import datetime
 
 # Add project root to path for imports
 project_root = Path(__file__).parent.parent
@@ -25,6 +26,11 @@ from components.risk_engine import FamilyRiskCalculator
 from components.visualizations import create_interactive_plots
 from utils.data_manager import load_family_data
 from config.settings import DEFAULT_RISK_WEIGHTS, DEFAULT_THRESHOLDS
+
+# Import new Phase 2 pages
+from pages.committee_workflow import show_committee_workflow
+from pages.analytics_trends import show_analytics_trends
+from utils.report_generator import ReportGenerator
 
 # Page configuration
 st.set_page_config(
@@ -66,6 +72,26 @@ st.markdown("""
 
 def main():
     """Main dashboard application."""
+    
+    # Navigation sidebar
+    st.sidebar.title("🦠 ICTV Dashboard")
+    
+    page = st.sidebar.radio(
+        "Navigation",
+        ["🏠 Risk Assessment", "🏛️ Committee Workflow", "📈 Analytics & Trends", "📄 Reports"]
+    )
+    
+    if page == "🏠 Risk Assessment":
+        show_risk_assessment()
+    elif page == "🏛️ Committee Workflow":
+        show_committee_workflow()
+    elif page == "📈 Analytics & Trends":
+        show_analytics_trends()
+    elif page == "📄 Reports":
+        show_reports()
+
+def show_risk_assessment():
+    """Original risk assessment dashboard."""
     
     # Header
     st.markdown('<h1 class="main-header">🦠 ICTV Family Risk Assessment Dashboard</h1>', 
@@ -317,6 +343,170 @@ def main():
     except Exception as e:
         st.error(f"Error loading dashboard: {str(e)}")
         st.info("Please ensure the predictive framework data is available.")
+
+def show_reports():
+    """Report generation page."""
+    
+    st.header("📄 Report Generation")
+    
+    # Report type selection
+    report_type = st.selectbox(
+        "Select Report Type",
+        ["Executive Summary", "Family Detail Report", "Meeting Minutes", "Data Export"]
+    )
+    
+    report_generator = ReportGenerator()
+    
+    if report_type == "Executive Summary":
+        st.subheader("📊 Executive Summary Report")
+        
+        # Generate summary data
+        risk_calculator = FamilyRiskCalculator()
+        families_data = load_family_data()
+        assessments = risk_calculator.assess_all_families(families_data)
+        system_health = risk_calculator.get_system_health(assessments)
+        high_risk_families = [a for a in assessments if a['risk_score'] >= 5.0]
+        
+        recommendations = [
+            "Focus immediate attention on families exceeding crisis thresholds",
+            "Implement proactive monitoring for medium-risk families",
+            "Consider resource allocation for upcoming interventions",
+            "Update phylogenetic analyses for high-growth families",
+            "Schedule quarterly reviews for all families above concern threshold"
+        ]
+        
+        if st.button("📋 Generate Executive Summary", type="primary"):
+            pdf_data = report_generator.generate_executive_summary(
+                system_health, high_risk_families, recommendations
+            )
+            
+            # Create download link
+            st.markdown(
+                report_generator.create_download_link(
+                    pdf_data, 
+                    f"ICTV_Executive_Summary_{datetime.now().strftime('%Y%m%d')}.pdf",
+                    'pdf'
+                ),
+                unsafe_allow_html=True
+            )
+            
+            st.success("✅ Executive summary generated successfully!")
+    
+    elif report_type == "Family Detail Report":
+        st.subheader("🦠 Family Detail Report")
+        
+        families_data = load_family_data()
+        selected_family = st.selectbox(
+            "Select Family",
+            [f['family_name'] for f in families_data]
+        )
+        
+        if st.button("📋 Generate Family Report", type="primary"):
+            # Get family data and assessment
+            family_data = next(f for f in families_data if f['family_name'] == selected_family)
+            risk_calculator = FamilyRiskCalculator()
+            assessment = risk_calculator.calculate_family_risk(family_data)
+            
+            pdf_data = report_generator.generate_family_report(
+                family_data, assessment
+            )
+            
+            st.markdown(
+                report_generator.create_download_link(
+                    pdf_data,
+                    f"{selected_family}_Report_{datetime.now().strftime('%Y%m%d')}.pdf",
+                    'pdf'
+                ),
+                unsafe_allow_html=True
+            )
+            
+            st.success(f"✅ {selected_family} report generated successfully!")
+    
+    elif report_type == "Meeting Minutes":
+        st.subheader("📝 Meeting Minutes")
+        
+        with st.form("meeting_minutes_form"):
+            meeting_date = st.date_input("Meeting Date", value=datetime.now())
+            attendees = st.text_input("Attendees", "Committee Members")
+            duration = st.text_input("Duration", "2 hours")
+            
+            # Sample decisions
+            st.markdown("### Decisions Made")
+            decisions = [
+                {
+                    "family": "Genomoviridae",
+                    "decision": "Initiate Split",
+                    "vote": "8-2-1"
+                }
+            ]
+            
+            if st.form_submit_button("📋 Generate Minutes", type="primary"):
+                meeting_data = {
+                    "date": meeting_date.strftime('%B %d, %Y'),
+                    "attendees": attendees,
+                    "duration": duration
+                }
+                
+                pdf_data = report_generator.generate_meeting_minutes(
+                    meeting_data, decisions
+                )
+                
+                st.markdown(
+                    report_generator.create_download_link(
+                        pdf_data,
+                        f"Meeting_Minutes_{meeting_date.strftime('%Y%m%d')}.pdf",
+                        'pdf'
+                    ),
+                    unsafe_allow_html=True
+                )
+                
+                st.success("✅ Meeting minutes generated successfully!")
+    
+    elif report_type == "Data Export":
+        st.subheader("💾 Data Export")
+        
+        export_format = st.radio(
+            "Export Format",
+            ["CSV", "JSON"]
+        )
+        
+        include_metadata = st.checkbox("Include metadata", value=True)
+        
+        if st.button("📥 Export Data", type="primary"):
+            # Get assessment data
+            risk_calculator = FamilyRiskCalculator()
+            families_data = load_family_data()
+            assessments = risk_calculator.assess_all_families(families_data)
+            
+            if export_format == "CSV":
+                csv_data = report_generator.export_data_csv(assessments)
+                st.download_button(
+                    label="Download CSV",
+                    data=csv_data,
+                    file_name=f"ICTV_Risk_Assessment_{datetime.now().strftime('%Y%m%d')}.csv",
+                    mime="text/csv"
+                )
+            else:
+                json_data = report_generator.export_data_json(
+                    assessments, include_metadata
+                )
+                st.download_button(
+                    label="Download JSON",
+                    data=json_data,
+                    file_name=f"ICTV_Risk_Assessment_{datetime.now().strftime('%Y%m%d')}.json",
+                    mime="application/json"
+                )
+            
+            st.success(f"✅ Data exported as {export_format} successfully!")
+    
+    # Report history
+    with st.expander("🗓️ Recent Reports"):
+        st.markdown("""
+        - Executive Summary - January 15, 2025
+        - Genomoviridae Family Report - January 10, 2025
+        - Committee Meeting Minutes - January 8, 2025
+        - Full Data Export - January 1, 2025
+        """)
 
 if __name__ == "__main__":
     main()
