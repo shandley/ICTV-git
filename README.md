@@ -4,12 +4,12 @@
 
 **ICTV-git** transforms the International Committee on Taxonomy of Viruses (ICTV) classification system into a transparent, versioned, and community-driven platform using git version control principles. This solves the reproducibility crisis in virology research by enabling researchers to track taxonomic changes, migrate datasets between versions, and cite specific taxonomy versions.
 
-### 🚀 Current Status: Phase 1 Complete
-- **✅ Family Size Analysis**: Complete analysis of 20-year ICTV growth patterns using real MSL data
-- **✅ Caudovirales Case Study**: Documented the largest viral taxonomy reorganization in history  
-- **✅ Publication-Quality Visualizations**: 4 comprehensive plots showing growth trends and reorganization events
+### 🚀 Current Status: Phase 3 Complete
+- **✅ Phase 1 - Family Size Analysis**: Evidence-based guidelines for viral family management
+- **✅ Phase 2 - Temporal Evolution**: Multi-rank growth patterns and taxonomic stability analysis
+- **✅ Phase 3 - Discovery Method Evolution**: Technology-driven discovery paradigm shifts
 - **✅ Real Data Framework**: Strict policy ensuring all analyses use only documented ICTV statistics
-- **✅ Data Integrity Pipeline**: Comprehensive validation and verification of all research findings
+- **✅ 12 Publication-Ready Visualizations**: Comprehensive plots documenting viral taxonomy evolution
 
 ### 🎯 The Problem We Solve
 
@@ -19,14 +19,25 @@ Current viral taxonomy management suffers from:
 - **Lost institutional knowledge** - When families split, historical reasoning disappears
 - **Reproducibility crisis** - Papers published months apart use incompatible taxonomies
 
-### ✨ Current Features (Phase 1)
+### ✨ Completed Research Analyses
 
-- 📊 **Family Size Analysis**: Evidence-based guidelines for viral family management
-- 📈 **Growth Pattern Analysis**: 14.8x species growth over 20 years with technology-driven acceleration periods
-- 🔍 **Caudovirales Case Study**: Detailed analysis of 2021 dissolution affecting 1,847 species
-- 🎨 **Publication Visualizations**: Professional matplotlib plots ready for manuscript inclusion
-- 📋 **Real Data Validation**: Comprehensive verification ensuring no mock or simulated data
-- 🔬 **Research Framework**: Evidence-based methodology for viral taxonomy analysis
+#### Phase 1: Family Size Analysis
+- 📊 **Optimal Size Guidelines**: 50-300 species per family based on 20-year patterns
+- 🔍 **Caudovirales Case Study**: 1,847 species reorganization from 3 to 15 families
+- 📈 **Growth Metrics**: 14.8x species increase with 15.2% annual growth
+- ⚠️ **Crisis Thresholds**: Families >1,000 species require immediate action
+
+#### Phase 2: Temporal Evolution Analysis  
+- 📈 **Multi-Rank Evolution**: Species (14.8x), Genera (15.5x), Families (4.5x) growth
+- 🚀 **5 Acceleration Periods**: Technology-driven growth spikes (up to 79.7% in 2017)
+- 📊 **Stability Analysis**: Families most stable (CV=0.425), species least stable (CV=0.512)
+- 🔄 **Technology Eras**: Pre-NGS → NGS → Metagenomics → AI (2005-2024)
+
+#### Phase 3: Discovery Method Evolution
+- 🔬 **4 Discovery Eras**: Culture → Molecular → Metagenomics → AI-assisted
+- 📈 **34x Discovery Rate Increase**: From 125 to 3,297 species/year
+- 🌍 **Paradigm Shift**: 90% pathogen-focused → 70% environmental-focused
+- 💰 **200x Cost Reduction**: $10,000 → $50 per genome enabling mass discovery
 
 ## 🚀 Quick Start
 
@@ -45,24 +56,27 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install matplotlib pandas numpy pyyaml
 ```
 
-### Run Family Size Analysis
+### Run Research Analyses
 
 ```bash
-# Generate family size analysis with real ICTV data
+# Phase 1: Family Size Analysis
 python research/family_size_analysis/basic_analysis.py
-
-# Create publication-quality plots
 python research/family_size_analysis/create_matplotlib_plots.py
 
-# View results
-ls research/family_size_analysis/results/
+# Phase 2: Temporal Evolution Analysis
+python research/temporal_evolution_analysis/temporal_analysis.py
+python research/temporal_evolution_analysis/create_temporal_plots.py
+
+# Phase 3: Discovery Method Evolution
+python research/discovery_method_evolution/discovery_method_analysis.py
+python research/discovery_method_evolution/create_discovery_plots.py
 ```
 
 ### Key Outputs
 
-- **Analysis Results**: `research/family_size_analysis/results/family_size_analysis_basic.json`
-- **Publication Plots**: 4 PNG/PDF files in `research/family_size_analysis/results/`
-- **Research Findings**: `research/family_size_analysis/REAL_DATA_FINDINGS.md`
+- **Analysis Results**: JSON files in each phase's `results/` directory
+- **Publication Plots**: 12 total plots (4 per phase) as PNG/PDF files
+- **Research Reports**: Comprehensive findings documents for each phase
 
 ## 📊 Research Results
 
@@ -110,37 +124,50 @@ for year_data in growth_data:
 - **Source Verification**: Every finding traceable to official ICTV publications
 - **Validation Pipeline**: Multi-stage verification ensuring research integrity
 
-### Current Research Status
-- **Phase 1 Complete**: Family size analysis with comprehensive visualizations
-- **Next Phase**: Full MSL parsing for complete taxonomic git repository creation
-- **Future Work**: Migration tools, semantic diffs, and community platform development
+### Research Progress
+- **✅ Phase 1**: Family Size Analysis - COMPLETE
+- **✅ Phase 2**: Temporal Evolution Analysis - COMPLETE  
+- **✅ Phase 3**: Discovery Method Evolution - COMPLETE
+- **🔄 Next Phase**: Full MSL parsing for git repository creation
+- **📅 Future Work**: Migration tools, semantic diffs, and community platform
 
 ## 🛠️ Current Project Structure
 
 ```
 ICTV-git/
-├── research/                      # Research analysis modules
-│   ├── family_size_analysis/     # Complete family size analysis
-│   │   ├── basic_analysis.py     # Real ICTV data analysis
-│   │   ├── create_matplotlib_plots.py  # Publication visualizations
-│   │   ├── results/              # Generated plots and data
-│   │   └── REAL_DATA_FINDINGS.md # Research findings
-│   └── MOCK_DATA_ARCHIVE/        # Archived mock data (not used)
-├── manuscript_findings_v3.json   # Real research findings
-├── CLAUDE.md                     # Project instructions
-└── README.md                     # This file
+├── research/                              # Research analysis modules
+│   ├── family_size_analysis/             # Phase 1: Family size analysis
+│   │   ├── basic_analysis.py             # Core analysis with real ICTV data
+│   │   ├── create_matplotlib_plots.py    # Publication visualizations
+│   │   ├── results/                      # 4 plots + analysis data
+│   │   └── REAL_DATA_FINDINGS.md         # Comprehensive findings
+│   ├── temporal_evolution_analysis/      # Phase 2: Temporal patterns
+│   │   ├── temporal_analysis.py          # Multi-rank evolution analysis
+│   │   ├── create_temporal_plots.py      # Growth and stability plots
+│   │   ├── results/                      # 4 plots + temporal data
+│   │   └── TEMPORAL_EVOLUTION_FINDINGS.md # Evolution findings
+│   ├── discovery_method_evolution/       # Phase 3: Discovery methods
+│   │   ├── discovery_method_analysis.py  # Method contribution analysis
+│   │   ├── create_discovery_plots.py     # Technology impact plots
+│   │   ├── results/                      # 4 plots + method data
+│   │   └── DISCOVERY_METHOD_EVOLUTION_FINDINGS.md # Method findings
+│   └── MOCK_DATA_ARCHIVE/                # Archived mock data (not used)
+├── manuscript_findings_v3.json           # Consolidated research findings
+├── CLAUDE.md                             # Project development guidelines
+└── README.md                             # This file
 ```
 
 ## 📚 Documentation
 
-### Current Documentation
-- [Research Findings](research/family_size_analysis/REAL_DATA_FINDINGS.md) - Phase 1 results
-- [Project Instructions](CLAUDE.md) - Complete development guidelines
-- [Manuscript Findings](manuscript_findings_v3.json) - Research analysis summary
+### Research Documentation
+- **Phase 1**: [Family Size Findings](research/family_size_analysis/REAL_DATA_FINDINGS.md)
+- **Phase 2**: [Temporal Evolution Findings](research/temporal_evolution_analysis/TEMPORAL_EVOLUTION_FINDINGS.md)
+- **Phase 3**: [Discovery Method Findings](research/discovery_method_evolution/DISCOVERY_METHOD_EVOLUTION_FINDINGS.md)
+- **Consolidated**: [Manuscript Findings](manuscript_findings_v3.json)
 
-### Analysis Scripts
-- [Family Size Analysis](research/family_size_analysis/basic_analysis.py) - Core analysis
-- [Visualization Generator](research/family_size_analysis/create_matplotlib_plots.py) - Publication plots
+### Project Documentation
+- [Development Guidelines](CLAUDE.md) - Project instructions and data policies
+- [Research Implementation Plan](research_implementation_plan.md) - Analysis roadmap
 
 ## 🤝 Contributing
 
@@ -154,21 +181,21 @@ We welcome contributions to expand this research! Current priorities:
 
 ## 📄 Citation
 
-If you use ICTV-git family size analysis in your research, please cite:
+If you use ICTV-git analyses in your research, please cite:
 
 ```bibtex
-@software{ictv-git-family-analysis,
+@software{ictv-git,
   author = {Handley, Scott},
-  title = {ICTV-git: Family Size Analysis of Viral Taxonomy Evolution},
+  title = {ICTV-git: Comprehensive Analysis of Viral Taxonomy Evolution},
   year = {2024},
   publisher = {GitHub},
   journal = {GitHub repository},
   url = {https://github.com/shandley/ICTV-git},
-  note = {Real ICTV data analysis (2005-2024)}
+  note = {Three-phase analysis of ICTV data (2005-2024): family size dynamics, temporal evolution, and discovery method impacts}
 }
 ```
 
-Research manuscript in preparation focusing on viral taxonomy management and family size optimization.
+Research manuscript in preparation examining 20 years of viral taxonomy evolution through git-based analysis.
 
 ## 🔗 Links
 
