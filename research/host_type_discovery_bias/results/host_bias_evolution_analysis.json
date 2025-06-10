@@ -1,0 +1,245 @@
+{
+  "analysis_metadata": {
+    "phase": "Phase 9: Host-Type Discovery Bias Evolution",
+    "analysis_date": "2025-06-09T21:23:26.660320",
+    "data_source": "ICTV MSL host data and discovery method literature",
+    "years_covered": "2005-2024",
+    "limitation_note": "Geographic data partially inferred from host names and literature"
+  },
+  "temporal_bias_evolution": {
+    "era_analysis": {
+      "culture_era": {
+        "pathogen_percentage": 82.0,
+        "environmental_percentage": 4.2,
+        "bias_index": 19.52,
+        "total_species": 877,
+        "diversity_score": 5
+      },
+      "early_molecular_era": {
+        "pathogen_percentage": 66.9,
+        "environmental_percentage": 11.9,
+        "bias_index": 5.62,
+        "total_species": 2423,
+        "diversity_score": 6
+      },
+      "metagenomics_era": {
+        "pathogen_percentage": 39.4,
+        "environmental_percentage": 33.5,
+        "bias_index": 1.18,
+        "total_species": 9890,
+        "diversity_score": 7
+      },
+      "current_era": {
+        "pathogen_percentage": 30.2,
+        "environmental_percentage": 38.0,
+        "bias_index": 0.79,
+        "total_species": 10393,
+        "diversity_score": 7
+      }
+    },
+    "bias_reduction": 24.7,
+    "environmental_growth": 9.0
+  },
+  "technology_host_accessibility": {
+    "technology_progression": {
+      "culture_methods": {
+        "accessible_hosts": [
+          "human_clinical",
+          "domestic_animals",
+          "crop_plants"
+        ],
+        "accessibility_percentage": 33.3,
+        "bias_score": 9,
+        "limitations": "Cultivation requirements exclude most environmental hosts",
+        "host_diversity": 3
+      },
+      "pcr_sanger": {
+        "accessible_hosts": [
+          "human_clinical",
+          "domestic_animals",
+          "crop_plants",
+          "wild_animals",
+          "wild_plants"
+        ],
+        "accessibility_percentage": 55.6,
+        "bias_score": 6,
+        "limitations": "Requires known sequences, misses novel viruses",
+        "host_diversity": 5
+      },
+      "early_ngs": {
+        "accessible_hosts": [
+          "human_clinical",
+          "domestic_animals",
+          "crop_plants",
+          "wild_animals",
+          "wild_plants",
+          "marine_organisms",
+          "environmental_bacteria"
+        ],
+        "accessibility_percentage": 77.8,
+        "bias_score": 4,
+        "limitations": "Sample preparation still biased toward cultivable systems",
+        "host_diversity": 7
+      },
+      "metagenomics": {
+        "accessible_hosts": [
+          "wild_animals",
+          "wild_plants",
+          "marine_organisms",
+          "environmental_bacteria",
+          "environmental_archaea",
+          "environmental_uncultured"
+        ],
+        "accessibility_percentage": 66.7,
+        "bias_score": 2,
+        "limitations": "Environmental sample processing challenges",
+        "host_diversity": 6
+      },
+      "environmental_dna": {
+        "accessible_hosts": [
+          "marine_organisms",
+          "environmental_bacteria",
+          "environmental_archaea",
+          "environmental_uncultured"
+        ],
+        "accessibility_percentage": 44.4,
+        "bias_score": 1,
+        "limitations": "Assembly challenges for novel viral genomes",
+        "host_diversity": 4
+      }
+    },
+    "accessibility_improvement": 1.3,
+    "bias_reduction": 9.0
+  },
+  "kingdom_representation_shifts": {
+    "kingdom_shifts": {
+      "animals": {
+        "start_percentage": 52.1,
+        "end_percentage": 31.2,
+        "absolute_change": -20.9,
+        "growth_factor": 0.6,
+        "trend": "decreasing"
+      },
+      "plants": {
+        "start_percentage": 35.4,
+        "end_percentage": 21.4,
+        "absolute_change": -14.0,
+        "growth_factor": 0.6,
+        "trend": "decreasing"
+      },
+      "bacteria": {
+        "start_percentage": 11.8,
+        "end_percentage": 41.3,
+        "absolute_change": 29.5,
+        "growth_factor": 3.5,
+        "trend": "increasing"
+      },
+      "archaea": {
+        "start_percentage": 0.3,
+        "end_percentage": 3.7,
+        "absolute_change": 3.4,
+        "growth_factor": 12.3,
+        "trend": "increasing"
+      },
+      "fungi": {
+        "start_percentage": 0.4,
+        "end_percentage": 1.9,
+        "absolute_change": 1.5,
+        "growth_factor": 4.7,
+        "trend": "increasing"
+      },
+      "protists": {
+        "start_percentage": 0.0,
+        "end_percentage": 0.5,
+        "absolute_change": 0.5,
+        "growth_factor": "new",
+        "trend": "stable"
+      }
+    },
+    "diversity_increase": 2,
+    "major_shifts": [
+      "animals",
+      "plants",
+      "bacteria"
+    ],
+    "emerging_kingdoms": [
+      "protists"
+    ]
+  },
+  "geographic_bias_patterns": {
+    "regional_patterns": {
+      "temperate_regions": {
+        "bias_period": "2005-2015",
+        "period_length": 10,
+        "affected_host_types": 3,
+        "correction_methods": "International collaboration, field studies",
+        "bias_severity": "high"
+      },
+      "tropical_regions": {
+        "bias_period": "2010-2020",
+        "period_length": 10,
+        "affected_host_types": 3,
+        "correction_methods": "Tropical research initiatives, capacity building",
+        "bias_severity": "high"
+      },
+      "marine_environments": {
+        "bias_period": "2015-2024",
+        "period_length": 9,
+        "affected_host_types": 1,
+        "correction_methods": "Oceanographic expeditions, marine genomics programs",
+        "bias_severity": "high"
+      },
+      "extreme_environments": {
+        "bias_period": "2018-2024",
+        "period_length": 6,
+        "affected_host_types": 1,
+        "correction_methods": "Specialized sampling, extremophile research",
+        "bias_severity": "medium"
+      }
+    },
+    "total_regions_affected": 4,
+    "correction_timeline": [
+      "2005-2015",
+      "2010-2020",
+      "2015-2024",
+      "2018-2024"
+    ],
+    "ongoing_corrections": [
+      "marine_environments",
+      "extreme_environments"
+    ]
+  },
+  "bias_correction_effectiveness": {
+    "pathogen_bias_reduction": 51.8,
+    "environmental_representation_increase": 33.8,
+    "bias_correction_ratio": 0.65,
+    "overall_effectiveness": "high",
+    "correction_timeline": "2005-2024 (20 years)",
+    "key_drivers": [
+      "Metagenomics revolution",
+      "Environmental genomics programs",
+      "Climate change research"
+    ]
+  },
+  "key_findings": {
+    "pathogen_bias_reduction": "51.8% decrease",
+    "environmental_representation": "33.8% increase",
+    "bias_index_improvement": "24.7x reduction",
+    "technology_accessibility": "1.3x improvement",
+    "kingdom_diversity": "2 new kingdoms represented",
+    "correction_timeline": "20-year systematic bias reduction"
+  },
+  "statistical_summary": {
+    "eras_analyzed": 4,
+    "host_categories": 9,
+    "technologies_compared": 5,
+    "geographic_regions": 4,
+    "kingdom_tracking_years": 5
+  },
+  "implications": {
+    "for_discovery": "Technology drives host accessibility and bias reduction",
+    "for_ecology": "Environmental virus diversity vastly underestimated historically",
+    "for_evolution": "Host range expansion follows technological capabilities",
+    "for_future": "Continued bias toward accessible and economically important hosts"
+  }
+}
