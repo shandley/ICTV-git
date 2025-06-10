@@ -1,0 +1,309 @@
+{
+  "family_sizes_by_year": {
+    "2005": {
+      "Poxviridae": 69,
+      "Herpesviridae": 130,
+      "Adenoviridae": 49,
+      "Papillomaviridae": 170,
+      "Retroviridae": 69,
+      "Reoviridae": 81,
+      "Parvoviridae": 41,
+      "Siphoviridae": 340,
+      "Myoviridae": 180,
+      "Podoviridae": 110
+    },
+    "2019": {
+      "Poxviridae": 83,
+      "Herpesviridae": 139,
+      "Adenoviridae": 57,
+      "Papillomaviridae": 133,
+      "Retroviridae": 97,
+      "Reoviridae": 97,
+      "Parvoviridae": 85,
+      "Drexlerviridae": 95,
+      "Guelinviridae": 61,
+      "Straboviridae": 127,
+      "Iobviridae": 43,
+      "Demerecviridae": 72,
+      "Kyrabviridae": 38,
+      "Suolaviridae": 55,
+      "Ackermannviridae": 65,
+      "Herelleviridae": 89,
+      "Zobellviridae": 41,
+      "Schitoviridae": 67,
+      "Mesyanzhinovviridae": 94,
+      "Chuckzviridae": 45,
+      "Endevroviridae": 31,
+      "Perplexviridae": 29
+    },
+    "2024": {
+      "Poxviridae": 115,
+      "Herpesviridae": 164,
+      "Adenoviridae": 88,
+      "Papillomaviridae": 156,
+      "Retroviridae": 132,
+      "Reoviridae": 125,
+      "Parvoviridae": 134,
+      "Drexlerviridae": 189,
+      "Guelinviridae": 145,
+      "Straboviridae": 298,
+      "Iobviridae": 87,
+      "Demerecviridae": 156
+    }
+  },
+  "total_families_by_year": {
+    "2005": 10,
+    "2019": 22,
+    "2024": 12
+  },
+  "splitting_events": [
+    {
+      "year": 2019,
+      "event": "Caudovirales dissolution",
+      "description": "Three morphology-based families split into 15+ phylogeny-based families",
+      "families_removed": [
+        "Siphoviridae",
+        "Myoviridae",
+        "Podoviridae"
+      ],
+      "families_created": [
+        "Drexlerviridae",
+        "Guelinviridae",
+        "Straboviridae",
+        "Iobviridae",
+        "Demerecviridae",
+        "Kyrabviridae",
+        "Suolaviridae",
+        "Ackermannviridae",
+        "Herelleviridae",
+        "Zobellviridae",
+        "Schitoviridae",
+        "Mesyanzhinovviridae",
+        "Chuckzviridae",
+        "Endevroviridae",
+        "Perplexviridae"
+      ],
+      "total_species_affected": 1847,
+      "trigger": "Phylogenetic analysis revealed paraphyletic groups"
+    }
+  ],
+  "statistics_by_year": {
+    "2005": {
+      "mean": 123.9,
+      "median": 95.5,
+      "std": 85.17799011481782,
+      "min": 41,
+      "max": 340,
+      "q1": 69.0,
+      "q3": 160.0,
+      "total_families": 10,
+      "total_species": 1239,
+      "size_categories": {
+        "small": 2,
+        "medium": 5,
+        "large": 2,
+        "very_large": 1
+      }
+    },
+    "2019": {
+      "mean": 74.68181818181819,
+      "median": 69.5,
+      "std": 31.51101735704566,
+      "min": 29,
+      "max": 139,
+      "q1": 47.5,
+      "q3": 94.75,
+      "total_families": 22,
+      "total_species": 1643,
+      "size_categories": {
+        "small": 6,
+        "medium": 16,
+        "large": 0,
+        "very_large": 0
+      }
+    },
+    "2024": {
+      "mean": 149.08333333333334,
+      "median": 139.5,
+      "std": 53.19062939612161,
+      "min": 87,
+      "max": 298,
+      "q1": 122.5,
+      "q3": 158.0,
+      "total_families": 12,
+      "total_species": 1789,
+      "size_categories": {
+        "small": 0,
+        "medium": 7,
+        "large": 5,
+        "very_large": 0
+      }
+    }
+  },
+  "optimal_sizes": {
+    "lower_bound": 65.4,
+    "upper_bound": 158.4,
+    "median": 106.0,
+    "recommendation": "50-200 species per family appears optimal"
+  },
+  "splitting_thresholds": {
+    "families_that_split": {
+      "Siphoviridae": 340,
+      "Myoviridae": 180,
+      "Podoviridae": 110
+    },
+    "apparent_threshold": 180,
+    "notes": "Families >180 species show increased splitting probability"
+  },
+  "visualization_data": {
+    "time_series": [
+      {
+        "year": 2005,
+        "families": [
+          "Poxviridae",
+          "Herpesviridae",
+          "Adenoviridae",
+          "Papillomaviridae",
+          "Retroviridae",
+          "Reoviridae",
+          "Parvoviridae",
+          "Siphoviridae",
+          "Myoviridae",
+          "Podoviridae"
+        ],
+        "sizes": [
+          69,
+          130,
+          49,
+          170,
+          69,
+          81,
+          41,
+          340,
+          180,
+          110
+        ],
+        "total_families": 10,
+        "mean_size": 123.9
+      },
+      {
+        "year": 2019,
+        "families": [
+          "Poxviridae",
+          "Herpesviridae",
+          "Adenoviridae",
+          "Papillomaviridae",
+          "Retroviridae",
+          "Reoviridae",
+          "Parvoviridae",
+          "Drexlerviridae",
+          "Guelinviridae",
+          "Straboviridae",
+          "Iobviridae",
+          "Demerecviridae",
+          "Kyrabviridae",
+          "Suolaviridae",
+          "Ackermannviridae",
+          "Herelleviridae",
+          "Zobellviridae",
+          "Schitoviridae",
+          "Mesyanzhinovviridae",
+          "Chuckzviridae",
+          "Endevroviridae",
+          "Perplexviridae"
+        ],
+        "sizes": [
+          83,
+          139,
+          57,
+          133,
+          97,
+          97,
+          85,
+          95,
+          61,
+          127,
+          43,
+          72,
+          38,
+          55,
+          65,
+          89,
+          41,
+          67,
+          94,
+          45,
+          31,
+          29
+        ],
+        "total_families": 22,
+        "mean_size": 74.68181818181819
+      },
+      {
+        "year": 2024,
+        "families": [
+          "Poxviridae",
+          "Herpesviridae",
+          "Adenoviridae",
+          "Papillomaviridae",
+          "Retroviridae",
+          "Reoviridae",
+          "Parvoviridae",
+          "Drexlerviridae",
+          "Guelinviridae",
+          "Straboviridae",
+          "Iobviridae",
+          "Demerecviridae"
+        ],
+        "sizes": [
+          115,
+          164,
+          88,
+          156,
+          132,
+          125,
+          134,
+          189,
+          145,
+          298,
+          87,
+          156
+        ],
+        "total_families": 12,
+        "mean_size": 149.08333333333334
+      }
+    ],
+    "splitting_events": [
+      {
+        "year": 2019,
+        "event": "Caudovirales dissolution",
+        "description": "Three morphology-based families split into 15+ phylogeny-based families",
+        "families_removed": [
+          "Siphoviridae",
+          "Myoviridae",
+          "Podoviridae"
+        ],
+        "families_created": [
+          "Drexlerviridae",
+          "Guelinviridae",
+          "Straboviridae",
+          "Iobviridae",
+          "Demerecviridae",
+          "Kyrabviridae",
+          "Suolaviridae",
+          "Ackermannviridae",
+          "Herelleviridae",
+          "Zobellviridae",
+          "Schitoviridae",
+          "Mesyanzhinovviridae",
+          "Chuckzviridae",
+          "Endevroviridae",
+          "Perplexviridae"
+        ],
+        "total_species_affected": 1847,
+        "trigger": "Phylogenetic analysis revealed paraphyletic groups"
+      }
+    ],
+    "size_distributions": {}
+  }
+}

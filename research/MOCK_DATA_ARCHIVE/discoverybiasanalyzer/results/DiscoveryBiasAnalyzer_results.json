@@ -1,0 +1,300 @@
+{
+  "analysis_name": "Discovery Bias Analysis",
+  "summary": "Discovery Bias Analysis reveals significant era-based patterns:\n\nTechnology Eras Analyzed:\n- Pre Sequencing: 0 families (1900-1976)\n- Early Sequencing: 0 families (1977-1999)\n- Genomics: 14 families (2000-2009)\n- High Throughput: 12 families (2010-2019)\n- Ai Metagenomics: 14 families (2020-2024)\n\nKey Pattern: Newer families show different characteristics:\n- More genomics-based classification methods\n- Higher species counts per family\n- Different stability patterns\n- Broader host range exploration",
+  "technology_eras": {
+    "pre_sequencing": {
+      "years": [
+        1900,
+        1976
+      ],
+      "description": "Morphology and serology based classification",
+      "key_technologies": [
+        "Electron microscopy",
+        "Serological assays",
+        "Host range studies"
+      ]
+    },
+    "early_sequencing": {
+      "years": [
+        1977,
+        1999
+      ],
+      "description": "First generation sequencing, single genes",
+      "key_technologies": [
+        "Sanger sequencing",
+        "PCR",
+        "Restriction analysis"
+      ]
+    },
+    "genomics": {
+      "years": [
+        2000,
+        2009
+      ],
+      "description": "Whole genome sequencing becomes routine",
+      "key_technologies": [
+        "454 pyrosequencing",
+        "Illumina",
+        "Genome annotation"
+      ]
+    },
+    "high_throughput": {
+      "years": [
+        2010,
+        2019
+      ],
+      "description": "Next-generation sequencing revolution",
+      "key_technologies": [
+        "NGS platforms",
+        "Metagenomics",
+        "Viral discovery pipelines"
+      ]
+    },
+    "ai_metagenomics": {
+      "years": [
+        2020,
+        2024
+      ],
+      "description": "AI-assisted discovery and classification",
+      "key_technologies": [
+        "Machine learning",
+        "Environmental sampling",
+        "Automated classification"
+      ]
+    }
+  },
+  "families_by_era": {
+    "genomics": [
+      "Poxviridae",
+      "Herpesviridae",
+      "Adenoviridae",
+      "Papillomaviridae",
+      "Retroviridae",
+      "Reoviridae",
+      "Parvoviridae",
+      "Siphoviridae",
+      "Myoviridae",
+      "Podoviridae",
+      "Picornaviridae",
+      "Flaviviridae",
+      "Coronaviridae",
+      "Rhabdoviridae"
+    ],
+    "high_throughput": [
+      "Drexlerviridae",
+      "Guelinviridae",
+      "Straboviridae",
+      "Iobviridae",
+      "Demerecviridae",
+      "Kyrabviridae",
+      "Suolaviridae",
+      "Ackermannviridae",
+      "Herelleviridae",
+      "Zobellviridae",
+      "Schitoviridae",
+      "Mesyanzhinovviridae"
+    ],
+    "ai_metagenomics": [
+      "Geminiviridae",
+      "Nanoviridae",
+      "Circoviridae",
+      "Anelloviridae",
+      "Polyomaviridae",
+      "Caliciviridae",
+      "Astroviridae",
+      "Nodaviridae",
+      "Togaviridae",
+      "Arteriviridae",
+      "Filoviridae",
+      "Paramyxoviridae",
+      "Orthomyxoviridae",
+      "Bunyaviridae"
+    ]
+  },
+  "classification_methods": {
+    "raw_counts": {
+      "genomics": {
+        "morphology_based": 3,
+        "mixed_methods": 5,
+        "serology_to_genomics": 3
+      },
+      "high_throughput": {
+        "genomics_only": 12
+      },
+      "ai_metagenomics": {
+        "genomics_only": 14
+      }
+    },
+    "proportions": {
+      "genomics": {
+        "morphology_based": 0.2727272727272727,
+        "mixed_methods": 0.45454545454545453,
+        "serology_to_genomics": 0.2727272727272727
+      },
+      "high_throughput": {
+        "genomics_only": 1.0
+      },
+      "ai_metagenomics": {
+        "genomics_only": 1.0
+      }
+    },
+    "trend": "Clear shift from morphology/serology to genomics-based methods in newer families"
+  },
+  "stability_patterns": {
+    "genomics": {
+      "total_families": 14,
+      "stable_families": 11,
+      "reorganized_families": 3,
+      "split_families": 0,
+      "average_changes": 0.21428571428571427,
+      "stability_rate": 0.7857142857142857
+    },
+    "high_throughput": {
+      "total_families": 12,
+      "stable_families": 12,
+      "reorganized_families": 0,
+      "split_families": 0,
+      "average_changes": 0.0,
+      "stability_rate": 1.0
+    },
+    "ai_metagenomics": {
+      "total_families": 14,
+      "stable_families": 14,
+      "reorganized_families": 0,
+      "split_families": 0,
+      "average_changes": 0.0,
+      "stability_rate": 1.0
+    }
+  },
+  "growth_patterns": {
+    "time_series": {
+      "genomics": [
+        {
+          "year": 2005,
+          "total_species": "14",
+          "families_present": 14,
+          "avg_species_per_family": 1.0
+        },
+        {
+          "year": 2019,
+          "total_species": "11",
+          "families_present": 11,
+          "avg_species_per_family": 1.0
+        },
+        {
+          "year": 2024,
+          "total_species": "11",
+          "families_present": 11,
+          "avg_species_per_family": 1.0
+        }
+      ],
+      "high_throughput": [
+        {
+          "year": 2005,
+          "total_species": 0,
+          "families_present": 0,
+          "avg_species_per_family": 0
+        },
+        {
+          "year": 2019,
+          "total_species": "12",
+          "families_present": 12,
+          "avg_species_per_family": 1.0
+        },
+        {
+          "year": 2024,
+          "total_species": "12",
+          "families_present": 12,
+          "avg_species_per_family": 1.0
+        }
+      ],
+      "ai_metagenomics": [
+        {
+          "year": 2005,
+          "total_species": 0,
+          "families_present": 0,
+          "avg_species_per_family": 0
+        },
+        {
+          "year": 2019,
+          "total_species": 0,
+          "families_present": 0,
+          "avg_species_per_family": 0
+        },
+        {
+          "year": 2024,
+          "total_species": "14",
+          "families_present": 14,
+          "avg_species_per_family": 1.0
+        }
+      ]
+    },
+    "growth_rates": {
+      "genomics": {
+        "annual_growth_rate": -1.2612526743525532,
+        "total_growth": -21.428571428571427,
+        "initial_species": "14",
+        "final_species": "11"
+      }
+    }
+  },
+  "species_characteristics": {
+    "genomics": {
+      "genome_types": {},
+      "host_diversity": {
+        "vertebrates": 11
+      },
+      "naming_patterns": {
+        "alphanumeric": 11
+      },
+      "avg_species_per_genus": 1.0,
+      "median_species_per_genus": 1.0
+    },
+    "high_throughput": {
+      "genome_types": {},
+      "host_diversity": {
+        "vertebrates": 4,
+        "plants": 8
+      },
+      "naming_patterns": {
+        "alphanumeric": 12
+      },
+      "avg_species_per_genus": 1.0,
+      "median_species_per_genus": 1.0
+    },
+    "ai_metagenomics": {
+      "genome_types": {},
+      "host_diversity": {
+        "plants": 2,
+        "bacteria": 12
+      },
+      "naming_patterns": {
+        "alphanumeric": 14
+      },
+      "avg_species_per_genus": 1.0,
+      "median_species_per_genus": 1.0
+    }
+  },
+  "key_findings": [
+    {
+      "finding": "Modern era bias in family discovery",
+      "detail": "65.0% of families discovered in high-throughput/AI era (2010-2024)",
+      "implication": "Recent technological advances driving taxonomic expansion"
+    },
+    {
+      "finding": "Era-dependent taxonomic stability",
+      "detail": "Pre-sequencing families: 0.0% stable vs Modern: 100.0%",
+      "implication": "Older families benefit from decades of refinement"
+    },
+    {
+      "finding": "Discovery era affects growth trajectories",
+      "detail": "Genomics era families show highest growth (-1.3% annually)",
+      "implication": "Technology capabilities shape discovery rates"
+    },
+    {
+      "finding": "Classification methods reflect discovery technology",
+      "detail": "Clear progression from morphology \u2192 serology \u2192 genomics \u2192 AI-assisted",
+      "implication": "Historical methods persist in older families, creating heterogeneity"
+    }
+  ]
+}

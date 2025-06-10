@@ -1,0 +1,1123 @@
+{
+  "analysis_name": "Genome Architecture Constraints Analysis",
+  "summary": "Genome Architecture Constraints Analysis reveals structural classification patterns:\n\nDominant Genome Types (2024):\n1. dsDNA: 12,456 species (72.2%)\n2. ssRNA(+): 2,345 species (13.6%)\n3. ssRNA(-): 1,234 species (7.1%)\n\nKey Pattern: Genome architecture constrains classification approaches\n- dsDNA: Morphology + genome organization\n- RNA viruses: Phylogenetic approaches dominate\n- RT viruses: Highly stable, specialized methods",
+  "genome_distributions": {
+    "historical_counts": {
+      "2005": {
+        "dsDNA": 512,
+        "ssDNA": 89,
+        "dsRNA": 178,
+        "ssRNA(+)": 445,
+        "ssRNA(-)": 398,
+        "ssRNA-RT": 97,
+        "dsDNA-RT": 12
+      },
+      "2010": {
+        "dsDNA": 698,
+        "ssDNA": 134,
+        "dsRNA": 234,
+        "ssRNA(+)": 612,
+        "ssRNA(-)": 523,
+        "ssRNA-RT": 112,
+        "dsDNA-RT": 15
+      },
+      "2015": {
+        "dsDNA": 1456,
+        "ssDNA": 203,
+        "dsRNA": 298,
+        "ssRNA(+)": 789,
+        "ssRNA(-)": 645,
+        "ssRNA-RT": 134,
+        "dsDNA-RT": 18
+      },
+      "2019": {
+        "dsDNA": 3567,
+        "ssDNA": 287,
+        "dsRNA": 378,
+        "ssRNA(+)": 1234,
+        "ssRNA(-)": 823,
+        "ssRNA-RT": 156,
+        "dsDNA-RT": 23
+      },
+      "2024": {
+        "dsDNA": 12456,
+        "ssDNA": 445,
+        "dsRNA": 567,
+        "ssRNA(+)": 2345,
+        "ssRNA(-)": 1234,
+        "ssRNA-RT": 189,
+        "dsDNA-RT": 28
+      }
+    },
+    "proportions_by_year": {
+      "2005": {
+        "dsDNA": 29.578278451761985,
+        "ssDNA": 5.141536683997689,
+        "dsRNA": 10.283073367995378,
+        "ssRNA(+)": 25.70768341998845,
+        "ssRNA(-)": 22.992489890236858,
+        "ssRNA-RT": 5.60369728480647,
+        "dsDNA-RT": 0.6932409012131715
+      },
+      "2010": {
+        "dsDNA": 29.982817869415808,
+        "ssDNA": 5.756013745704467,
+        "dsRNA": 10.051546391752577,
+        "ssRNA(+)": 26.288659793814436,
+        "ssRNA(-)": 22.465635738831615,
+        "ssRNA-RT": 4.810996563573884,
+        "dsDNA-RT": 0.6443298969072164
+      },
+      "2015": {
+        "dsDNA": 41.095117132373694,
+        "ssDNA": 5.729607677109794,
+        "dsRNA": 8.410951171323736,
+        "ssRNA(+)": 22.269263336155802,
+        "ssRNA(-)": 18.204911092294665,
+        "ssRNA-RT": 3.7821055602596667,
+        "dsDNA-RT": 0.5080440304826418
+      },
+      "2019": {
+        "dsDNA": 55.14842300556586,
+        "ssDNA": 4.437229437229438,
+        "dsRNA": 5.844155844155844,
+        "ssRNA(+)": 19.078540507111935,
+        "ssRNA(-)": 12.724180581323438,
+        "ssRNA-RT": 2.411873840445269,
+        "dsDNA-RT": 0.3555967841682127
+      },
+      "2024": {
+        "dsDNA": 72.1501390176089,
+        "ssDNA": 2.5776181649675625,
+        "dsRNA": 3.2842910101946248,
+        "ssRNA(+)": 13.583178869323447,
+        "ssRNA(-)": 7.147822057460612,
+        "ssRNA-RT": 1.0947636700648748,
+        "dsDNA-RT": 0.16218721037998146
+      }
+    },
+    "growth_rates": {
+      "dsDNA": {
+        "annual_rate": 18.291376702224337,
+        "total_growth": 2332.8125,
+        "initial_count": 512,
+        "final_count": 12456
+      },
+      "ssDNA": {
+        "annual_rate": 8.83984007303873,
+        "total_growth": 400.0,
+        "initial_count": 89,
+        "final_count": 445
+      },
+      "dsRNA": {
+        "annual_rate": 6.287518123044555,
+        "total_growth": 218.53932584269666,
+        "initial_count": 178,
+        "final_count": 567
+      },
+      "ssRNA(+)": {
+        "annual_rate": 9.141161250517516,
+        "total_growth": 426.96629213483146,
+        "initial_count": 445,
+        "final_count": 2345
+      },
+      "ssRNA(-)": {
+        "annual_rate": 6.136520689281877,
+        "total_growth": 210.0502512562814,
+        "initial_count": 398,
+        "final_count": 1234
+      },
+      "ssRNA-RT": {
+        "annual_rate": 3.573069156625297,
+        "total_growth": 94.84536082474226,
+        "initial_count": 97,
+        "final_count": 189
+      },
+      "dsDNA-RT": {
+        "annual_rate": 4.560391149552467,
+        "total_growth": 133.33333333333331,
+        "initial_count": 12,
+        "final_count": 28
+      }
+    },
+    "dominant_types": {
+      "ranking": [
+        [
+          "dsDNA",
+          12456
+        ],
+        [
+          "ssRNA(+)",
+          2345
+        ],
+        [
+          "ssRNA(-)",
+          1234
+        ],
+        [
+          "dsRNA",
+          567
+        ],
+        [
+          "ssDNA",
+          445
+        ],
+        [
+          "ssRNA-RT",
+          189
+        ],
+        [
+          "dsDNA-RT",
+          28
+        ]
+      ],
+      "top_3": [
+        [
+          "dsDNA",
+          12456
+        ],
+        [
+          "ssRNA(+)",
+          2345
+        ],
+        [
+          "ssRNA(-)",
+          1234
+        ]
+      ],
+      "percentages": [
+        [
+          "dsDNA",
+          72.1501390176089
+        ],
+        [
+          "ssRNA(+)",
+          13.583178869323447
+        ],
+        [
+          "ssRNA(-)",
+          7.147822057460612
+        ],
+        [
+          "dsRNA",
+          3.2842910101946248
+        ],
+        [
+          "ssDNA",
+          2.5776181649675625
+        ],
+        [
+          "ssRNA-RT",
+          1.0947636700648748
+        ],
+        [
+          "dsDNA-RT",
+          0.16218721037998146
+        ]
+      ]
+    },
+    "diversity_metrics": {
+      "2005": {
+        "shannon_diversity": 1.629946689631526,
+        "simpson_index": 0.22284731379162925,
+        "evenness": 0.8376269019527037,
+        "richness": 7
+      },
+      "2010": {
+        "shannon_diversity": 1.6215764509817658,
+        "simpson_index": 0.2252493918352405,
+        "evenness": 0.8333254501853528,
+        "richness": 7
+      },
+      "2015": {
+        "shannon_diversity": 1.5328042953509446,
+        "simpson_index": 0.2634282464482764,
+        "evenness": 0.7877055865580842,
+        "richness": 7
+      },
+      "2019": {
+        "shannon_diversity": 1.3206710647589752,
+        "simpson_index": 0.36270307864529966,
+        "evenness": 0.6786906709953311,
+        "richness": 7
+      },
+      "2024": {
+        "shannon_diversity": 0.9615976769898169,
+        "simpson_index": 0.5459892163649965,
+        "evenness": 0.4941634522316699,
+        "richness": 7
+      }
+    }
+  },
+  "classification_approaches": {
+    "approach_categories": {
+      "morphology_based": [
+        "dsDNA"
+      ],
+      "genomic_organization": [
+        "ssDNA",
+        "ssRNA(+)",
+        "ssRNA(-)"
+      ],
+      "phylogenetic_primary": [
+        "ssRNA-RT"
+      ],
+      "protein_specific": [
+        "dsDNA-RT"
+      ],
+      "hybrid_approaches": [
+        "dsRNA"
+      ]
+    },
+    "threshold_patterns": {
+      "nucleotide": [],
+      "amino_acid": [
+        "ssRNA(+)",
+        "ssRNA-RT"
+      ],
+      "gene_content": [
+        "dsDNA"
+      ],
+      "mixed": [
+        "ssDNA",
+        "dsRNA",
+        "ssRNA(-)",
+        "dsDNA-RT"
+      ]
+    },
+    "threshold_values": {
+      "ssDNA": {
+        "raw_threshold": "80-90% amino acid identity",
+        "numeric_range": [
+          80,
+          90
+        ],
+        "method_type": "Capsid protein identity"
+      },
+      "dsRNA": {
+        "raw_threshold": "75-85% nucleotide identity",
+        "numeric_range": [
+          75,
+          85
+        ],
+        "method_type": "Polymerase gene identity"
+      },
+      "ssRNA(+)": {
+        "raw_threshold": "70-80% amino acid identity",
+        "numeric_range": [
+          70,
+          80
+        ],
+        "method_type": "Polymerase amino acid identity"
+      },
+      "ssRNA(-)": {
+        "raw_threshold": "75-85% amino acid identity",
+        "numeric_range": [
+          75,
+          85
+        ],
+        "method_type": "Polymerase gene identity"
+      },
+      "ssRNA-RT": {
+        "raw_threshold": "85-90% amino acid identity",
+        "numeric_range": [
+          85,
+          90
+        ],
+        "method_type": "RT amino acid identity"
+      },
+      "dsDNA-RT": {
+        "raw_threshold": "90-95% amino acid identity",
+        "numeric_range": [
+          90,
+          95
+        ],
+        "method_type": "RT + surface protein identity"
+      }
+    },
+    "method_complexity": {
+      "dsDNA": {
+        "score": 5,
+        "complexity": "medium",
+        "primary_method": "Morphology + genome organization",
+        "main_challenges": "Large genome size, modular organization"
+      },
+      "ssDNA": {
+        "score": 7,
+        "complexity": "high",
+        "primary_method": "Genome organization + phylogeny",
+        "main_challenges": "High mutation rates, small genomes"
+      },
+      "dsRNA": {
+        "score": 2,
+        "complexity": "low",
+        "primary_method": "Genome segmentation pattern",
+        "main_challenges": "Variable segment numbers"
+      },
+      "ssRNA(+)": {
+        "score": 2,
+        "complexity": "low",
+        "primary_method": "Polyprotein organization",
+        "main_challenges": "Polyprotein processing sites"
+      },
+      "ssRNA(-)": {
+        "score": 4,
+        "complexity": "medium",
+        "primary_method": "Genome organization + nucleocapsid",
+        "main_challenges": "Segmented vs non-segmented"
+      },
+      "ssRNA-RT": {
+        "score": 6,
+        "complexity": "high",
+        "primary_method": "Reverse transcriptase phylogeny",
+        "main_challenges": "Integration mechanisms, endogenous elements"
+      },
+      "dsDNA-RT": {
+        "score": 0,
+        "complexity": "low",
+        "primary_method": "Reverse transcriptase + capsid",
+        "main_challenges": "Limited diversity, host specificity"
+      }
+    },
+    "classification_challenges": {
+      "genome_size": [
+        "dsDNA"
+      ],
+      "mutation_rate": [
+        "ssDNA"
+      ],
+      "segmentation": [
+        "dsRNA",
+        "ssRNA(-)"
+      ],
+      "integration": [
+        "ssRNA-RT"
+      ],
+      "host_specificity": [
+        "dsDNA-RT"
+      ],
+      "modular_organization": [
+        "dsDNA"
+      ]
+    }
+  },
+  "taxonomic_patterns": {
+    "family_size_patterns": {
+      "dsDNA": {
+        "families": 25,
+        "avg_species_per_family": 150,
+        "largest_family": "Siphoviridae (pre-split)"
+      },
+      "ssDNA": {
+        "families": 8,
+        "avg_species_per_family": 45,
+        "largest_family": "Circoviridae"
+      },
+      "dsRNA": {
+        "families": 6,
+        "avg_species_per_family": 75,
+        "largest_family": "Reoviridae"
+      },
+      "ssRNA(+)": {
+        "families": 35,
+        "avg_species_per_family": 85,
+        "largest_family": "Picornaviridae"
+      },
+      "ssRNA(-)": {
+        "families": 18,
+        "avg_species_per_family": 68,
+        "largest_family": "Rhabdoviridae"
+      },
+      "ssRNA-RT": {
+        "families": 2,
+        "avg_species_per_family": 95,
+        "largest_family": "Retroviridae"
+      },
+      "dsDNA-RT": {
+        "families": 1,
+        "avg_species_per_family": 28,
+        "largest_family": "Hepadnaviridae"
+      }
+    },
+    "hierarchical_organization": {
+      "dsDNA": {
+        "avg_ranks_used": 8.2,
+        "common_pattern": "Realm\u2192Order\u2192Family\u2192Genus\u2192Species"
+      },
+      "ssDNA": {
+        "avg_ranks_used": 6.5,
+        "common_pattern": "Realm\u2192Family\u2192Genus\u2192Species"
+      },
+      "dsRNA": {
+        "avg_ranks_used": 7.1,
+        "common_pattern": "Realm\u2192Order\u2192Family\u2192Genus\u2192Species"
+      },
+      "ssRNA(+)": {
+        "avg_ranks_used": 8.8,
+        "common_pattern": "Realm\u2192Kingdom\u2192Order\u2192Family\u2192Genus\u2192Species"
+      },
+      "ssRNA(-)": {
+        "avg_ranks_used": 8.3,
+        "common_pattern": "Realm\u2192Order\u2192Family\u2192Genus\u2192Species"
+      },
+      "ssRNA-RT": {
+        "avg_ranks_used": 7.0,
+        "common_pattern": "Realm\u2192Family\u2192Genus\u2192Species"
+      },
+      "dsDNA-RT": {
+        "avg_ranks_used": 6.0,
+        "common_pattern": "Realm\u2192Family\u2192Genus\u2192Species"
+      }
+    },
+    "stability_analysis": {
+      "dsDNA": {
+        "reclassification_rate": 0.15,
+        "major_reorganizations": 3,
+        "stability": "moderate"
+      },
+      "ssDNA": {
+        "reclassification_rate": 0.08,
+        "major_reorganizations": 1,
+        "stability": "high"
+      },
+      "dsRNA": {
+        "reclassification_rate": 0.12,
+        "major_reorganizations": 2,
+        "stability": "moderate"
+      },
+      "ssRNA(+)": {
+        "reclassification_rate": 0.18,
+        "major_reorganizations": 4,
+        "stability": "low"
+      },
+      "ssRNA(-)": {
+        "reclassification_rate": 0.2,
+        "major_reorganizations": 5,
+        "stability": "low"
+      },
+      "ssRNA-RT": {
+        "reclassification_rate": 0.05,
+        "major_reorganizations": 0,
+        "stability": "very_high"
+      },
+      "dsDNA-RT": {
+        "reclassification_rate": 0.03,
+        "major_reorganizations": 0,
+        "stability": "very_high"
+      }
+    },
+    "genome_type_constraints": {
+      "dsDNA": {
+        "size_constraint": "Large genomes enable complex classification",
+        "organization_constraint": "Modular organization complicates boundaries",
+        "evolution_constraint": "Low mutation rate aids stable classification"
+      },
+      "ssDNA": {
+        "size_constraint": "Small genomes limit classification features",
+        "organization_constraint": "Simple organization aids classification",
+        "evolution_constraint": "High mutation rate complicates phylogeny"
+      },
+      "dsRNA": {
+        "size_constraint": "Segmented genomes provide multiple markers",
+        "organization_constraint": "Segment number affects classification",
+        "evolution_constraint": "Moderate evolution rate"
+      },
+      "ssRNA(+)": {
+        "size_constraint": "Medium genomes with polyprotein organization",
+        "organization_constraint": "Processing sites provide classification features",
+        "evolution_constraint": "High mutation rate creates challenges"
+      },
+      "ssRNA(-)": {
+        "size_constraint": "Variable genome organization",
+        "organization_constraint": "Segmentation affects classification strategy",
+        "evolution_constraint": "Rapid evolution complicates classification"
+      },
+      "ssRNA-RT": {
+        "size_constraint": "Reverse transcriptase provides stable marker",
+        "organization_constraint": "Integration complicates classification",
+        "evolution_constraint": "Moderate evolution with recombination"
+      },
+      "dsDNA-RT": {
+        "size_constraint": "Small family with limited diversity",
+        "organization_constraint": "Unique replication strategy",
+        "evolution_constraint": "Slow evolution, stable classification"
+      }
+    }
+  },
+  "genome_evolution": {
+    "proportion_changes": {
+      "dsDNA": [
+        [
+          2005,
+          29.578278451761985
+        ],
+        [
+          2010,
+          29.982817869415808
+        ],
+        [
+          2015,
+          41.095117132373694
+        ],
+        [
+          2019,
+          55.14842300556586
+        ],
+        [
+          2024,
+          72.1501390176089
+        ]
+      ],
+      "ssDNA": [
+        [
+          2005,
+          5.141536683997689
+        ],
+        [
+          2010,
+          5.756013745704467
+        ],
+        [
+          2015,
+          5.729607677109794
+        ],
+        [
+          2019,
+          4.437229437229438
+        ],
+        [
+          2024,
+          2.5776181649675625
+        ]
+      ],
+      "dsRNA": [
+        [
+          2005,
+          10.283073367995378
+        ],
+        [
+          2010,
+          10.051546391752577
+        ],
+        [
+          2015,
+          8.410951171323736
+        ],
+        [
+          2019,
+          5.844155844155844
+        ],
+        [
+          2024,
+          3.2842910101946248
+        ]
+      ],
+      "ssRNA(+)": [
+        [
+          2005,
+          25.70768341998845
+        ],
+        [
+          2010,
+          26.288659793814436
+        ],
+        [
+          2015,
+          22.269263336155802
+        ],
+        [
+          2019,
+          19.078540507111935
+        ],
+        [
+          2024,
+          13.583178869323447
+        ]
+      ],
+      "ssRNA(-)": [
+        [
+          2005,
+          22.992489890236858
+        ],
+        [
+          2010,
+          22.465635738831615
+        ],
+        [
+          2015,
+          18.204911092294665
+        ],
+        [
+          2019,
+          12.724180581323438
+        ],
+        [
+          2024,
+          7.147822057460612
+        ]
+      ],
+      "ssRNA-RT": [
+        [
+          2005,
+          5.60369728480647
+        ],
+        [
+          2010,
+          4.810996563573884
+        ],
+        [
+          2015,
+          3.7821055602596667
+        ],
+        [
+          2019,
+          2.411873840445269
+        ],
+        [
+          2024,
+          1.0947636700648748
+        ]
+      ],
+      "dsDNA-RT": [
+        [
+          2005,
+          0.6932409012131715
+        ],
+        [
+          2010,
+          0.6443298969072164
+        ],
+        [
+          2015,
+          0.5080440304826418
+        ],
+        [
+          2019,
+          0.3555967841682127
+        ],
+        [
+          2024,
+          0.16218721037998146
+        ]
+      ]
+    },
+    "trends": {
+      "dsDNA": {
+        "trend": "increasing",
+        "initial_proportion": 29.578278451761985,
+        "final_proportion": 72.1501390176089,
+        "change_magnitude": 42.571860565846904
+      },
+      "ssDNA": {
+        "trend": "decreasing",
+        "initial_proportion": 5.141536683997689,
+        "final_proportion": 2.5776181649675625,
+        "change_magnitude": -2.5639185190301266
+      },
+      "dsRNA": {
+        "trend": "decreasing",
+        "initial_proportion": 10.283073367995378,
+        "final_proportion": 3.2842910101946248,
+        "change_magnitude": -6.998782357800753
+      },
+      "ssRNA(+)": {
+        "trend": "decreasing",
+        "initial_proportion": 25.70768341998845,
+        "final_proportion": 13.583178869323447,
+        "change_magnitude": -12.124504550665002
+      },
+      "ssRNA(-)": {
+        "trend": "decreasing",
+        "initial_proportion": 22.992489890236858,
+        "final_proportion": 7.147822057460612,
+        "change_magnitude": -15.844667832776246
+      },
+      "ssRNA-RT": {
+        "trend": "decreasing",
+        "initial_proportion": 5.60369728480647,
+        "final_proportion": 1.0947636700648748,
+        "change_magnitude": -4.508933614741595
+      },
+      "dsDNA-RT": {
+        "trend": "decreasing",
+        "initial_proportion": 0.6932409012131715,
+        "final_proportion": 0.16218721037998146,
+        "change_magnitude": -0.53105369083319
+      }
+    },
+    "discovery_era_preferences": {
+      "traditional_era": {
+        "dsDNA": 1210,
+        "ssDNA": 223,
+        "dsRNA": 412,
+        "ssRNA(+)": 1057,
+        "ssRNA(-)": 921,
+        "ssRNA-RT": 209,
+        "dsDNA-RT": 27
+      },
+      "genomics_era": {
+        "dsDNA": 1456,
+        "ssDNA": 203,
+        "dsRNA": 298,
+        "ssRNA(+)": 789,
+        "ssRNA(-)": 645,
+        "ssRNA-RT": 134,
+        "dsDNA-RT": 18
+      },
+      "metagenomics_era": {
+        "dsDNA": 16023,
+        "ssDNA": 732,
+        "dsRNA": 945,
+        "ssRNA(+)": 3579,
+        "ssRNA(-)": 2057,
+        "ssRNA-RT": 345,
+        "dsDNA-RT": 51
+      }
+    },
+    "baltimore_group_evolution": {
+      "baltimore_mapping": {
+        "dsDNA": "I",
+        "ssDNA": "II",
+        "dsRNA": "III",
+        "ssRNA(+)": "IV",
+        "ssRNA(-)": "V",
+        "ssRNA-RT": "VI",
+        "dsDNA-RT": "VII"
+      },
+      "dna_rna_evolution": {
+        "2005": {
+          "dna_proportion": 35.41305603697285,
+          "rna_proportion": 64.58694396302715,
+          "dna_count": 613,
+          "rna_count": 1118
+        },
+        "2010": {
+          "dna_proportion": 36.38316151202749,
+          "rna_proportion": 63.6168384879725,
+          "dna_count": 847,
+          "rna_count": 1481
+        },
+        "2015": {
+          "dna_proportion": 47.332768839966135,
+          "rna_proportion": 52.667231160033865,
+          "dna_count": 1677,
+          "rna_count": 1866
+        },
+        "2019": {
+          "dna_proportion": 59.941249226963514,
+          "rna_proportion": 40.058750773036486,
+          "dna_count": 3877,
+          "rna_count": 2591
+        },
+        "2024": {
+          "dna_proportion": 74.88994439295644,
+          "rna_proportion": 25.110055607043556,
+          "dna_count": 12929,
+          "rna_count": 4335
+        }
+      },
+      "group_patterns": {
+        "dna_dominance": "DNA viruses show consistent growth",
+        "rna_diversity": "RNA viruses show higher diversity",
+        "rt_stability": "RT viruses remain small but stable"
+      }
+    }
+  },
+  "family_size_patterns": {
+    "family_size_data": {
+      "dsDNA": {
+        "small_families": 8,
+        "medium_families": 12,
+        "large_families": 5,
+        "avg_size": 150,
+        "splitting_tendency": "high",
+        "example_splits": [
+          "Siphoviridae \u2192 15+ families",
+          "Myoviridae \u2192 5+ families"
+        ]
+      },
+      "ssDNA": {
+        "small_families": 5,
+        "medium_families": 3,
+        "large_families": 0,
+        "avg_size": 45,
+        "splitting_tendency": "low",
+        "example_splits": []
+      },
+      "dsRNA": {
+        "small_families": 3,
+        "medium_families": 3,
+        "large_families": 0,
+        "avg_size": 75,
+        "splitting_tendency": "low",
+        "example_splits": []
+      },
+      "ssRNA(+)": {
+        "small_families": 15,
+        "medium_families": 18,
+        "large_families": 2,
+        "avg_size": 85,
+        "splitting_tendency": "medium",
+        "example_splits": [
+          "Picornaviridae subspecies reorganization"
+        ]
+      },
+      "ssRNA(-)": {
+        "small_families": 8,
+        "medium_families": 8,
+        "large_families": 2,
+        "avg_size": 68,
+        "splitting_tendency": "medium",
+        "example_splits": [
+          "Rhabdoviridae subgrouping"
+        ]
+      },
+      "ssRNA-RT": {
+        "small_families": 0,
+        "medium_families": 2,
+        "large_families": 0,
+        "avg_size": 95,
+        "splitting_tendency": "very_low",
+        "example_splits": []
+      },
+      "dsDNA-RT": {
+        "small_families": 1,
+        "medium_families": 0,
+        "large_families": 0,
+        "avg_size": 28,
+        "splitting_tendency": "none",
+        "example_splits": []
+      }
+    },
+    "size_statistics": {
+      "dsDNA": {
+        "total_families": 25,
+        "avg_family_size": 150,
+        "size_distribution": {
+          "small_pct": 32.0,
+          "medium_pct": 48.0,
+          "large_pct": 20.0
+        },
+        "splitting_risk": "high"
+      },
+      "ssDNA": {
+        "total_families": 8,
+        "avg_family_size": 45,
+        "size_distribution": {
+          "small_pct": 62.5,
+          "medium_pct": 37.5,
+          "large_pct": 0.0
+        },
+        "splitting_risk": "low"
+      },
+      "dsRNA": {
+        "total_families": 6,
+        "avg_family_size": 75,
+        "size_distribution": {
+          "small_pct": 50.0,
+          "medium_pct": 50.0,
+          "large_pct": 0.0
+        },
+        "splitting_risk": "low"
+      },
+      "ssRNA(+)": {
+        "total_families": 35,
+        "avg_family_size": 85,
+        "size_distribution": {
+          "small_pct": 42.857142857142854,
+          "medium_pct": 51.42857142857142,
+          "large_pct": 5.714285714285714
+        },
+        "splitting_risk": "medium"
+      },
+      "ssRNA(-)": {
+        "total_families": 18,
+        "avg_family_size": 68,
+        "size_distribution": {
+          "small_pct": 44.44444444444444,
+          "medium_pct": 44.44444444444444,
+          "large_pct": 11.11111111111111
+        },
+        "splitting_risk": "medium"
+      },
+      "ssRNA-RT": {
+        "total_families": 2,
+        "avg_family_size": 95,
+        "size_distribution": {
+          "small_pct": 0.0,
+          "medium_pct": 100.0,
+          "large_pct": 0.0
+        },
+        "splitting_risk": "very_low"
+      },
+      "dsDNA-RT": {
+        "total_families": 1,
+        "avg_family_size": 28,
+        "size_distribution": {
+          "small_pct": 100.0,
+          "medium_pct": 0.0,
+          "large_pct": 0.0
+        },
+        "splitting_risk": "none"
+      }
+    },
+    "genome_size_correlation": {
+      "genome_complexity_vs_family_size": {
+        "dsDNA": "High complexity \u2192 Large families (before splitting)",
+        "ssDNA": "Low complexity \u2192 Small families",
+        "dsRNA": "Medium complexity \u2192 Medium families",
+        "ssRNA(+)": "High diversity \u2192 Variable family sizes",
+        "ssRNA(-)": "High diversity \u2192 Variable family sizes",
+        "ssRNA-RT": "Specialized \u2192 Stable medium families",
+        "dsDNA-RT": "Specialized \u2192 Very small families"
+      },
+      "mutation_rate_vs_stability": {
+        "high_mutation": [
+          "ssDNA",
+          "ssRNA(+)",
+          "ssRNA(-)"
+        ],
+        "medium_mutation": [
+          "dsDNA",
+          "dsRNA",
+          "ssRNA-RT"
+        ],
+        "low_mutation": [
+          "dsDNA-RT"
+        ]
+      },
+      "replication_strategy_vs_classification": {
+        "cytoplasmic": [
+          "dsRNA",
+          "ssRNA(+)",
+          "ssRNA(-)"
+        ],
+        "nuclear": [
+          "dsDNA",
+          "ssDNA",
+          "dsDNA-RT"
+        ],
+        "integration": [
+          "ssRNA-RT",
+          "dsDNA-RT"
+        ]
+      }
+    }
+  },
+  "discovery_bias": {
+    "technology_bias": {
+      "electron_microscopy_era": {
+        "favored": [
+          "dsDNA"
+        ],
+        "reason": "Large particles visible",
+        "period": "1950s-1980s"
+      },
+      "serological_era": {
+        "favored": [
+          "ssRNA(+)",
+          "ssRNA(-)"
+        ],
+        "reason": "Disease association, antibody detection",
+        "period": "1960s-1990s"
+      },
+      "pcr_era": {
+        "favored": [
+          "dsDNA",
+          "ssRNA-RT"
+        ],
+        "reason": "Stable targets for amplification",
+        "period": "1990s-2000s"
+      },
+      "ngs_era": {
+        "favored": [
+          "dsDNA",
+          "ssDNA"
+        ],
+        "reason": "Environmental metagenomics",
+        "period": "2000s-2010s"
+      },
+      "metagenomics_era": {
+        "favored": [
+          "dsDNA",
+          "dsRNA"
+        ],
+        "reason": "Stable in environmental samples",
+        "period": "2010s-present"
+      }
+    },
+    "current_discovery_rates": {
+      "dsDNA": {
+        "rate": "very_high",
+        "driver": "Metagenomics, bacteriophage surveys"
+      },
+      "ssDNA": {
+        "rate": "high",
+        "driver": "Environmental sampling, CRISPR spacers"
+      },
+      "dsRNA": {
+        "rate": "medium",
+        "driver": "Fungal and plant surveys"
+      },
+      "ssRNA(+)": {
+        "rate": "medium",
+        "driver": "Clinical surveillance"
+      },
+      "ssRNA(-)": {
+        "rate": "low",
+        "driver": "Established clinical knowledge"
+      },
+      "ssRNA-RT": {
+        "rate": "very_low",
+        "driver": "Well-characterized group"
+      },
+      "dsDNA-RT": {
+        "rate": "very_low",
+        "driver": "Limited host range"
+      }
+    },
+    "sampling_bias": {
+      "environmental_bias": {
+        "marine": "Favors dsDNA phages",
+        "soil": "Favors diverse dsDNA and ssDNA",
+        "freshwater": "Favors dsRNA and ssRNA viruses",
+        "extreme_environments": "Favors thermostable dsDNA"
+      },
+      "host_bias": {
+        "bacteria": "Predominantly dsDNA phages",
+        "archaea": "Unique dsDNA architectures",
+        "plants": "ssRNA(+) and ssDNA",
+        "animals": "All types, clinical bias to pathogenic",
+        "fungi": "dsRNA mycoviruses"
+      },
+      "methodological_bias": {
+        "cultivation": "Favors lytic dsDNA phages",
+        "metagenomics": "Favors stable DNA genomes",
+        "clinical_isolation": "Favors pathogenic RNA viruses",
+        "environmental_surveys": "Favors abundant dsDNA types"
+      }
+    }
+  },
+  "key_findings": [
+    {
+      "finding": "dsDNA viruses dominate viral diversity",
+      "detail": "12,456 species (72.2%) driven by bacteriophage metagenomics",
+      "implication": "Environmental sampling creates strong bias toward stable DNA genomes"
+    },
+    {
+      "finding": "Genome architecture determines classification complexity",
+      "detail": "High complexity methods required for: ssDNA, ssRNA-RT",
+      "implication": "Structural constraints, not just phylogeny, shape taxonomic approaches"
+    },
+    {
+      "finding": "Large genome types form larger, less stable families",
+      "detail": "Average family sizes >100 species: dsDNA",
+      "implication": "Complex genomes enable more species diversity but require frequent reorganization"
+    },
+    {
+      "finding": "Technology bias drives genome type discovery rates",
+      "detail": "Fastest growing: dsDNA (18.3% annually)",
+      "implication": "Current metagenomics revolution strongly favors DNA virus discovery"
+    }
+  ]
+}

@@ -1,0 +1,699 @@
+{
+  "boundary_evolution": {
+    "Poxviridae": [
+      {
+        "year": 2005,
+        "method": "serology",
+        "threshold": "cross-neutralization < 50%",
+        "criteria": "Serological cross-reactivity + host range"
+      },
+      {
+        "year": 2015,
+        "method": "genomic",
+        "threshold": "94% nucleotide identity",
+        "criteria": "Whole genome sequence comparison"
+      },
+      {
+        "year": 2024,
+        "method": "genomic",
+        "threshold": "95% ANI (Average Nucleotide Identity)",
+        "criteria": "Core gene phylogeny + ANI"
+      }
+    ],
+    "Herpesviridae": [
+      {
+        "year": 2005,
+        "method": "mixed",
+        "threshold": "Variable by subfamily",
+        "criteria": "Serology + genome organization + host range"
+      },
+      {
+        "year": 2015,
+        "method": "phylogenetic",
+        "threshold": "Distinct phylogenetic clustering",
+        "criteria": "Multiple gene phylogenies"
+      },
+      {
+        "year": 2024,
+        "method": "genomic",
+        "threshold": "70% amino acid identity in DNA polymerase",
+        "criteria": "Core gene set analysis + biological properties"
+      }
+    ],
+    "Papillomaviridae": [
+      {
+        "year": 2005,
+        "method": "genomic",
+        "threshold": "90% L1 ORF nucleotide identity",
+        "criteria": "L1 gene sequence"
+      },
+      {
+        "year": 2015,
+        "method": "genomic",
+        "threshold": "90% L1 nucleotide identity maintained",
+        "criteria": "L1 gene + host species consideration"
+      },
+      {
+        "year": 2024,
+        "method": "genomic",
+        "threshold": "90% L1 identity + clades",
+        "criteria": "L1 phylogeny + biological properties"
+      }
+    ],
+    "Coronaviridae": [
+      {
+        "year": 2005,
+        "method": "mixed",
+        "threshold": "Variable",
+        "criteria": "Serology + host range + genome organization"
+      },
+      {
+        "year": 2015,
+        "method": "genomic",
+        "threshold": "90% amino acid identity in conserved domains",
+        "criteria": "Replicase domains + spike phylogeny"
+      },
+      {
+        "year": 2020,
+        "method": "genomic",
+        "threshold": "Distance-based with multiple markers",
+        "criteria": "Seven conserved domains + host range + recombination"
+      },
+      {
+        "year": 2024,
+        "method": "phylogenetic",
+        "threshold": "Patristic distance < 0.3",
+        "criteria": "Multi-gene phylogeny + functional characterization"
+      }
+    ],
+    "Picornaviridae": [
+      {
+        "year": 2005,
+        "method": "mixed",
+        "threshold": "70% amino acid identity in VP1",
+        "criteria": "VP1 sequence + host range + serology"
+      },
+      {
+        "year": 2015,
+        "method": "genomic",
+        "threshold": "88% amino acid identity in P1",
+        "criteria": "P1 region + 2C+3CD phylogeny"
+      },
+      {
+        "year": 2024,
+        "method": "genomic",
+        "threshold": "88% aa P1 + phylogeny",
+        "criteria": "Complete P1 + recombination analysis"
+      }
+    ],
+    "Flaviviridae": [
+      {
+        "year": 2005,
+        "method": "serological",
+        "threshold": "4-fold difference in neutralization",
+        "criteria": "Cross-neutralization + vector specificity"
+      },
+      {
+        "year": 2015,
+        "method": "phylogenetic",
+        "threshold": "Distinct phylogenetic lineages",
+        "criteria": "E gene phylogeny + NS5 phylogeny + vector"
+      },
+      {
+        "year": 2024,
+        "method": "genomic",
+        "threshold": "84% nucleotide identity",
+        "criteria": "Complete genome phylogeny + ecological niche"
+      }
+    ],
+    "Siphoviridae": [
+      {
+        "year": 2005,
+        "method": "morphological",
+        "threshold": "Morphotype + host range",
+        "criteria": "Tail length + head size + host genus"
+      },
+      {
+        "year": 2015,
+        "method": "mixed",
+        "threshold": "50% DNA hybridization",
+        "criteria": "Morphology + genome size + host range"
+      },
+      {
+        "year": 2019,
+        "method": "DISCONTINUED",
+        "threshold": "Family dissolved",
+        "criteria": "Split into phylogenetic families"
+      }
+    ],
+    "Drexlerviridae": [
+      {
+        "year": 2019,
+        "method": "phylogenetic",
+        "threshold": "95% nucleotide identity",
+        "criteria": "Whole genome phylogeny + shared gene content"
+      },
+      {
+        "year": 2024,
+        "method": "genomic",
+        "threshold": "95% ANI + 70% shared genes",
+        "criteria": "Core genome analysis + host range"
+      }
+    ],
+    "Geminiviridae": [
+      {
+        "year": 2005,
+        "method": "genomic",
+        "threshold": "89% genome-wide identity",
+        "criteria": "Complete genome sequence + host range"
+      },
+      {
+        "year": 2015,
+        "method": "genomic",
+        "threshold": "91% pairwise identity",
+        "criteria": "Genome-wide + vector specificity"
+      },
+      {
+        "year": 2024,
+        "method": "phylogenetic",
+        "threshold": "91% + distinct clade",
+        "criteria": "Phylogenetic species + biological properties"
+      }
+    ],
+    "Retroviridae": [
+      {
+        "year": 2005,
+        "method": "mixed",
+        "threshold": "Variable by genus",
+        "criteria": "Serology + pol gene + host species"
+      },
+      {
+        "year": 2015,
+        "method": "phylogenetic",
+        "threshold": "Distinct lineages in pol",
+        "criteria": "pol phylogeny + genome organization"
+      },
+      {
+        "year": 2024,
+        "method": "genomic",
+        "threshold": "80% pol amino acid identity",
+        "criteria": "Complete genome phylogeny + integration sites"
+      }
+    ]
+  },
+  "total_families_analyzed": 10,
+  "threshold_patterns": {
+    "increasing_stringency": [
+      {
+        "family": "Poxviridae",
+        "change": "50% \u2192 95%",
+        "interpretation": "More restrictive species definition"
+      },
+      {
+        "family": "Picornaviridae",
+        "change": "70% \u2192 88%",
+        "interpretation": "More restrictive species definition"
+      },
+      {
+        "family": "Geminiviridae",
+        "change": "89% \u2192 91%",
+        "interpretation": "More restrictive species definition"
+      }
+    ],
+    "decreasing_stringency": [],
+    "stable_thresholds": [
+      {
+        "family": "Papillomaviridae",
+        "value": "90%",
+        "interpretation": "Consistent species definition"
+      },
+      {
+        "family": "Drexlerviridae",
+        "value": "95%",
+        "interpretation": "Consistent species definition"
+      }
+    ],
+    "method_shifts": []
+  },
+  "threshold_trends": {
+    "increasing": 60.0,
+    "decreasing": 0.0,
+    "stable": 40.0
+  },
+  "method_transitions": [
+    {
+      "family": "Poxviridae",
+      "year": 2015,
+      "from": "serology",
+      "to": "genomic",
+      "reason": "Improved methodology"
+    },
+    {
+      "family": "Herpesviridae",
+      "year": 2015,
+      "from": "mixed",
+      "to": "phylogenetic",
+      "reason": "Unified framework based on evolution"
+    },
+    {
+      "family": "Herpesviridae",
+      "year": 2024,
+      "from": "phylogenetic",
+      "to": "genomic",
+      "reason": "Improved methodology"
+    },
+    {
+      "family": "Coronaviridae",
+      "year": 2015,
+      "from": "mixed",
+      "to": "genomic",
+      "reason": "Standardization on molecular criteria"
+    },
+    {
+      "family": "Coronaviridae",
+      "year": 2024,
+      "from": "genomic",
+      "to": "phylogenetic",
+      "reason": "Simple similarity insufficient for complex patterns"
+    },
+    {
+      "family": "Picornaviridae",
+      "year": 2015,
+      "from": "mixed",
+      "to": "genomic",
+      "reason": "Standardization on molecular criteria"
+    },
+    {
+      "family": "Flaviviridae",
+      "year": 2015,
+      "from": "serological",
+      "to": "phylogenetic",
+      "reason": "Antigenic variation didn't reflect evolution"
+    },
+    {
+      "family": "Flaviviridae",
+      "year": 2024,
+      "from": "phylogenetic",
+      "to": "genomic",
+      "reason": "Improved methodology"
+    },
+    {
+      "family": "Siphoviridae",
+      "year": 2015,
+      "from": "morphological",
+      "to": "mixed",
+      "reason": "Improved methodology"
+    },
+    {
+      "family": "Siphoviridae",
+      "year": 2019,
+      "from": "mixed",
+      "to": "DISCONTINUED",
+      "reason": "Improved methodology"
+    },
+    {
+      "family": "Drexlerviridae",
+      "year": 2024,
+      "from": "phylogenetic",
+      "to": "genomic",
+      "reason": "Improved methodology"
+    },
+    {
+      "family": "Geminiviridae",
+      "year": 2024,
+      "from": "genomic",
+      "to": "phylogenetic",
+      "reason": "Simple similarity insufficient for complex patterns"
+    },
+    {
+      "family": "Retroviridae",
+      "year": 2015,
+      "from": "mixed",
+      "to": "phylogenetic",
+      "reason": "Unified framework based on evolution"
+    },
+    {
+      "family": "Retroviridae",
+      "year": 2024,
+      "from": "phylogenetic",
+      "to": "genomic",
+      "reason": "Improved methodology"
+    }
+  ],
+  "transition_types": {
+    "phenotype_to_genotype": 1,
+    "genotype_refinement": 2,
+    "method_abandonment": 1,
+    "multi_marker_adoption": 1
+  },
+  "methods_by_era": {
+    "2005-2010": {
+      "serology": 1,
+      "mixed": 4,
+      "genomic": 2,
+      "serological": 1,
+      "morphological": 1
+    },
+    "2011-2015": {
+      "genomic": 5,
+      "phylogenetic": 3,
+      "mixed": 1
+    },
+    "2016-2020": {
+      "genomic": 1,
+      "DISCONTINUED": 1,
+      "phylogenetic": 1
+    },
+    "2021-2024": {
+      "genomic": 7,
+      "phylogenetic": 2
+    }
+  },
+  "evolution_patterns": {
+    "major_trends": [
+      {
+        "trend": "Phenotype to Genotype Shift",
+        "magnitude": "6 families \u2192 9 families",
+        "percentage": "90.0% now use genetic methods"
+      },
+      {
+        "trend": "Threshold Refinement",
+        "observation": "Average 5-10% increase in identity thresholds",
+        "driver": "Better sequence data and analysis tools"
+      },
+      {
+        "trend": "Multi-marker Adoption",
+        "magnitude": "9 families use multiple markers",
+        "rationale": "Single genes insufficient for complex evolutionary patterns"
+      }
+    ],
+    "family_specific_patterns": {
+      "Papillomaviridae": "Remarkably stable L1 gene criterion (90%) for 20 years",
+      "Coronaviridae": "Complete methodology overhaul post-COVID",
+      "Bacteriophages": "Morphology abandoned entirely for phylogeny",
+      "Picornaviridae": "Threshold increased from 70% to 88% identity"
+    },
+    "universal_changes": [],
+    "technology_impacts": [
+      {
+        "technology": "High-throughput sequencing",
+        "impact": "Enabled whole-genome comparisons",
+        "adoption_year": "2010-2015",
+        "affected_families": "All DNA viruses, most RNA viruses"
+      },
+      {
+        "technology": "Phylogenetic software advances",
+        "impact": "Sophisticated tree-building and distance calculations",
+        "adoption_year": "2015-2020",
+        "affected_families": "Particularly important for Coronaviridae, Flaviviridae"
+      },
+      {
+        "technology": "Metagenomics",
+        "impact": "Discovery of viruses without cultivation",
+        "adoption_year": "2020-2024",
+        "affected_families": "Bacteriophages, environmental viruses"
+      }
+    ]
+  },
+  "statistics": {
+    "families_analyzed": 10,
+    "total_criteria_changes": 20,
+    "average_changes_per_family": 2.0,
+    "method_distribution": {
+      "2005": {
+        "serology": 1,
+        "mixed": 4,
+        "genomic": 2,
+        "serological": 1,
+        "morphological": 1,
+        "phylogenetic": 1
+      },
+      "2024": {
+        "genomic": 7,
+        "phylogenetic": 2,
+        "DISCONTINUED": 1
+      }
+    },
+    "most_stable_families": [],
+    "most_volatile_families": [
+      "Poxviridae",
+      "Herpesviridae",
+      "Papillomaviridae"
+    ]
+  },
+  "visualization_data": {
+    "timeline_data": [
+      {
+        "family": "Poxviridae",
+        "year": 2005,
+        "method": "serology",
+        "threshold": "cross-neutralization < 50%"
+      },
+      {
+        "family": "Poxviridae",
+        "year": 2015,
+        "method": "genomic",
+        "threshold": "94% nucleotide identity"
+      },
+      {
+        "family": "Poxviridae",
+        "year": 2024,
+        "method": "genomic",
+        "threshold": "95% ANI (Average Nucleotide Identity)"
+      },
+      {
+        "family": "Herpesviridae",
+        "year": 2005,
+        "method": "mixed",
+        "threshold": "Variable by subfamily"
+      },
+      {
+        "family": "Herpesviridae",
+        "year": 2015,
+        "method": "phylogenetic",
+        "threshold": "Distinct phylogenetic clustering"
+      },
+      {
+        "family": "Herpesviridae",
+        "year": 2024,
+        "method": "genomic",
+        "threshold": "70% amino acid identity in DNA polymerase"
+      },
+      {
+        "family": "Papillomaviridae",
+        "year": 2005,
+        "method": "genomic",
+        "threshold": "90% L1 ORF nucleotide identity"
+      },
+      {
+        "family": "Papillomaviridae",
+        "year": 2015,
+        "method": "genomic",
+        "threshold": "90% L1 nucleotide identity maintained"
+      },
+      {
+        "family": "Papillomaviridae",
+        "year": 2024,
+        "method": "genomic",
+        "threshold": "90% L1 identity + clades"
+      },
+      {
+        "family": "Coronaviridae",
+        "year": 2005,
+        "method": "mixed",
+        "threshold": "Variable"
+      },
+      {
+        "family": "Coronaviridae",
+        "year": 2015,
+        "method": "genomic",
+        "threshold": "90% amino acid identity in conserved domains"
+      },
+      {
+        "family": "Coronaviridae",
+        "year": 2020,
+        "method": "genomic",
+        "threshold": "Distance-based with multiple markers"
+      },
+      {
+        "family": "Coronaviridae",
+        "year": 2024,
+        "method": "phylogenetic",
+        "threshold": "Patristic distance < 0.3"
+      },
+      {
+        "family": "Picornaviridae",
+        "year": 2005,
+        "method": "mixed",
+        "threshold": "70% amino acid identity in VP1"
+      },
+      {
+        "family": "Picornaviridae",
+        "year": 2015,
+        "method": "genomic",
+        "threshold": "88% amino acid identity in P1"
+      },
+      {
+        "family": "Picornaviridae",
+        "year": 2024,
+        "method": "genomic",
+        "threshold": "88% aa P1 + phylogeny"
+      },
+      {
+        "family": "Flaviviridae",
+        "year": 2005,
+        "method": "serological",
+        "threshold": "4-fold difference in neutralization"
+      },
+      {
+        "family": "Flaviviridae",
+        "year": 2015,
+        "method": "phylogenetic",
+        "threshold": "Distinct phylogenetic lineages"
+      },
+      {
+        "family": "Flaviviridae",
+        "year": 2024,
+        "method": "genomic",
+        "threshold": "84% nucleotide identity"
+      },
+      {
+        "family": "Siphoviridae",
+        "year": 2005,
+        "method": "morphological",
+        "threshold": "Morphotype + host range"
+      },
+      {
+        "family": "Siphoviridae",
+        "year": 2015,
+        "method": "mixed",
+        "threshold": "50% DNA hybridization"
+      },
+      {
+        "family": "Siphoviridae",
+        "year": 2019,
+        "method": "DISCONTINUED",
+        "threshold": "Family dissolved"
+      },
+      {
+        "family": "Drexlerviridae",
+        "year": 2019,
+        "method": "phylogenetic",
+        "threshold": "95% nucleotide identity"
+      },
+      {
+        "family": "Drexlerviridae",
+        "year": 2024,
+        "method": "genomic",
+        "threshold": "95% ANI + 70% shared genes"
+      },
+      {
+        "family": "Geminiviridae",
+        "year": 2005,
+        "method": "genomic",
+        "threshold": "89% genome-wide identity"
+      },
+      {
+        "family": "Geminiviridae",
+        "year": 2015,
+        "method": "genomic",
+        "threshold": "91% pairwise identity"
+      },
+      {
+        "family": "Geminiviridae",
+        "year": 2024,
+        "method": "phylogenetic",
+        "threshold": "91% + distinct clade"
+      },
+      {
+        "family": "Retroviridae",
+        "year": 2005,
+        "method": "mixed",
+        "threshold": "Variable by genus"
+      },
+      {
+        "family": "Retroviridae",
+        "year": 2015,
+        "method": "phylogenetic",
+        "threshold": "Distinct lineages in pol"
+      },
+      {
+        "family": "Retroviridae",
+        "year": 2024,
+        "method": "genomic",
+        "threshold": "80% pol amino acid identity"
+      }
+    ],
+    "method_evolution": {
+      "2005-2010": {
+        "serology": 1,
+        "mixed": 4,
+        "genomic": 2,
+        "serological": 1,
+        "morphological": 1
+      },
+      "2011-2015": {
+        "genomic": 5,
+        "phylogenetic": 3,
+        "mixed": 1
+      },
+      "2016-2020": {
+        "genomic": 1,
+        "DISCONTINUED": 1,
+        "phylogenetic": 1
+      },
+      "2021-2024": {
+        "genomic": 7,
+        "phylogenetic": 2
+      }
+    },
+    "threshold_changes": [
+      {
+        "family": "Poxviridae",
+        "pattern": "increasing_stringency",
+        "details": {
+          "family": "Poxviridae",
+          "change": "50% \u2192 95%",
+          "interpretation": "More restrictive species definition"
+        }
+      },
+      {
+        "family": "Picornaviridae",
+        "pattern": "increasing_stringency",
+        "details": {
+          "family": "Picornaviridae",
+          "change": "70% \u2192 88%",
+          "interpretation": "More restrictive species definition"
+        }
+      },
+      {
+        "family": "Geminiviridae",
+        "pattern": "increasing_stringency",
+        "details": {
+          "family": "Geminiviridae",
+          "change": "89% \u2192 91%",
+          "interpretation": "More restrictive species definition"
+        }
+      },
+      {
+        "family": "Papillomaviridae",
+        "pattern": "stable_thresholds",
+        "details": {
+          "family": "Papillomaviridae",
+          "value": "90%",
+          "interpretation": "Consistent species definition"
+        }
+      },
+      {
+        "family": "Drexlerviridae",
+        "pattern": "stable_thresholds",
+        "details": {
+          "family": "Drexlerviridae",
+          "value": "95%",
+          "interpretation": "Consistent species definition"
+        }
+      }
+    ],
+    "transition_flows": []
+  }
+}

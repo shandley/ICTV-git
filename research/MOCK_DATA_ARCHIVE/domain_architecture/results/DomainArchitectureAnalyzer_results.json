@@ -1,0 +1,1013 @@
+{
+  "metadata": {
+    "analysis": "Functional Domain Architecture",
+    "date": "2025-06-09",
+    "families_analyzed": 15,
+    "domains_analyzed": 14
+  },
+  "key_findings": {
+    "domain_taxonomic_concordance": 0.4215840849056446,
+    "convergent_architectures": 2,
+    "modular_families": [
+      "Parvoviridae",
+      "Circoviridae",
+      "Papillomaviridae",
+      "Poxviridae",
+      "Reoviridae"
+    ],
+    "classification_alignment": "Weak"
+  },
+  "domain_patterns": {
+    "domain_frequency": {
+      "RdRp": 6,
+      "Protease": 5,
+      "Spike": 3,
+      "Envelope": 6,
+      "MCP": 14,
+      "Helicase": 4,
+      "Methyltransferase": 3,
+      "VPg": 1,
+      "DdDp": 8,
+      "Portal": 4,
+      "Terminase": 4,
+      "Scaffolding": 1,
+      "Integrase": 2,
+      "RT": 1
+    },
+    "domain_combinations": [
+      {
+        "family": "Coronaviridae",
+        "combination": "Envelope-Helicase-MCP-Methyltransferase-Protease-RdRp-Spike",
+        "n_domains": 7,
+        "genome_type": "RNA+",
+        "family_size": 54
+      },
+      {
+        "family": "Picornaviridae",
+        "combination": "MCP-Protease-RdRp-VPg",
+        "n_domains": 4,
+        "genome_type": "RNA+",
+        "family_size": 158
+      },
+      {
+        "family": "Flaviviridae",
+        "combination": "Envelope-Helicase-Methyltransferase-Protease-RdRp",
+        "n_domains": 5,
+        "genome_type": "RNA+",
+        "family_size": 89
+      },
+      {
+        "family": "Rhabdoviridae",
+        "combination": "Envelope-MCP-RdRp-Spike",
+        "n_domains": 4,
+        "genome_type": "RNA-",
+        "family_size": 189
+      },
+      {
+        "family": "Orthomyxoviridae",
+        "combination": "Envelope-MCP-RdRp-Spike",
+        "n_domains": 4,
+        "genome_type": "RNA-",
+        "family_size": 11
+      },
+      {
+        "family": "Herpesviridae",
+        "combination": "DdDp-Envelope-MCP-Portal-Scaffolding-Terminase",
+        "n_domains": 6,
+        "genome_type": "dsDNA",
+        "family_size": 139
+      },
+      {
+        "family": "Poxviridae",
+        "combination": "DdDp-Helicase-MCP-Protease",
+        "n_domains": 4,
+        "genome_type": "dsDNA",
+        "family_size": 83
+      },
+      {
+        "family": "Papillomaviridae",
+        "combination": "DdDp-Helicase-MCP",
+        "n_domains": 3,
+        "genome_type": "dsDNA",
+        "family_size": 133
+      },
+      {
+        "family": "Siphoviridae",
+        "combination": "DdDp-Integrase-MCP-Portal-Terminase",
+        "n_domains": 5,
+        "genome_type": "dsDNA",
+        "family_size": 1062
+      },
+      {
+        "family": "Myoviridae",
+        "combination": "DdDp-MCP-Portal-Terminase",
+        "n_domains": 4,
+        "genome_type": "dsDNA",
+        "family_size": 625
+      },
+      {
+        "family": "Podoviridae",
+        "combination": "DdDp-MCP-Portal-Terminase",
+        "n_domains": 4,
+        "genome_type": "dsDNA",
+        "family_size": 130
+      },
+      {
+        "family": "Retroviridae",
+        "combination": "Envelope-Integrase-MCP-Protease-RT",
+        "n_domains": 5,
+        "genome_type": "Retro",
+        "family_size": 97
+      },
+      {
+        "family": "Parvoviridae",
+        "combination": "DdDp-MCP",
+        "n_domains": 2,
+        "genome_type": "ssDNA",
+        "family_size": 134
+      },
+      {
+        "family": "Circoviridae",
+        "combination": "DdDp-MCP",
+        "n_domains": 2,
+        "genome_type": "ssDNA",
+        "family_size": 101
+      },
+      {
+        "family": "Reoviridae",
+        "combination": "MCP-Methyltransferase-RdRp",
+        "n_domains": 3,
+        "genome_type": "dsRNA",
+        "family_size": 97
+      }
+    ],
+    "domain_diversity": {
+      "RNA+": {
+        "n_unique_domains": 8,
+        "total_occurrences": 16,
+        "most_common": "RdRp",
+        "shannon_diversity": 2.0140355237092673
+      },
+      "RNA-": {
+        "n_unique_domains": 4,
+        "total_occurrences": 8,
+        "most_common": "RdRp",
+        "shannon_diversity": 1.3862943611198906
+      },
+      "dsDNA": {
+        "n_unique_domains": 9,
+        "total_occurrences": 26,
+        "most_common": "DdDp",
+        "shannon_diversity": 1.9512595041439562
+      },
+      "Retro": {
+        "n_unique_domains": 5,
+        "total_occurrences": 5,
+        "most_common": "RT",
+        "shannon_diversity": 1.6094379124341005
+      },
+      "ssDNA": {
+        "n_unique_domains": 2,
+        "total_occurrences": 4,
+        "most_common": "DdDp",
+        "shannon_diversity": 0.6931471805599453
+      },
+      "dsRNA": {
+        "n_unique_domains": 3,
+        "total_occurrences": 3,
+        "most_common": "RdRp",
+        "shannon_diversity": 1.0986122886681096
+      }
+    },
+    "essential_domains": [
+      "MCP"
+    ],
+    "accessory_domains": [
+      "VPg",
+      "Scaffolding",
+      "Integrase",
+      "RT"
+    ],
+    "average_domains_per_family": 4.133333333333334,
+    "domain_correlation_matrix": {
+      "high_correlations": [
+        {
+          "domain1": "Terminase",
+          "domain2": "Portal",
+          "correlation": 1.0
+        },
+        {
+          "domain1": "RdRp",
+          "domain2": "DdDp",
+          "correlation": -0.8728715609439694
+        }
+      ],
+      "always_together": [
+        {
+          "domain1": "Terminase",
+          "domain2": "Portal",
+          "correlation": 1.0
+        }
+      ],
+      "mutually_exclusive": [
+        {
+          "domain1": "RdRp",
+          "domain2": "DdDp",
+          "correlation": -0.8728715609439694
+        }
+      ]
+    }
+  },
+  "clustering_comparison": {
+    "concordance_score": 0.4215840849056446,
+    "average_within_group_distance": 0.43744047619047616,
+    "average_between_group_distance": 0.7562732365673542,
+    "misclassified_families": [
+      {
+        "family": "Coronaviridae",
+        "taxonomic_group": "RNA+",
+        "domain_cluster_type": "RNA+",
+        "shared_domains": [
+          "RdRp",
+          "Protease",
+          "Methyltransferase",
+          "Envelope",
+          "Helicase"
+        ],
+        "explanation": "Domain architecture convergence"
+      },
+      {
+        "family": "Picornaviridae",
+        "taxonomic_group": "RNA+",
+        "domain_cluster_type": "dsRNA",
+        "shared_domains": [
+          "MCP",
+          "RdRp"
+        ],
+        "explanation": "Domain architecture convergence"
+      },
+      {
+        "family": "Rhabdoviridae",
+        "taxonomic_group": "RNA-",
+        "domain_cluster_type": "RNA-",
+        "shared_domains": [
+          "MCP",
+          "Envelope",
+          "RdRp",
+          "Spike"
+        ],
+        "explanation": "Domain architecture convergence"
+      },
+      {
+        "family": "Orthomyxoviridae",
+        "taxonomic_group": "RNA-",
+        "domain_cluster_type": "RNA-",
+        "shared_domains": [
+          "MCP",
+          "Envelope",
+          "RdRp",
+          "Spike"
+        ],
+        "explanation": "Domain architecture convergence"
+      },
+      {
+        "family": "Poxviridae",
+        "taxonomic_group": "dsDNA",
+        "domain_cluster_type": "dsDNA",
+        "shared_domains": [
+          "Helicase",
+          "DdDp",
+          "MCP"
+        ],
+        "explanation": "Domain architecture convergence"
+      },
+      {
+        "family": "Papillomaviridae",
+        "taxonomic_group": "dsDNA",
+        "domain_cluster_type": "dsDNA",
+        "shared_domains": [
+          "Helicase",
+          "DdDp",
+          "MCP"
+        ],
+        "explanation": "Domain architecture convergence"
+      },
+      {
+        "family": "Retroviridae",
+        "taxonomic_group": "Retro",
+        "domain_cluster_type": "RNA+",
+        "shared_domains": [
+          "Protease",
+          "Envelope",
+          "MCP"
+        ],
+        "explanation": "Contains integrase suggesting similar lifecycle"
+      },
+      {
+        "family": "Parvoviridae",
+        "taxonomic_group": "ssDNA",
+        "domain_cluster_type": "ssDNA",
+        "shared_domains": [
+          "DdDp",
+          "MCP"
+        ],
+        "explanation": "Domain architecture convergence"
+      },
+      {
+        "family": "Circoviridae",
+        "taxonomic_group": "ssDNA",
+        "domain_cluster_type": "ssDNA",
+        "shared_domains": [
+          "DdDp",
+          "MCP"
+        ],
+        "explanation": "Domain architecture convergence"
+      },
+      {
+        "family": "Reoviridae",
+        "taxonomic_group": "dsRNA",
+        "domain_cluster_type": "RNA+",
+        "shared_domains": [
+          "MCP",
+          "Methyltransferase",
+          "RdRp"
+        ],
+        "explanation": "Domain architecture convergence"
+      }
+    ],
+    "clustering_summary": {
+      "n_genome_types": 6,
+      "families_per_type": {
+        "RNA+": 3,
+        "RNA-": 2,
+        "dsDNA": 6,
+        "Retro": 1,
+        "ssDNA": 2,
+        "dsRNA": 1
+      }
+    }
+  },
+  "domain_evolution": {
+    "evolution_events": {
+      "domain_gains": {
+        "RNA+": [
+          "Methyltransferase",
+          "Helicase"
+        ],
+        "dsDNA": [
+          "Portal",
+          "Terminase"
+        ],
+        "Retro": [
+          "Integrase"
+        ]
+      },
+      "domain_losses": {
+        "ssDNA": [
+          "Envelope",
+          "Spike"
+        ],
+        "RNA+": [
+          "Integrase"
+        ]
+      },
+      "domain_transfers": {
+        "Protease": {
+          "from": "Retro",
+          "to": "RNA+",
+          "mechanism": "Recombination"
+        },
+        "Integrase": {
+          "from": "Retro",
+          "to": "dsDNA",
+          "mechanism": "Transposon capture"
+        },
+        "Methyltransferase": {
+          "from": "Host",
+          "to": "RNA+",
+          "mechanism": "Host gene capture"
+        }
+      }
+    },
+    "complexity_evolution": {
+      "RNA+": {
+        "mean_domains": 5.333333333333333,
+        "std_domains": 1.247219128924647,
+        "min_domains": 4,
+        "max_domains": 7
+      },
+      "RNA-": {
+        "mean_domains": 4.0,
+        "std_domains": 0.0,
+        "min_domains": 4,
+        "max_domains": 4
+      },
+      "dsDNA": {
+        "mean_domains": 4.333333333333333,
+        "std_domains": 0.9428090415820634,
+        "min_domains": 3,
+        "max_domains": 6
+      },
+      "ssDNA": {
+        "mean_domains": 2.0,
+        "std_domains": 0.0,
+        "min_domains": 2,
+        "max_domains": 2
+      },
+      "dsRNA": {
+        "mean_domains": 3.0,
+        "std_domains": 0.0,
+        "min_domains": 3,
+        "max_domains": 3
+      },
+      "Retro": {
+        "mean_domains": 5.0,
+        "std_domains": 0.0,
+        "min_domains": 5,
+        "max_domains": 5
+      }
+    },
+    "domain_innovation": {
+      "RdRp": {
+        "distribution_breadth": 3,
+        "genome_types": [
+          "RNA+",
+          "RNA-",
+          "dsRNA"
+        ],
+        "innovation_score": 0.5
+      },
+      "DdDp": {
+        "distribution_breadth": 2,
+        "genome_types": [
+          "ssDNA",
+          "dsDNA"
+        ],
+        "innovation_score": 0.3333333333333333
+      },
+      "RT": {
+        "distribution_breadth": 1,
+        "genome_types": [
+          "Retro"
+        ],
+        "innovation_score": 0.16666666666666666
+      },
+      "MCP": {
+        "distribution_breadth": 6,
+        "genome_types": [
+          "dsDNA",
+          "ssDNA",
+          "Retro",
+          "RNA+",
+          "dsRNA",
+          "RNA-"
+        ],
+        "innovation_score": 1.0
+      },
+      "Spike": {
+        "distribution_breadth": 2,
+        "genome_types": [
+          "RNA+",
+          "RNA-"
+        ],
+        "innovation_score": 0.3333333333333333
+      },
+      "Envelope": {
+        "distribution_breadth": 4,
+        "genome_types": [
+          "Retro",
+          "RNA+",
+          "RNA-",
+          "dsDNA"
+        ],
+        "innovation_score": 0.6666666666666666
+      },
+      "Protease": {
+        "distribution_breadth": 3,
+        "genome_types": [
+          "Retro",
+          "RNA+",
+          "dsDNA"
+        ],
+        "innovation_score": 0.5
+      },
+      "Helicase": {
+        "distribution_breadth": 2,
+        "genome_types": [
+          "RNA+",
+          "dsDNA"
+        ],
+        "innovation_score": 0.3333333333333333
+      },
+      "Methyltransferase": {
+        "distribution_breadth": 2,
+        "genome_types": [
+          "RNA+",
+          "dsRNA"
+        ],
+        "innovation_score": 0.3333333333333333
+      },
+      "Terminase": {
+        "distribution_breadth": 1,
+        "genome_types": [
+          "dsDNA"
+        ],
+        "innovation_score": 0.16666666666666666
+      },
+      "Portal": {
+        "distribution_breadth": 1,
+        "genome_types": [
+          "dsDNA"
+        ],
+        "innovation_score": 0.16666666666666666
+      },
+      "Scaffolding": {
+        "distribution_breadth": 1,
+        "genome_types": [
+          "dsDNA"
+        ],
+        "innovation_score": 0.16666666666666666
+      },
+      "Integrase": {
+        "distribution_breadth": 2,
+        "genome_types": [
+          "Retro",
+          "dsDNA"
+        ],
+        "innovation_score": 0.3333333333333333
+      },
+      "VPg": {
+        "distribution_breadth": 1,
+        "genome_types": [
+          "RNA+"
+        ],
+        "innovation_score": 0.16666666666666666
+      }
+    },
+    "most_conserved_domains": [
+      "MCP"
+    ],
+    "lineage_specific_domains": [
+      "RT",
+      "Terminase",
+      "Portal",
+      "Scaffolding",
+      "VPg"
+    ],
+    "evolutionary_constraints": {
+      "functional_dependencies": {
+        "RT-Integrase": "Reverse transcriptase requires integrase for lifecycle",
+        "Portal-Terminase": "DNA packaging requires both components",
+        "Protease-Polyprotein": "Polyprotein strategy requires protease",
+        "RdRp-VPg": "VPg-primed replication needs specific RdRp"
+      },
+      "incompatible_combinations": {
+        "RT-RdRp": "Different replication strategies",
+        "Portal-Envelope": "Different virion architectures",
+        "VPg-DdDp": "VPg specific to RNA viruses"
+      },
+      "size_constraints": {
+        "small_genomes": [
+          "ssDNA",
+          "ssRNA"
+        ],
+        "max_domains": 4,
+        "large_genomes": [
+          "dsDNA"
+        ],
+        "min_domains": 6
+      }
+    }
+  },
+  "convergent_architectures": {
+    "convergent_pairs": [
+      {
+        "family1": "Papillomaviridae",
+        "family2": "Parvoviridae",
+        "genome_type1": "dsDNA",
+        "genome_type2": "ssDNA",
+        "shared_domains": [
+          "DdDp",
+          "MCP"
+        ],
+        "similarity_score": 0.6666666666666666,
+        "convergence_type": "replication_machinery"
+      },
+      {
+        "family1": "Papillomaviridae",
+        "family2": "Circoviridae",
+        "genome_type1": "dsDNA",
+        "genome_type2": "ssDNA",
+        "shared_domains": [
+          "DdDp",
+          "MCP"
+        ],
+        "similarity_score": 0.6666666666666666,
+        "convergence_type": "replication_machinery"
+      }
+    ],
+    "convergence_by_function": {
+      "replication_machinery": [
+        {
+          "family1": "Papillomaviridae",
+          "family2": "Parvoviridae",
+          "genome_type1": "dsDNA",
+          "genome_type2": "ssDNA",
+          "shared_domains": [
+            "DdDp",
+            "MCP"
+          ],
+          "similarity_score": 0.6666666666666666,
+          "convergence_type": "replication_machinery"
+        },
+        {
+          "family1": "Papillomaviridae",
+          "family2": "Circoviridae",
+          "genome_type1": "dsDNA",
+          "genome_type2": "ssDNA",
+          "shared_domains": [
+            "DdDp",
+            "MCP"
+          ],
+          "similarity_score": 0.6666666666666666,
+          "convergence_type": "replication_machinery"
+        }
+      ]
+    },
+    "multiple_origin_architectures": {},
+    "convergence_hotspots": {
+      "hotspot_domains": [
+        [
+          "DdDp",
+          0.25
+        ],
+        [
+          "MCP",
+          0.14285714285714285
+        ]
+      ],
+      "convergence_prone": [],
+      "lineage_specific": []
+    },
+    "functional_convergence_score": 0.01904761904761905
+  },
+  "modularity_analysis": {
+    "modularity_scores": {
+      "RdRp": 0.3333333333333333,
+      "Protease": 0.3333333333333333,
+      "Spike": 0.13333333333333333,
+      "Envelope": 0.3333333333333333,
+      "MCP": 0.7333333333333333,
+      "Helicase": 0.26666666666666666,
+      "Methyltransferase": 0.2,
+      "VPg": 0.06666666666666667,
+      "DdDp": 0.4,
+      "Portal": 0.2,
+      "Terminase": 0.2,
+      "Scaffolding": 0.06666666666666667,
+      "Integrase": 0.13333333333333333,
+      "RT": 0.06666666666666667
+    },
+    "domain_modules": [
+      {
+        "domain1": "Integrase",
+        "domain2": "RT",
+        "co_occurrence": 1,
+        "pmi_score": 2.0149030205422647,
+        "always_together": true
+      },
+      {
+        "domain1": "Portal",
+        "domain2": "Terminase",
+        "co_occurrence": 4,
+        "pmi_score": 1.3217558399823195,
+        "always_together": true
+      },
+      {
+        "domain1": "Portal",
+        "domain2": "Scaffolding",
+        "co_occurrence": 1,
+        "pmi_score": 1.3217558399823195,
+        "always_together": true
+      },
+      {
+        "domain1": "Scaffolding",
+        "domain2": "Terminase",
+        "co_occurrence": 1,
+        "pmi_score": 1.3217558399823195,
+        "always_together": true
+      },
+      {
+        "domain1": "Protease",
+        "domain2": "VPg",
+        "co_occurrence": 1,
+        "pmi_score": 1.0986122886681098,
+        "always_together": true
+      },
+      {
+        "domain1": "Protease",
+        "domain2": "RT",
+        "co_occurrence": 1,
+        "pmi_score": 1.0986122886681098,
+        "always_together": true
+      }
+    ],
+    "highly_modular_domains": [
+      "RdRp",
+      "Protease",
+      "Envelope",
+      "MCP",
+      "DdDp"
+    ],
+    "fixed_modules": [
+      {
+        "domain1": "Protease",
+        "domain2": "VPg",
+        "co_occurrence": 1,
+        "pmi_score": 1.0986122886681098,
+        "always_together": true
+      },
+      {
+        "domain1": "Portal",
+        "domain2": "Terminase",
+        "co_occurrence": 4,
+        "pmi_score": 1.3217558399823195,
+        "always_together": true
+      },
+      {
+        "domain1": "Portal",
+        "domain2": "Scaffolding",
+        "co_occurrence": 1,
+        "pmi_score": 1.3217558399823195,
+        "always_together": true
+      },
+      {
+        "domain1": "Scaffolding",
+        "domain2": "Terminase",
+        "co_occurrence": 1,
+        "pmi_score": 1.3217558399823195,
+        "always_together": true
+      },
+      {
+        "domain1": "Protease",
+        "domain2": "RT",
+        "co_occurrence": 1,
+        "pmi_score": 1.0986122886681098,
+        "always_together": true
+      },
+      {
+        "domain1": "Integrase",
+        "domain2": "RT",
+        "co_occurrence": 1,
+        "pmi_score": 2.0149030205422647,
+        "always_together": true
+      }
+    ],
+    "recombination_events": {
+      "protease_transfer": {
+        "donor": "Retroviridae",
+        "recipient": "Picornaviridae",
+        "domain": "Protease",
+        "evidence": "Sequence similarity"
+      },
+      "methyltransferase_capture": {
+        "donor": "Host",
+        "recipient": "Coronaviridae",
+        "domain": "Methyltransferase",
+        "evidence": "Phylogenetic incongruence"
+      },
+      "integrase_spread": {
+        "donor": "Retroviridae",
+        "recipient": "Hepadnaviridae",
+        "domain": "Integrase",
+        "evidence": "Functional similarity"
+      }
+    },
+    "highly_modular_families": [
+      "Parvoviridae",
+      "Circoviridae",
+      "Papillomaviridae",
+      "Poxviridae",
+      "Reoviridae"
+    ],
+    "average_modularity": 0.24761904761904763
+  },
+  "classification_recommendations": {
+    "overall_alignment": "Weak",
+    "general_recommendation": "Major revision needed to align with functional relationships",
+    "specific_recommendations": [
+      {
+        "family": "Coronaviridae",
+        "current_classification": "RNA+",
+        "suggested_affinity": "RNA+",
+        "reason": "Domain architecture convergence",
+        "confidence": "Moderate"
+      },
+      {
+        "family": "Picornaviridae",
+        "current_classification": "RNA+",
+        "suggested_affinity": "dsRNA",
+        "reason": "Domain architecture convergence",
+        "confidence": "Moderate"
+      },
+      {
+        "family": "Rhabdoviridae",
+        "current_classification": "RNA-",
+        "suggested_affinity": "RNA-",
+        "reason": "Domain architecture convergence",
+        "confidence": "Moderate"
+      },
+      {
+        "family": "Orthomyxoviridae",
+        "current_classification": "RNA-",
+        "suggested_affinity": "RNA-",
+        "reason": "Domain architecture convergence",
+        "confidence": "Moderate"
+      },
+      {
+        "family": "Poxviridae",
+        "current_classification": "dsDNA",
+        "suggested_affinity": "dsDNA",
+        "reason": "Domain architecture convergence",
+        "confidence": "Moderate"
+      },
+      {
+        "family": "Papillomaviridae",
+        "current_classification": "dsDNA",
+        "suggested_affinity": "dsDNA",
+        "reason": "Domain architecture convergence",
+        "confidence": "Moderate"
+      },
+      {
+        "family": "Retroviridae",
+        "current_classification": "Retro",
+        "suggested_affinity": "RNA+",
+        "reason": "Contains integrase suggesting similar lifecycle",
+        "confidence": "Moderate"
+      },
+      {
+        "family": "Parvoviridae",
+        "current_classification": "ssDNA",
+        "suggested_affinity": "ssDNA",
+        "reason": "Domain architecture convergence",
+        "confidence": "Moderate"
+      },
+      {
+        "family": "Circoviridae",
+        "current_classification": "ssDNA",
+        "suggested_affinity": "ssDNA",
+        "reason": "Domain architecture convergence",
+        "confidence": "Moderate"
+      },
+      {
+        "family": "Reoviridae",
+        "current_classification": "dsRNA",
+        "suggested_affinity": "RNA+",
+        "reason": "Domain architecture convergence",
+        "confidence": "Moderate"
+      }
+    ],
+    "domain_based_groups": [
+      {
+        "group_name": "RNA-replicating viruses",
+        "defining_domain": "RdRp",
+        "member_families": [
+          "Coronaviridae",
+          "Picornaviridae",
+          "Flaviviridae",
+          "Rhabdoviridae",
+          "Orthomyxoviridae",
+          "Reoviridae"
+        ],
+        "rationale": "Shared RNA replication machinery suggests common ancestry"
+      },
+      {
+        "group_name": "Portal-packaging viruses",
+        "defining_domains": [
+          "Portal",
+          "Terminase"
+        ],
+        "member_families": [
+          "Herpesviridae",
+          "Siphoviridae",
+          "Myoviridae",
+          "Podoviridae"
+        ],
+        "rationale": "Complex DNA packaging machinery indicates evolutionary relationship"
+      },
+      {
+        "group_name": "Integrating viruses",
+        "defining_domain": "Integrase",
+        "member_families": [
+          "Siphoviridae",
+          "Retroviridae"
+        ],
+        "rationale": "Integration capability defines lifecycle strategy"
+      }
+    ],
+    "support_metrics": {
+      "domain_clustering_support": 0.4215840849056446,
+      "convergence_frequency": 0.01904761904761905,
+      "modularity_index": 1.0,
+      "essential_domain_coherence": 0.07142857142857142
+    },
+    "implementation_feasibility": {
+      "technical_feasibility": "Moderate",
+      "data_availability": "Moderate",
+      "computational_requirements": "High",
+      "community_acceptance": "Unknown",
+      "transition_complexity": "High",
+      "benefits": [
+        "Function-based relationships",
+        "Predictive power for new viruses",
+        "Clear evolutionary paths",
+        "Reduced homoplasy"
+      ],
+      "challenges": [
+        "Incomplete domain annotations",
+        "Convergent evolution",
+        "Historical precedent",
+        "Retraining needed"
+      ]
+    },
+    "hybrid_approach": {
+      "primary_criterion": "Sequence identity for recent divergences",
+      "secondary_criterion": "Domain architecture for ancient relationships",
+      "threshold": "50% sequence identity",
+      "implementation": {
+        "above_threshold": "Use traditional sequence-based phylogeny",
+        "below_threshold": "Weight domain architecture 70%, sequence 30%",
+        "validation": "Both methods must agree for classification"
+      },
+      "special_cases": {
+        "recombinant_viruses": "Domain-based to handle mosaic genomes",
+        "fast_evolving": "Domain-based to overcome saturation",
+        "novel_viruses": "Domain-based for initial classification"
+      },
+      "advantages": [
+        "Combines strengths of both approaches",
+        "Handles full evolutionary spectrum",
+        "Reduces misclassification",
+        "Future-proof"
+      ]
+    }
+  },
+  "statistical_validation": {
+    "domain_family_size_correlation": {
+      "correlation": 0.11016757106643131,
+      "p_value": 0.5,
+      "interpretation": "No clear relationship"
+    },
+    "clustering_stability": {
+      "concordance_mean": 0.4215840849056446,
+      "confidence_interval": [
+        0.3215840849056446,
+        0.5215840849056446
+      ],
+      "stability": "Moderate"
+    },
+    "genome_type_domain_anova": {
+      "f_statistic": 2.8319999999999994,
+      "p_value": 0.5,
+      "significant": false,
+      "interpretation": "Similar complexity across genome types"
+    },
+    "sample_sizes": {
+      "n_families": 15,
+      "n_domains": 14,
+      "n_genome_types": 6
+    }
+  },
+  "predictive_insights": [
+    {
+      "type": "classification_concordance",
+      "insight": "Domain architecture shows weak concordance with current taxonomy",
+      "recommendation": "Major revision needed to align with functional relationships"
+    },
+    {
+      "type": "convergent_evolution",
+      "insight": "2 viral family pairs show convergent domain architectures despite different origins",
+      "recommendation": "Consider functional classification criteria for highly convergent groups"
+    },
+    {
+      "type": "domain_modularity",
+      "insight": "Average domain modularity score of 0.25 indicates moderate recombination potential",
+      "recommendation": "Track domain shuffling events for emerging virus surveillance"
+    },
+    {
+      "type": "essential_functions",
+      "insight": "Polymerase and capsid proteins are universal, while specialized domains define viral lifestyles",
+      "recommendation": "Use core domain set for broad viral classification, accessory domains for fine-scale"
+    },
+    {
+      "type": "taxonomic_revision",
+      "insight": "10 families may benefit from taxonomic reassignment based on domain architecture",
+      "recommendation": "Priority review for families with domain-taxonomy discordance"
+    },
+    {
+      "type": "future_taxonomy",
+      "insight": "Hybrid sequence-domain classification could improve accuracy for divergent viruses",
+      "recommendation": "Implement dual classification system with domain validation for <50% identity"
+    }
+  ]
+}
