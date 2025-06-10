@@ -1,0 +1,12 @@
+Species Boundary Evolution Analysis Summary
+==================================================
+
+Analysis Date: 2025-06-09T20:22:20.013958
+Data Source: ICTV documentation and published literature
+
+Key Findings:
+  - primary_shift: Biological (2005) → Sequence (2014) → Integrated (2019+)
+  - stability_rate: 0.0
+  - total_reclassifications: 4
+  - complexity_increase: 3.3x increase in demarcation factors
+  - current_trend: Multi-factor integrated approach with family-specific thresholds

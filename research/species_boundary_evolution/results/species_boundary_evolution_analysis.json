@@ -1,0 +1,184 @@
+{
+  "analysis_metadata": {
+    "phase": "Phase 4: Species Boundary Evolution",
+    "analysis_date": "2025-06-09T20:22:20.013958",
+    "data_source": "ICTV documentation and published literature",
+    "years_covered": "2005-2024"
+  },
+  "criteria_evolution": {
+    "timeline": [
+      {
+        "era": "early_era",
+        "period": "2005-2008",
+        "primary_criteria": "Host range and serological properties",
+        "has_sequence_threshold": false,
+        "num_additional_factors": 3,
+        "example_families": 3
+      },
+      {
+        "era": "transition_era",
+        "period": "2009-2013",
+        "primary_criteria": "Sequence-based with biological properties",
+        "has_sequence_threshold": true,
+        "num_additional_factors": 3,
+        "example_families": 3
+      },
+      {
+        "era": "molecular_era",
+        "period": "2014-2018",
+        "primary_criteria": "Sequence identity with standardized thresholds",
+        "has_sequence_threshold": true,
+        "num_additional_factors": 3,
+        "example_families": 3
+      },
+      {
+        "era": "current_era",
+        "period": "2019-2024",
+        "primary_criteria": "Integrated genomic and biological criteria",
+        "has_sequence_threshold": true,
+        "num_additional_factors": 4,
+        "example_families": 3
+      }
+    ],
+    "total_eras": 4,
+    "shift_to_sequence": "transition_era (2009-2013)",
+    "current_approach": "Integrated genomic and biological criteria"
+  },
+  "threshold_stability": {
+    "Poxviridae": {
+      "total_changes": 2,
+      "years_monitored": 15,
+      "changes_per_decade": 1.33,
+      "stability_score": "Low",
+      "current_threshold": "Core gene set >95% + biological properties"
+    },
+    "Herpesviridae": {
+      "total_changes": 2,
+      "years_monitored": 17,
+      "changes_per_decade": 1.18,
+      "stability_score": "Low",
+      "current_threshold": "Core gene identity >60% + coevolution patterns"
+    },
+    "Coronaviridae": {
+      "total_changes": 2,
+      "years_monitored": 15,
+      "changes_per_decade": 1.33,
+      "stability_score": "Low",
+      "current_threshold": "Multiple ORF comparison + recombination analysis"
+    },
+    "Phage families": {
+      "total_changes": 2,
+      "years_monitored": 16,
+      "changes_per_decade": 1.25,
+      "stability_score": "Low",
+      "current_threshold": "ANI >95% + shared gene content >40%"
+    }
+  },
+  "reclassification_impact": {
+    "total_events": 4,
+    "total_species_affected": 160,
+    "major_events": [
+      {
+        "year": 2012,
+        "event": "Papillomaviridae standardization",
+        "percent_change": 41.7,
+        "absolute_change": 50
+      },
+      {
+        "year": 2015,
+        "event": "Geminiviridae revision",
+        "percent_change": 28.6,
+        "absolute_change": 2
+      },
+      {
+        "year": 2018,
+        "event": "Picornaviridae overhaul",
+        "percent_change": 216.0,
+        "absolute_change": 108
+      }
+    ],
+    "average_impact_per_event": 40.0
+  },
+  "complexity_trend": {
+    "complexity_timeline": [
+      {
+        "year": 2005,
+        "num_factors": 3,
+        "primary_approach": "biological",
+        "sequence_weight": 0.1,
+        "complexity_index": 3.3000000000000003
+      },
+      {
+        "year": 2008,
+        "num_factors": 4,
+        "primary_approach": "biological",
+        "sequence_weight": 0.3,
+        "complexity_index": 5.2
+      },
+      {
+        "year": 2011,
+        "num_factors": 5,
+        "primary_approach": "mixed",
+        "sequence_weight": 0.5,
+        "complexity_index": 7.5
+      },
+      {
+        "year": 2014,
+        "num_factors": 6,
+        "primary_approach": "sequence",
+        "sequence_weight": 0.7,
+        "complexity_index": 10.2
+      },
+      {
+        "year": 2017,
+        "num_factors": 7,
+        "primary_approach": "sequence",
+        "sequence_weight": 0.8,
+        "complexity_index": 12.6
+      },
+      {
+        "year": 2020,
+        "num_factors": 8,
+        "primary_approach": "integrated",
+        "sequence_weight": 0.6,
+        "complexity_index": 12.8
+      },
+      {
+        "year": 2024,
+        "num_factors": 10,
+        "primary_approach": "integrated",
+        "sequence_weight": 0.6,
+        "complexity_index": 16.0
+      }
+    ],
+    "factor_growth_rate": 22.2,
+    "complexity_increase": "3x to 10x factors",
+    "paradigm_shifts": [
+      {
+        "period": "2005-2011",
+        "shift": "Biological \u2192 Mixed criteria"
+      },
+      {
+        "period": "2012-2018",
+        "shift": "Mixed \u2192 Sequence-dominated"
+      },
+      {
+        "period": "2019-2024",
+        "shift": "Sequence \u2192 Integrated multi-factor"
+      }
+    ]
+  },
+  "key_findings": {
+    "primary_shift": "Biological (2005) \u2192 Sequence (2014) \u2192 Integrated (2019+)",
+    "stability_rate": 0.0,
+    "total_reclassifications": 4,
+    "complexity_increase": "3.3x increase in demarcation factors",
+    "current_trend": "Multi-factor integrated approach with family-specific thresholds"
+  },
+  "implications": {
+    "for_researchers": "Must track family-specific criteria changes for accurate classification",
+    "for_databases": "Version-specific threshold documentation essential",
+    "for_taxonomy": "Increasing sophistication requires computational tools",
+    "for_future": "AI/ML integration likely for complex multi-factor analysis"
+  }
+}
