@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (if sensitive)
+*.xlsx
+*.xls
+data/private/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Documentation builds
+docs/_build/
+
+# Distribution
+dist/
+build/
+*.egg-info/

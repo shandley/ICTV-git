@@ -18,9 +18,9 @@ import sys
 import json
 from datetime import datetime
 
-# Add project root to path for imports
-project_root = Path(__file__).parent.parent
-sys.path.append(str(project_root))
+# Add current directory to path for imports
+current_dir = Path(__file__).parent
+sys.path.append(str(current_dir))
 
 from components.risk_engine import FamilyRiskCalculator
 from components.visualizations import create_interactive_plots
@@ -31,6 +31,7 @@ from config.settings import DEFAULT_RISK_WEIGHTS, DEFAULT_THRESHOLDS
 from pages.committee_workflow import show_committee_workflow
 from pages.analytics_trends import show_analytics_trends
 from utils.report_generator import ReportGenerator
+from utils.authentication import check_password, show_login_status
 
 # Page configuration
 st.set_page_config(
@@ -73,8 +74,15 @@ st.markdown("""
 def main():
     """Main dashboard application."""
     
+    # Check authentication
+    if not check_password():
+        return
+    
     # Navigation sidebar
     st.sidebar.title("🦠 ICTV Dashboard")
+    
+    # Show login status
+    show_login_status()
     
     page = st.sidebar.radio(
         "Navigation",

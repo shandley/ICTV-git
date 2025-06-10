@@ -11,15 +11,8 @@ from typing import Dict, List, Any
 from pathlib import Path
 import sys
 
-# Add project root to path
-project_root = Path(__file__).parent.parent.parent
-sys.path.append(str(project_root))
-
-try:
-    from implementation.predictive_framework.family_risk_predictor import FamilyRiskPredictor
-except ImportError:
-    # Fallback for standalone operation
-    pass
+# Dashboard operates independently of predictive framework
+# All risk calculations are self-contained
 
 class FamilyRiskCalculator:
     """Interactive risk calculator with real-time parameter adjustment."""

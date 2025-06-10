@@ -1,0 +1,37 @@
+# Streamlit Configuration for ICTV Dashboard
+
+[theme]
+# Primary color for interactive elements
+primaryColor = "#1f77b4"
+
+# Background color for the main content area
+backgroundColor = "#ffffff"
+
+# Background color for sidebar and most interactive widgets
+secondaryBackgroundColor = "#f0f2f6"
+
+# Color used for almost all text
+textColor = "#262730"
+
+# Font family for all text
+font = "sans serif"
+
+[server]
+# Maximum size for file uploads (in MB)
+maxUploadSize = 50
+
+# Maximum size for websocket messages (in MB)
+maxMessageSize = 50
+
+[browser]
+# Tab title
+gatherUsageStats = false
+
+[runner]
+# Allows users to upload files
+# Set to false in production if file upload is not needed
+magicEnabled = true
+
+[client]
+# Show the Streamlit menu
+showSidebarNavigation = true

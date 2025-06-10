@@ -1,0 +1,21 @@
+# ICTV Interactive Dashboard Requirements
+# Python 3.8+
+
+# Core dependencies
+streamlit==1.45.1
+pandas==2.3.0
+numpy==2.3.0
+plotly==6.1.2
+
+# Data visualization
+matplotlib==3.10.3
+altair==5.5.0
+
+# Additional utilities
+python-dateutil==2.9.0.post0
+pytz==2025.2
+
+# For future enhancements (optional)
+# openpyxl==3.1.2  # For Excel file reading
+# reportlab==4.0.7  # For advanced PDF generation
+# python-dotenv==1.0.0  # For environment variables

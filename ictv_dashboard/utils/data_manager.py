@@ -14,21 +14,8 @@ from typing import List, Dict, Any
 def load_family_data() -> List[Dict[str, Any]]:
     """Load family data for risk assessment."""
     
-    # Try to load from existing predictive framework
-    project_root = Path(__file__).parent.parent.parent
-    framework_path = project_root / "implementation" / "predictive_framework"
-    
-    try:
-        # Try to load existing assessment data
-        assessment_file = framework_path / "family_assessments.json"
-        if assessment_file.exists():
-            with open(assessment_file, 'r') as f:
-                data = json.load(f)
-                return data.get('assessments', [])
-    except Exception:
-        pass
-    
-    # Generate sample data based on real ICTV families if no data available
+    # For deployment, always use the representative sample data
+    # In production, this would connect to a database or API
     return generate_sample_family_data()
 
 def generate_sample_family_data() -> List[Dict[str, Any]]:

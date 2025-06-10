@@ -15,9 +15,10 @@ import json
 from pathlib import Path
 import sys
 
-# Add project root to path
-project_root = Path(__file__).parent.parent
-sys.path.append(str(project_root))
+# Add dashboard root to path
+dashboard_root = Path(__file__).parent.parent
+if str(dashboard_root) not in sys.path:
+    sys.path.insert(0, str(dashboard_root))
 
 from components.risk_engine import FamilyRiskCalculator
 from utils.data_manager import load_family_data
