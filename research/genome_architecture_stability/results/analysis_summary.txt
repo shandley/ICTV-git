@@ -1,0 +1,19 @@
+Genome Architecture vs Taxonomic Stability Analysis Summary
+============================================================
+
+Analysis Date: 2025-06-09T21:09:19.462040
+Data Source: ICTV MSL genome composition data and taxonomic changes
+
+Key Findings:
+  - most_stable_genome_type: ssRNA-RT
+  - least_stable_genome_type: dsRNA
+  - complexity_correlation: 0.523
+  - fastest_growing_type: ssDNA
+  - average_complexity_increase: 2.0
+  - total_genome_types: 7
+
+Statistical Summary:
+  - total_families_analyzed: 54
+  - genome_types_covered: 7
+  - years_analyzed: 20
+  - correlation_strength: Moderate correlation

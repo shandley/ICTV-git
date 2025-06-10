@@ -1,0 +1,372 @@
+{
+  "analysis_metadata": {
+    "phase": "Phase 8: Genome Architecture vs Taxonomic Stability",
+    "analysis_date": "2025-06-09T21:09:19.462040",
+    "data_source": "ICTV MSL genome composition data and taxonomic changes",
+    "years_covered": "2005-2024"
+  },
+  "genome_distribution": {
+    "growth_by_type": {
+      "dsDNA": {
+        "species_growth_factor": 9.2,
+        "family_growth_factor": 3.6,
+        "percentage_2005": 47.4,
+        "percentage_2024": 37.5,
+        "percentage_change": -10.0,
+        "absolute_growth": 7342
+      },
+      "ssDNA": {
+        "species_growth_factor": 23.4,
+        "family_growth_factor": 4.2,
+        "percentage_2005": 3.6,
+        "percentage_2024": 7.1,
+        "percentage_change": 3.6,
+        "absolute_growth": 1500
+      },
+      "dsRNA": {
+        "species_growth_factor": 2.6,
+        "family_growth_factor": 1.9,
+        "percentage_2005": 4.7,
+        "percentage_2024": 1.1,
+        "percentage_change": -3.7,
+        "absolute_growth": 145
+      },
+      "ssRNA(+)": {
+        "species_growth_factor": 20.4,
+        "family_growth_factor": 3.1,
+        "percentage_2005": 25.8,
+        "percentage_2024": 44.9,
+        "percentage_change": 19.1,
+        "absolute_growth": 9391
+      },
+      "ssRNA(-)": {
+        "species_growth_factor": 7.2,
+        "family_growth_factor": 2.6,
+        "percentage_2005": 14.2,
+        "percentage_2024": 8.7,
+        "percentage_change": -5.5,
+        "absolute_growth": 1656
+      },
+      "ssRNA-RT": {
+        "species_growth_factor": 1.9,
+        "family_growth_factor": 1.0,
+        "percentage_2005": 3.6,
+        "percentage_2024": 0.6,
+        "percentage_change": -3.0,
+        "absolute_growth": 59
+      },
+      "dsDNA-RT": {
+        "species_growth_factor": 1.5,
+        "family_growth_factor": 1.0,
+        "percentage_2005": 0.6,
+        "percentage_2024": 0.1,
+        "percentage_change": -0.6,
+        "absolute_growth": 6
+      }
+    },
+    "fastest_growing": [
+      "ssDNA",
+      {
+        "species_growth_factor": 23.4,
+        "family_growth_factor": 4.2,
+        "percentage_2005": 3.6,
+        "percentage_2024": 7.1,
+        "percentage_change": 3.6,
+        "absolute_growth": 1500
+      }
+    ],
+    "slowest_growing": [
+      "dsDNA-RT",
+      {
+        "species_growth_factor": 1.5,
+        "family_growth_factor": 1.0,
+        "percentage_2005": 0.6,
+        "percentage_2024": 0.1,
+        "percentage_change": -0.6,
+        "absolute_growth": 6
+      }
+    ],
+    "total_growth_factor": 11.7
+  },
+  "stability_patterns": {
+    "stability_ranking": {
+      "ssRNA-RT": {
+        "rank": 1,
+        "stability_score": "very_low",
+        "changes_per_decade": 9.2,
+        "total_changes": 18.5,
+        "major_reorganizations": 6,
+        "families_analyzed": 2,
+        "classification_approach": "pol gene phylogeny and integration patterns",
+        "key_challenges": "High recombination, integration effects, long evolution"
+      },
+      "ssRNA(-)": {
+        "rank": 2,
+        "stability_score": "low",
+        "changes_per_decade": 8.1,
+        "total_changes": 16.2,
+        "major_reorganizations": 15,
+        "families_analyzed": 9,
+        "classification_approach": "Nucleocapsid and polymerase phylogeny",
+        "key_challenges": "Segmented genomes, reassortment, antigenic drift"
+      },
+      "ssRNA(+)": {
+        "rank": 3,
+        "stability_score": "low",
+        "changes_per_decade": 7.3,
+        "total_changes": 14.6,
+        "major_reorganizations": 18,
+        "families_analyzed": 12,
+        "classification_approach": "RdRp and structural protein phylogeny",
+        "key_challenges": "High mutation rates, recombination, large family sizes"
+      },
+      "dsDNA-RT": {
+        "rank": 4,
+        "stability_score": "medium",
+        "changes_per_decade": 6.0,
+        "total_changes": 12.0,
+        "major_reorganizations": 3,
+        "families_analyzed": 2,
+        "classification_approach": "P gene and host range",
+        "key_challenges": "Limited diversity, host-specific evolution"
+      },
+      "ssDNA": {
+        "rank": 5,
+        "stability_score": "medium",
+        "changes_per_decade": 5.8,
+        "total_changes": 11.7,
+        "major_reorganizations": 8,
+        "families_analyzed": 8,
+        "classification_approach": "Rep protein and capsid phylogeny",
+        "key_challenges": "High mutation rates, recombination"
+      },
+      "dsDNA": {
+        "rank": 6,
+        "stability_score": "high",
+        "changes_per_decade": 4.2,
+        "total_changes": 8.3,
+        "major_reorganizations": 12,
+        "families_analyzed": 15,
+        "classification_approach": "Sequence-based with gene content",
+        "key_challenges": "Large size variation, mobile elements"
+      },
+      "dsRNA": {
+        "rank": 7,
+        "stability_score": "high",
+        "changes_per_decade": 3.6,
+        "total_changes": 7.2,
+        "major_reorganizations": 4,
+        "families_analyzed": 6,
+        "classification_approach": "Segment number and RdRp phylogeny",
+        "key_challenges": "Segment reassortment, limited diversity"
+      }
+    },
+    "most_stable": "ssRNA-RT",
+    "least_stable": "dsRNA",
+    "complexity_correlation": 0.523,
+    "correlation_interpretation": "Moderate correlation"
+  },
+  "classification_evolution": {
+    "evolution_patterns": {
+      "dsDNA": {
+        "periods": [
+          "2005-2010",
+          "2011-2015",
+          "2016-2020",
+          "2021-2024"
+        ],
+        "approaches": [
+          "Morphology and serology dominant",
+          "Core gene phylogeny introduced",
+          "Whole genome comparison standard",
+          "ANI and synteny analysis"
+        ],
+        "complexity_progression": [
+          1,
+          2,
+          3,
+          2
+        ],
+        "complexity_increase": 1,
+        "current_complexity": 2
+      },
+      "ssRNA(+)": {
+        "periods": [
+          "2005-2010",
+          "2011-2015",
+          "2016-2020",
+          "2021-2024"
+        ],
+        "approaches": [
+          "Capsid protein and host range",
+          "RdRp phylogeny becomes central",
+          "Multiple ORF analysis required",
+          "Recombination-aware classification"
+        ],
+        "complexity_progression": [
+          2,
+          2,
+          3,
+          4
+        ],
+        "complexity_increase": 2,
+        "current_complexity": 4
+      },
+      "ssRNA(-)": {
+        "periods": [
+          "2005-2010",
+          "2011-2015",
+          "2016-2020",
+          "2021-2024"
+        ],
+        "approaches": [
+          "Serology and host specificity",
+          "Nucleocapsid gene phylogeny",
+          "Segment-specific analysis",
+          "Reassortment network analysis"
+        ],
+        "complexity_progression": [
+          1,
+          2,
+          2,
+          4
+        ],
+        "complexity_increase": 3,
+        "current_complexity": 4
+      }
+    },
+    "average_complexity_increase": 2.0,
+    "most_complex_current": [
+      "ssRNA(+)",
+      {
+        "periods": [
+          "2005-2010",
+          "2011-2015",
+          "2016-2020",
+          "2021-2024"
+        ],
+        "approaches": [
+          "Capsid protein and host range",
+          "RdRp phylogeny becomes central",
+          "Multiple ORF analysis required",
+          "Recombination-aware classification"
+        ],
+        "complexity_progression": [
+          2,
+          2,
+          3,
+          4
+        ],
+        "complexity_increase": 2,
+        "current_complexity": 4
+      }
+    ],
+    "fastest_evolving": [
+      "ssRNA(-)",
+      {
+        "periods": [
+          "2005-2010",
+          "2011-2015",
+          "2016-2020",
+          "2021-2024"
+        ],
+        "approaches": [
+          "Serology and host specificity",
+          "Nucleocapsid gene phylogeny",
+          "Segment-specific analysis",
+          "Reassortment network analysis"
+        ],
+        "complexity_progression": [
+          1,
+          2,
+          2,
+          4
+        ],
+        "complexity_increase": 3,
+        "current_complexity": 4
+      }
+    ]
+  },
+  "architecture_challenges": {
+    "challenge_details": {
+      "Segmented genomes": {
+        "affected_families": [
+          "Orthomyxoviridae",
+          "Reoviridae",
+          "Bunyaviridae"
+        ],
+        "num_families": 3,
+        "impact_type": "Reassortment creates classification challenges",
+        "solution_approach": "Multiple gene phylogenies required",
+        "stability_impact": "Decreased",
+        "impact_score": -1
+      },
+      "Large DNA genomes": {
+        "affected_families": [
+          "Poxviridae",
+          "Herpesviridae",
+          "Baculoviridae"
+        ],
+        "num_families": 3,
+        "impact_type": "Gene content analysis possible",
+        "solution_approach": "Core gene sets for classification",
+        "stability_impact": "Increased",
+        "impact_score": 1
+      },
+      "Reverse transcription": {
+        "affected_families": [
+          "Retroviridae",
+          "Hepadnaviridae"
+        ],
+        "num_families": 2,
+        "impact_type": "Recombination complicates phylogeny",
+        "solution_approach": "pol gene focus, recombination-aware methods",
+        "stability_impact": "Decreased",
+        "impact_score": -1
+      },
+      "Small RNA genomes": {
+        "affected_families": [
+          "Picornaviridae",
+          "Flaviviridae"
+        ],
+        "num_families": 2,
+        "impact_type": "Limited phylogenetic signal",
+        "solution_approach": "Multiple protein domains analysis",
+        "stability_impact": "Variable",
+        "impact_score": 0
+      }
+    },
+    "impact_summary": {
+      "stabilizing_factors": 1,
+      "destabilizing_factors": 2,
+      "neutral_factors": 1
+    },
+    "most_challenging": "Segmented genomes",
+    "solution_approaches": [
+      "Multiple gene phylogenies required",
+      "Core gene sets for classification",
+      "Multiple protein domains analysis",
+      "pol gene focus, recombination-aware methods"
+    ]
+  },
+  "key_findings": {
+    "most_stable_genome_type": "ssRNA-RT",
+    "least_stable_genome_type": "dsRNA",
+    "complexity_correlation": 0.523,
+    "fastest_growing_type": "ssDNA",
+    "average_complexity_increase": 2.0,
+    "total_genome_types": 7
+  },
+  "statistical_summary": {
+    "total_families_analyzed": 54,
+    "genome_types_covered": 7,
+    "years_analyzed": 20,
+    "correlation_strength": "Moderate correlation"
+  },
+  "implications": {
+    "for_classification": "Genome architecture determines appropriate classification methods",
+    "for_stability": "Replication complexity correlates with taxonomic instability",
+    "for_discovery": "Different genome types require different analytical approaches",
+    "for_future": "Architecture-specific classification frameworks needed"
+  }
+}
