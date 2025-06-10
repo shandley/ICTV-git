@@ -1,0 +1,352 @@
+{
+  "size_stability_correlation": {
+    "correlation_coefficient": -0.814,
+    "relationship": "strong_negative",
+    "interpretation": "Larger families are significantly less stable",
+    "sample_size": 26,
+    "size_range": "2-1847 species",
+    "stability_range": "2.1-9.9 points"
+  },
+  "optimal_size_ranges": {
+    "very_small": {
+      "range": "1-5",
+      "families": [
+        {
+          "name": "Anelloviridae",
+          "size": 5,
+          "stability": 9.8,
+          "management": 10
+        },
+        {
+          "name": "Deltavirus",
+          "size": 3,
+          "stability": 9.9,
+          "management": 10
+        },
+        {
+          "name": "Spumaretroviridae",
+          "size": 2,
+          "stability": 9.7,
+          "management": 10
+        }
+      ],
+      "avg_stability": 9.8,
+      "avg_management": 10,
+      "count": 3,
+      "optimization_score": 9.9
+    },
+    "small": {
+      "range": "6-20",
+      "families": [
+        {
+          "name": "Coronaviridae",
+          "size": 19,
+          "stability": 9.1,
+          "management": 8
+        },
+        {
+          "name": "Caliciviridae",
+          "size": 16,
+          "stability": 9.3,
+          "management": 8
+        },
+        {
+          "name": "Astroviridae",
+          "size": 14,
+          "stability": 9.2,
+          "management": 8
+        },
+        {
+          "name": "Hepadnaviridae",
+          "size": 12,
+          "stability": 9.4,
+          "management": 8
+        },
+        {
+          "name": "Arteriviridae",
+          "size": 9,
+          "stability": 9.6,
+          "management": 8
+        },
+        {
+          "name": "Bornaviridae",
+          "size": 7,
+          "stability": 9.5,
+          "management": 8
+        }
+      ],
+      "avg_stability": 9.35,
+      "avg_management": 8,
+      "count": 6,
+      "optimization_score": 8.68
+    },
+    "medium": {
+      "range": "21-60",
+      "families": [
+        {
+          "name": "Flaviviridae",
+          "size": 58,
+          "stability": 8.5,
+          "management": 8
+        },
+        {
+          "name": "Reoviridae",
+          "size": 54,
+          "stability": 7.1,
+          "management": 5
+        },
+        {
+          "name": "Parvoviridae",
+          "size": 47,
+          "stability": 8.7,
+          "management": 8
+        },
+        {
+          "name": "Orthomyxoviridae",
+          "size": 43,
+          "stability": 8.2,
+          "management": 8
+        },
+        {
+          "name": "Retroviridae",
+          "size": 39,
+          "stability": 6.8,
+          "management": 5
+        },
+        {
+          "name": "Filoviridae",
+          "size": 34,
+          "stability": 8.9,
+          "management": 8
+        },
+        {
+          "name": "Arenaviridae",
+          "size": 28,
+          "stability": 8.6,
+          "management": 8
+        },
+        {
+          "name": "Bunyaviridae",
+          "size": 24,
+          "stability": 5.4,
+          "management": 5
+        }
+      ],
+      "avg_stability": 7.77,
+      "avg_management": 6.88,
+      "count": 8,
+      "optimization_score": 7.32
+    },
+    "large": {
+      "range": "61-150",
+      "families": [
+        {
+          "name": "Adenoviridae",
+          "size": 89,
+          "stability": 7.8,
+          "management": 8
+        },
+        {
+          "name": "Herpesviridae",
+          "size": 87,
+          "stability": 6.9,
+          "management": 8
+        },
+        {
+          "name": "Papillomaviridae",
+          "size": 76,
+          "stability": 8.1,
+          "management": 8
+        },
+        {
+          "name": "Polyomaviridae",
+          "size": 68,
+          "stability": 8.3,
+          "management": 8
+        },
+        {
+          "name": "Picornaviridae",
+          "size": 63,
+          "stability": 7.2,
+          "management": 8
+        }
+      ],
+      "avg_stability": 7.66,
+      "avg_management": 8,
+      "count": 5,
+      "optimization_score": 7.83
+    },
+    "very_large": {
+      "range": "151+",
+      "families": [
+        {
+          "name": "Siphoviridae",
+          "size": 1847,
+          "stability": 2.1,
+          "management": 1
+        },
+        {
+          "name": "Podoviridae",
+          "size": 847,
+          "stability": 3.2,
+          "management": 3
+        },
+        {
+          "name": "Myoviridae",
+          "size": 623,
+          "stability": 3.8,
+          "management": 3
+        },
+        {
+          "name": "Microviridae",
+          "size": 445,
+          "stability": 4.2,
+          "management": 5
+        }
+      ],
+      "avg_stability": 3.33,
+      "avg_management": 3,
+      "count": 4,
+      "optimization_score": 3.17
+    }
+  },
+  "growth_patterns": {
+    "temporal_data": {
+      "2008": {
+        "avg_family_size": 26.25,
+        "total_families": 87,
+        "total_species": 2284
+      },
+      "2009": {
+        "avg_family_size": 27.87,
+        "total_families": 89,
+        "total_species": 2480
+      },
+      "2011": {
+        "avg_family_size": 27.27,
+        "total_families": 96,
+        "total_species": 2618
+      },
+      "2012": {
+        "avg_family_size": 27.45,
+        "total_families": 103,
+        "total_species": 2827
+      },
+      "2013": {
+        "avg_family_size": 28.96,
+        "total_families": 110,
+        "total_species": 3186
+      },
+      "2014": {
+        "avg_family_size": 31.41,
+        "total_families": 118,
+        "total_species": 3706
+      },
+      "2015": {
+        "avg_family_size": 34.14,
+        "total_families": 129,
+        "total_species": 4404
+      },
+      "2016": {
+        "avg_family_size": 34.95,
+        "total_families": 143,
+        "total_species": 4998
+      },
+      "2017": {
+        "avg_family_size": 35.19,
+        "total_families": 158,
+        "total_species": 5560
+      },
+      "2018": {
+        "avg_family_size": 39.46,
+        "total_families": 167,
+        "total_species": 6590
+      },
+      "2019": {
+        "avg_family_size": 48.2,
+        "total_families": 189,
+        "total_species": 9110
+      },
+      "2020": {
+        "avg_family_size": 57.32,
+        "total_families": 168,
+        "total_species": 9630
+      },
+      "2021": {
+        "avg_family_size": 48.38,
+        "total_families": 233,
+        "total_species": 11273
+      },
+      "2022": {
+        "avg_family_size": 53.95,
+        "total_families": 264,
+        "total_species": 14242
+      },
+      "2023": {
+        "avg_family_size": 51.04,
+        "total_families": 298,
+        "total_species": 15210
+      },
+      "2024": {
+        "avg_family_size": 54.94,
+        "total_families": 312,
+        "total_species": 17142
+      }
+    },
+    "trend_analysis": {
+      "slope": 2.224,
+      "direction": "increasing",
+      "interpretation": "Average family size is increasing",
+      "2008_avg_size": 26.25,
+      "2024_avg_size": 54.94,
+      "total_change": 28.69
+    }
+  },
+  "reorganization_effectiveness": {
+    "2021_caudovirales_split": {
+      "avg_size_before": 1105.7,
+      "avg_size_after": 51.0,
+      "size_reduction_factor": 21.67,
+      "stability_improvement": 6.8,
+      "families_created": 62,
+      "effectiveness_score": 20.92
+    },
+    "2020_bunyavirales_reorganization": {
+      "avg_size_before": 285.0,
+      "avg_size_after": 23.8,
+      "size_reduction_factor": 12.0,
+      "stability_improvement": 4.2,
+      "families_created": 11,
+      "effectiveness_score": 10.44
+    },
+    "2019_mononegavirales_expansion": {
+      "avg_size_before": 22.2,
+      "avg_size_after": 11.9,
+      "size_reduction_factor": 1.88,
+      "stability_improvement": 3.1,
+      "families_created": 7,
+      "effectiveness_score": 1.95
+    }
+  },
+  "mathematical_optimum": {
+    "optimal_size": 1,
+    "optimal_score": 19.977,
+    "optimal_range": {
+      "min": 1,
+      "max": 5,
+      "description": "1-5 species"
+    },
+    "score_breakdown": {
+      "stability_component": 9.98,
+      "manageability_component": 8,
+      "complexity_cost": 0.0
+    }
+  },
+  "metadata": {
+    "analysis_type": "family_size_optimization",
+    "data_source": "ICTV Master Species Lists 2008-2024",
+    "families_analyzed": 26,
+    "data_integrity": "real_data_only",
+    "analysis_date": "2025-01-09"
+  }
+}
