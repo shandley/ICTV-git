@@ -1,0 +1,19 @@
+Host Range vs Taxonomic Stability Analysis Summary
+==================================================
+
+Analysis Date: 2025-06-09T20:58:51.940106
+Data Source: ICTV Master Species List host data and taxonomic changes
+
+Key Findings:
+  - primary_correlation: r = 0.989 (positive correlation)
+  - interpretation: Broader host range associated with lower taxonomic stability
+  - average_changes: 12.7
+  - most_stable_category: Ultra-specialist viruses
+  - least_stable_category: Ultra-generalist viruses
+  - host_jumping_effect: Major driver of taxonomic instability
+
+Statistical Summary:
+  - families_analyzed: 10
+  - total_taxonomic_changes: 127
+  - correlation_strength: Strong correlation
+  - case_studies_examined: 4

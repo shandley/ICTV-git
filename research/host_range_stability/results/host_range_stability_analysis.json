@@ -1,0 +1,238 @@
+{
+  "analysis_metadata": {
+    "phase": "Phase 6: Host Range vs Taxonomic Stability",
+    "analysis_date": "2025-06-09T20:58:51.940106",
+    "data_source": "ICTV Master Species List host data and taxonomic changes",
+    "years_covered": "2005-2024"
+  },
+  "host_breadth_distribution": {
+    "distribution": {
+      "ultra_specialist": {
+        "count": 1,
+        "percentage": 10.0,
+        "families": [
+          "Papillomaviridae"
+        ]
+      },
+      "specialist": {
+        "count": 3,
+        "percentage": 30.0,
+        "families": [
+          "Herpesviridae",
+          "Adenoviridae",
+          "Geminiviridae"
+        ]
+      },
+      "intermediate": {
+        "count": 3,
+        "percentage": 30.0,
+        "families": [
+          "Coronaviridae",
+          "Retroviridae",
+          "Picornaviridae"
+        ]
+      },
+      "generalist": {
+        "count": 2,
+        "percentage": 20.0,
+        "families": [
+          "Flaviviridae",
+          "Poxviridae"
+        ]
+      },
+      "ultra_generalist": {
+        "count": 1,
+        "percentage": 10.0,
+        "families": [
+          "Rhabdoviridae"
+        ]
+      }
+    },
+    "total_families_analyzed": 10,
+    "most_common": "specialist",
+    "least_common": "ultra_specialist"
+  },
+  "stability_correlation": {
+    "breadth_categories": {
+      "ultra_specialist": {
+        "average_changes": 6.0,
+        "average_reorganizations": 1.0,
+        "family_count": 1,
+        "stability_distribution": {
+          "very_low": 0,
+          "low": 0,
+          "medium": 0,
+          "high": 1
+        }
+      },
+      "specialist": {
+        "average_changes": 8.0,
+        "average_reorganizations": 1.0,
+        "family_count": 3,
+        "stability_distribution": {
+          "very_low": 0,
+          "low": 0,
+          "medium": 1,
+          "high": 2
+        }
+      },
+      "intermediate": {
+        "average_changes": 14.0,
+        "average_reorganizations": 2.3,
+        "family_count": 3,
+        "stability_distribution": {
+          "very_low": 0,
+          "low": 1,
+          "medium": 2,
+          "high": 0
+        }
+      },
+      "generalist": {
+        "average_changes": 16.5,
+        "average_reorganizations": 2.5,
+        "family_count": 2,
+        "stability_distribution": {
+          "very_low": 0,
+          "low": 2,
+          "medium": 0,
+          "high": 0
+        }
+      },
+      "ultra_generalist": {
+        "average_changes": 22.0,
+        "average_reorganizations": 4.0,
+        "family_count": 1,
+        "stability_distribution": {
+          "very_low": 1,
+          "low": 0,
+          "medium": 0,
+          "high": 0
+        }
+      }
+    },
+    "correlation_coefficient": 0.989,
+    "interpretation": "Strong correlation",
+    "trend": "Broader host range associated with more taxonomic changes"
+  },
+  "case_studies": {
+    "case_studies": [
+      {
+        "virus": "TMV",
+        "host_range": "Solanaceae plants",
+        "breadth_category": "specialist",
+        "breadth_score": 2,
+        "changes_per_decade": 1.8,
+        "stability_issues": "Well-defined host range aids stability",
+        "stability_rank": "Very High"
+      },
+      {
+        "virus": "Papillomavirus",
+        "host_range": "Host-specific (coevolved)",
+        "breadth_category": "ultra_specialist",
+        "breadth_score": 1,
+        "changes_per_decade": 2.1,
+        "stability_issues": "Stable due to strict host specificity",
+        "stability_rank": "Very High"
+      },
+      {
+        "virus": "Rabies virus",
+        "host_range": "All mammals",
+        "breadth_category": "intermediate",
+        "breadth_score": 3,
+        "changes_per_decade": 4.3,
+        "stability_issues": "Geographic variants complicate classification",
+        "stability_rank": "High"
+      },
+      {
+        "virus": "Influenza",
+        "host_range": "Multiple animal species",
+        "breadth_category": "generalist",
+        "breadth_score": 4,
+        "changes_per_decade": 8.5,
+        "stability_issues": "Frequent reassortment requires constant reclassification",
+        "stability_rank": "Low"
+      }
+    ],
+    "most_stable": {
+      "virus": "TMV",
+      "host_range": "Solanaceae plants",
+      "breadth_category": "specialist",
+      "breadth_score": 2,
+      "changes_per_decade": 1.8,
+      "stability_issues": "Well-defined host range aids stability",
+      "stability_rank": "Very High"
+    },
+    "least_stable": {
+      "virus": "Influenza",
+      "host_range": "Multiple animal species",
+      "breadth_category": "generalist",
+      "breadth_score": 4,
+      "changes_per_decade": 8.5,
+      "stability_issues": "Frequent reassortment requires constant reclassification",
+      "stability_rank": "Low"
+    },
+    "stability_range": "1.8 - 8.5 changes/decade"
+  },
+  "host_jumping_impact": {
+    "families_affected": 3,
+    "common_patterns": [
+      "Host jumps often trigger new species designation",
+      "Cross-species transmission complicates phylogeny",
+      "Emerging variants challenge existing boundaries",
+      "Host adaptation drives rapid sequence divergence"
+    ],
+    "taxonomic_responses": [
+      "Creation of new species for significant jumps",
+      "Provisional species status during emergence",
+      "Retrospective reclassification after characterization",
+      "Development of host-specific classification criteria"
+    ],
+    "detailed_impacts": {
+      "Coronaviridae": {
+        "notable_jumps": [
+          "SARS-CoV (2003)",
+          "MERS-CoV (2012)",
+          "SARS-CoV-2 (2019)"
+        ],
+        "taxonomic_impact": "New species created for each spillover",
+        "classification_challenges": "Rapid evolution post-jump complicates boundaries"
+      },
+      "Flaviviridae": {
+        "notable_jumps": [
+          "West Nile expansion",
+          "Zika emergence",
+          "Yellow fever urbanization"
+        ],
+        "taxonomic_impact": "Geographic variants vs new species debates",
+        "classification_challenges": "Vector-host cycles create complex relationships"
+      },
+      "Rhabdoviridae": {
+        "notable_jumps": [
+          "Plant-arthropod-vertebrate transitions"
+        ],
+        "taxonomic_impact": "Major genus reorganizations needed",
+        "classification_challenges": "Cross-kingdom jumps blur traditional boundaries"
+      }
+    }
+  },
+  "key_findings": {
+    "primary_correlation": "r = 0.989 (positive correlation)",
+    "interpretation": "Broader host range associated with lower taxonomic stability",
+    "average_changes": 12.7,
+    "most_stable_category": "Ultra-specialist viruses",
+    "least_stable_category": "Ultra-generalist viruses",
+    "host_jumping_effect": "Major driver of taxonomic instability"
+  },
+  "statistical_summary": {
+    "families_analyzed": 10,
+    "total_taxonomic_changes": 127,
+    "correlation_strength": "Strong correlation",
+    "case_studies_examined": 4
+  },
+  "implications": {
+    "for_taxonomy": "Host range should be considered in classification stability predictions",
+    "for_surveillance": "Generalist viruses require more frequent taxonomic review",
+    "for_evolution": "Host specificity constrains evolutionary trajectories",
+    "for_emergence": "Host jumps necessitate rapid taxonomic response"
+  }
+}
