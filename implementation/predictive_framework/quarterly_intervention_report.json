@@ -1,0 +1,643 @@
+{
+  "report_date": "2025-06-09",
+  "reporting_period": "Q1 2025",
+  "executive_summary": [
+    "Assessment of 12 ICTV families reveals 9 requiring intervention",
+    "1 families assessed as high risk requiring immediate attention",
+    "System stability score: 6.7/10",
+    "Immediate attention required for: Genomoviridae",
+    "3 families recommended for reorganization within 12-18 months",
+    "Proactive intervention strategy recommended to prevent crisis-driven reorganizations"
+  ],
+  "priority_interventions": [
+    {
+      "family": "Genomoviridae",
+      "priority_level": 2,
+      "intervention_type": "Split",
+      "timeline": "Q3-Q4 2025 - Begin planning within 6 months",
+      "risk_score": 6.3,
+      "key_recommendations": [
+        "HIGH PRIORITY: Include in next quarterly committee meeting agenda",
+        "Approve dedicated budget allocation for reorganization project",
+        "Assign project manager for reorganization coordination"
+      ]
+    },
+    {
+      "family": "Circoviridae",
+      "priority_level": 3,
+      "intervention_type": "Split",
+      "timeline": "Q3-Q4 2025 - Begin planning within 6 months",
+      "risk_score": 5.55,
+      "key_recommendations": [
+        "HIGH PRIORITY: Include in next quarterly committee meeting agenda",
+        "Approve dedicated budget allocation for reorganization project",
+        "Assign project manager for reorganization coordination"
+      ]
+    },
+    {
+      "family": "Microviridae",
+      "priority_level": 3,
+      "intervention_type": "Split",
+      "timeline": "Q3-Q4 2025 - Begin planning within 6 months",
+      "risk_score": 5.25,
+      "key_recommendations": [
+        "HIGH PRIORITY: Include in next quarterly committee meeting agenda",
+        "Approve dedicated budget allocation for reorganization project",
+        "Assign project manager for reorganization coordination"
+      ]
+    },
+    {
+      "family": "Herpesviridae",
+      "priority_level": 3,
+      "intervention_type": "Review",
+      "timeline": "Q4 2025 - Schedule review within 9 months",
+      "risk_score": 4.0,
+      "key_recommendations": [
+        "ROUTINE: Include in annual family review cycle",
+        "Recruit additional experts in host-pathogen interactions",
+        "Ensure international expert representation on committee"
+      ]
+    },
+    {
+      "family": "Flaviviridae",
+      "priority_level": 4,
+      "intervention_type": "Review",
+      "timeline": "Q4 2025 - Schedule review within 9 months",
+      "risk_score": 3.85,
+      "key_recommendations": [
+        "ROUTINE: Include in annual family review cycle",
+        "Ensure international expert representation on committee",
+        "Document all decisions and rationale for future reference"
+      ]
+    },
+    {
+      "family": "Adenoviridae",
+      "priority_level": 4,
+      "intervention_type": "Review",
+      "timeline": "Q4 2025 - Schedule review within 9 months",
+      "risk_score": 3.7,
+      "key_recommendations": [
+        "ROUTINE: Include in annual family review cycle",
+        "Recruit additional experts in host-pathogen interactions",
+        "Ensure international expert representation on committee"
+      ]
+    },
+    {
+      "family": "Coronaviridae",
+      "priority_level": 4,
+      "intervention_type": "Review",
+      "timeline": "Q4 2025 - Schedule review within 9 months",
+      "risk_score": 3.4,
+      "key_recommendations": [
+        "ROUTINE: Include in annual family review cycle",
+        "Document all decisions and rationale for future reference",
+        "Maintain regular communication with affected research communities"
+      ]
+    },
+    {
+      "family": "Papillomaviridae",
+      "priority_level": 4,
+      "intervention_type": "Review",
+      "timeline": "Q4 2025 - Schedule review within 9 months",
+      "risk_score": 2.8,
+      "key_recommendations": [
+        "ROUTINE: Include in annual family review cycle",
+        "Document all decisions and rationale for future reference",
+        "Maintain regular communication with affected research communities"
+      ]
+    },
+    {
+      "family": "Hepadnaviridae",
+      "priority_level": 4,
+      "intervention_type": "Review",
+      "timeline": "Q4 2025 - Schedule review within 9 months",
+      "risk_score": 2.6,
+      "key_recommendations": [
+        "ROUTINE: Include in annual family review cycle",
+        "Include experts in complex genome architectures (RT viruses)",
+        "Document all decisions and rationale for future reference"
+      ]
+    }
+  ],
+  "resource_summary": {
+    "total_budget_estimate": "$345,000",
+    "total_committee_hours": "150 hours",
+    "families_requiring_action": 9,
+    "emergency_interventions": 0,
+    "planned_splits": 3
+  },
+  "detailed_plans": {
+    "Microviridae": {
+      "priority_level": 3,
+      "intervention_type": "Split",
+      "timeline": "Q3-Q4 2025 - Begin planning within 6 months",
+      "resource_requirements": {
+        "committee_time": "20-40 hours over 12-18 months",
+        "expert_taxonomists": "5-8 committee members + 3-5 external experts",
+        "administrative_support": "High (proposal preparation, stakeholder coordination)",
+        "timeline": "12-18 months for complete reorganization",
+        "budget_estimate": "$50,000-100,000"
+      },
+      "implementation_steps": [
+        "Establish reorganization working group (5-8 experts)",
+        "Allocate dedicated committee resources and timeline",
+        "Conduct comprehensive molecular phylogenetic analysis",
+        "Perform host range and biogeographic analysis",
+        "Consider multiple daughter families (6-12) rather than binary split",
+        "Model different splitting scenarios for optimal family sizes",
+        "Identify optimal splitting criteria and boundaries",
+        "Draft formal reorganization proposal",
+        "Prepare new family definitions and descriptions",
+        "Create species assignment mapping for all taxa",
+        "Submit proposal for ICTV Executive Committee review",
+        "Conduct international stakeholder consultation (60-day period)",
+        "Address feedback and revise proposal if needed",
+        "Submit for formal ICTV ratification vote",
+        "Coordinate implementation across international databases",
+        "Monitor post-reorganization stability and user adoption"
+      ],
+      "success_criteria": [
+        "All new families achieve >8.0 stability scores",
+        "Phylogenetic monophyly maintained in all daughter families",
+        "User community acceptance >80%",
+        "Database integration completed without errors",
+        "No species misclassifications in transition"
+      ],
+      "risk_mitigation": [
+        "Phased implementation to minimize disruption to user community",
+        "Prepare comprehensive species mapping to prevent misassignments",
+        "Establish clear decision-making timeline to prevent delays",
+        "Prepare backup committee members in case of unavailability",
+        "Create communication plan to manage stakeholder expectations",
+        "Develop contingency plans for common implementation challenges",
+        "Coordinate with major databases (NCBI, EMBL-EBI) before implementation",
+        "Prepare database migration scripts and validation procedures",
+        "Establish rollback procedures in case of implementation problems",
+        "Create user communication and support plan for transition period"
+      ],
+      "expected_outcomes": {
+        "family_creation": "7 new families created",
+        "average_family_size": "Reduced to 55 species per family",
+        "stability_improvement": "Expected stability increase to >8.0 for all daughter families",
+        "phylogenetic_coherence": "Achievement of monophyly in all resulting families",
+        "management_efficiency": "60-80% reduction in family management complexity",
+        "user_satisfaction": ">85% user approval for improved family structure"
+      },
+      "committee_recommendations": [
+        "HIGH PRIORITY: Include in next quarterly committee meeting agenda",
+        "Approve dedicated budget allocation for reorganization project",
+        "Assign project manager for reorganization coordination",
+        "Establish dedicated communication channel for stakeholder updates",
+        "Ensure international expert representation on committee",
+        "Document all decisions and rationale for future reference",
+        "Maintain regular communication with affected research communities",
+        "Coordinate timing with major virology conferences for maximum input",
+        "Plan implementation to minimize disruption to ongoing research projects",
+        "Schedule 6-month post-implementation review",
+        "Monitor user adoption and satisfaction metrics",
+        "Prepare lessons learned document for future reorganizations",
+        "Update ICTV procedures based on implementation experience"
+      ]
+    },
+    "Genomoviridae": {
+      "priority_level": 2,
+      "intervention_type": "Split",
+      "timeline": "Q3-Q4 2025 - Begin planning within 6 months",
+      "resource_requirements": {
+        "committee_time": "20-40 hours over 12-18 months",
+        "expert_taxonomists": "5-8 committee members + 3-5 external experts",
+        "administrative_support": "High (proposal preparation, stakeholder coordination)",
+        "timeline": "12-18 months for complete reorganization",
+        "budget_estimate": "$50,000-100,000"
+      },
+      "implementation_steps": [
+        "Establish reorganization working group (5-8 experts)",
+        "Allocate dedicated committee resources and timeline",
+        "Conduct comprehensive molecular phylogenetic analysis",
+        "Perform host range and biogeographic analysis",
+        "Identify optimal splitting criteria and boundaries",
+        "Draft formal reorganization proposal",
+        "Prepare new family definitions and descriptions",
+        "Create species assignment mapping for all taxa",
+        "Submit proposal for ICTV Executive Committee review",
+        "Conduct international stakeholder consultation (60-day period)",
+        "Address feedback and revise proposal if needed",
+        "Submit for formal ICTV ratification vote",
+        "Coordinate implementation across international databases",
+        "Monitor post-reorganization stability and user adoption"
+      ],
+      "success_criteria": [
+        "All new families achieve >8.0 stability scores",
+        "Phylogenetic monophyly maintained in all daughter families",
+        "User community acceptance >80%",
+        "Database integration completed without errors",
+        "No species misclassifications in transition"
+      ],
+      "risk_mitigation": [
+        "Phased implementation to minimize disruption to user community",
+        "Prepare comprehensive species mapping to prevent misassignments",
+        "Accelerated timeline to prevent further size increases",
+        "Temporary moratorium on new species assignments until reorganization",
+        "Establish clear decision-making timeline to prevent delays",
+        "Prepare backup committee members in case of unavailability",
+        "Create communication plan to manage stakeholder expectations",
+        "Develop contingency plans for common implementation challenges",
+        "Coordinate with major databases (NCBI, EMBL-EBI) before implementation",
+        "Prepare database migration scripts and validation procedures",
+        "Establish rollback procedures in case of implementation problems",
+        "Create user communication and support plan for transition period"
+      ],
+      "expected_outcomes": {
+        "family_creation": "3 new families created",
+        "average_family_size": "Reduced to 58 species per family",
+        "stability_improvement": "Expected stability increase to >8.0 for all daughter families",
+        "phylogenetic_coherence": "Achievement of monophyly in all resulting families",
+        "management_efficiency": "60-80% reduction in family management complexity",
+        "user_satisfaction": ">85% user approval for improved family structure"
+      },
+      "committee_recommendations": [
+        "HIGH PRIORITY: Include in next quarterly committee meeting agenda",
+        "Approve dedicated budget allocation for reorganization project",
+        "Assign project manager for reorganization coordination",
+        "Establish dedicated communication channel for stakeholder updates",
+        "Document all decisions and rationale for future reference",
+        "Maintain regular communication with affected research communities",
+        "Coordinate timing with major virology conferences for maximum input",
+        "Plan implementation to minimize disruption to ongoing research projects",
+        "Schedule 6-month post-implementation review",
+        "Monitor user adoption and satisfaction metrics",
+        "Prepare lessons learned document for future reorganizations",
+        "Update ICTV procedures based on implementation experience"
+      ]
+    },
+    "Circoviridae": {
+      "priority_level": 3,
+      "intervention_type": "Split",
+      "timeline": "Q3-Q4 2025 - Begin planning within 6 months",
+      "resource_requirements": {
+        "committee_time": "20-40 hours over 12-18 months",
+        "expert_taxonomists": "5-8 committee members + 3-5 external experts",
+        "administrative_support": "High (proposal preparation, stakeholder coordination)",
+        "timeline": "12-18 months for complete reorganization",
+        "budget_estimate": "$50,000-100,000"
+      },
+      "implementation_steps": [
+        "Establish reorganization working group (5-8 experts)",
+        "Allocate dedicated committee resources and timeline",
+        "Conduct comprehensive molecular phylogenetic analysis",
+        "Perform host range and biogeographic analysis",
+        "Identify optimal splitting criteria and boundaries",
+        "Draft formal reorganization proposal",
+        "Prepare new family definitions and descriptions",
+        "Create species assignment mapping for all taxa",
+        "Submit proposal for ICTV Executive Committee review",
+        "Conduct international stakeholder consultation (60-day period)",
+        "Address feedback and revise proposal if needed",
+        "Submit for formal ICTV ratification vote",
+        "Coordinate implementation across international databases",
+        "Monitor post-reorganization stability and user adoption"
+      ],
+      "success_criteria": [
+        "All new families achieve >8.0 stability scores",
+        "Phylogenetic monophyly maintained in all daughter families",
+        "User community acceptance >80%",
+        "Database integration completed without errors",
+        "No species misclassifications in transition"
+      ],
+      "risk_mitigation": [
+        "Establish clear decision-making timeline to prevent delays",
+        "Prepare backup committee members in case of unavailability",
+        "Create communication plan to manage stakeholder expectations",
+        "Develop contingency plans for common implementation challenges",
+        "Coordinate with major databases (NCBI, EMBL-EBI) before implementation",
+        "Prepare database migration scripts and validation procedures",
+        "Establish rollback procedures in case of implementation problems",
+        "Create user communication and support plan for transition period"
+      ],
+      "expected_outcomes": {
+        "family_creation": "2 new families created",
+        "average_family_size": "Reduced to 52 species per family",
+        "stability_improvement": "Expected stability increase to >8.0 for all daughter families",
+        "phylogenetic_coherence": "Achievement of monophyly in all resulting families",
+        "management_efficiency": "60-80% reduction in family management complexity",
+        "user_satisfaction": ">85% user approval for improved family structure"
+      },
+      "committee_recommendations": [
+        "HIGH PRIORITY: Include in next quarterly committee meeting agenda",
+        "Approve dedicated budget allocation for reorganization project",
+        "Assign project manager for reorganization coordination",
+        "Establish dedicated communication channel for stakeholder updates",
+        "Document all decisions and rationale for future reference",
+        "Maintain regular communication with affected research communities",
+        "Coordinate timing with major virology conferences for maximum input",
+        "Plan implementation to minimize disruption to ongoing research projects",
+        "Schedule 6-month post-implementation review",
+        "Monitor user adoption and satisfaction metrics",
+        "Prepare lessons learned document for future reorganizations",
+        "Update ICTV procedures based on implementation experience"
+      ]
+    },
+    "Adenoviridae": {
+      "priority_level": 4,
+      "intervention_type": "Review",
+      "timeline": "Q4 2025 - Schedule review within 9 months",
+      "resource_requirements": {
+        "committee_time": "8-12 hours over 3-6 months",
+        "expert_taxonomists": "3-4 committee members + 2 external experts",
+        "administrative_support": "Moderate (documentation, coordination)",
+        "timeline": "3-6 months for complete review",
+        "budget_estimate": "$15,000-25,000"
+      },
+      "implementation_steps": [
+        "Form review committee (3-4 members + external experts)",
+        "Conduct comprehensive phylogenetic analysis",
+        "Analyze host range patterns and geographic distribution",
+        "Identify potential natural subdivision criteria",
+        "Prepare preliminary recommendations report",
+        "Conduct stakeholder consultation (30-day period)",
+        "Finalize review report with action recommendations",
+        "Present findings to full ICTV committee"
+      ],
+      "success_criteria": [
+        "Complete phylogenetic analysis completed",
+        "Natural subdivision points identified",
+        "Stakeholder consensus on family boundaries",
+        "Clear recommendations for future action"
+      ],
+      "risk_mitigation": [
+        "Use host boundaries as primary splitting criteria to maintain biological coherence",
+        "Ensure each daughter family has coherent host range profile",
+        "Coordinate with major databases (NCBI, EMBL-EBI) before implementation",
+        "Prepare database migration scripts and validation procedures",
+        "Establish rollback procedures in case of implementation problems",
+        "Create user communication and support plan for transition period"
+      ],
+      "expected_outcomes": {
+        "information_clarity": "Complete understanding of family structure and boundaries",
+        "decision_readiness": "Clear recommendations for future intervention needs",
+        "stakeholder_alignment": "Community consensus on family status and needs",
+        "proactive_planning": "Early identification of optimization opportunities"
+      },
+      "committee_recommendations": [
+        "ROUTINE: Include in annual family review cycle",
+        "Recruit additional experts in host-pathogen interactions",
+        "Ensure international expert representation on committee",
+        "Document all decisions and rationale for future reference",
+        "Maintain regular communication with affected research communities",
+        "Coordinate timing with major virology conferences for maximum input",
+        "Plan implementation to minimize disruption to ongoing research projects"
+      ]
+    },
+    "Herpesviridae": {
+      "priority_level": 3,
+      "intervention_type": "Review",
+      "timeline": "Q4 2025 - Schedule review within 9 months",
+      "resource_requirements": {
+        "committee_time": "8-12 hours over 3-6 months",
+        "expert_taxonomists": "3-4 committee members + 2 external experts",
+        "administrative_support": "Moderate (documentation, coordination)",
+        "timeline": "3-6 months for complete review",
+        "budget_estimate": "$15,000-25,000"
+      },
+      "implementation_steps": [
+        "Form review committee (3-4 members + external experts)",
+        "Conduct comprehensive phylogenetic analysis",
+        "Analyze host range patterns and geographic distribution",
+        "Identify potential natural subdivision criteria",
+        "Prepare preliminary recommendations report",
+        "Conduct stakeholder consultation (30-day period)",
+        "Finalize review report with action recommendations",
+        "Present findings to full ICTV committee"
+      ],
+      "success_criteria": [
+        "Complete phylogenetic analysis completed",
+        "Natural subdivision points identified",
+        "Stakeholder consensus on family boundaries",
+        "Clear recommendations for future action"
+      ],
+      "risk_mitigation": [
+        "Use host boundaries as primary splitting criteria to maintain biological coherence",
+        "Ensure each daughter family has coherent host range profile",
+        "Coordinate with major databases (NCBI, EMBL-EBI) before implementation",
+        "Prepare database migration scripts and validation procedures",
+        "Establish rollback procedures in case of implementation problems",
+        "Create user communication and support plan for transition period"
+      ],
+      "expected_outcomes": {
+        "information_clarity": "Complete understanding of family structure and boundaries",
+        "decision_readiness": "Clear recommendations for future intervention needs",
+        "stakeholder_alignment": "Community consensus on family status and needs",
+        "proactive_planning": "Early identification of optimization opportunities"
+      },
+      "committee_recommendations": [
+        "ROUTINE: Include in annual family review cycle",
+        "Recruit additional experts in host-pathogen interactions",
+        "Ensure international expert representation on committee",
+        "Document all decisions and rationale for future reference",
+        "Maintain regular communication with affected research communities",
+        "Coordinate timing with major virology conferences for maximum input",
+        "Plan implementation to minimize disruption to ongoing research projects"
+      ]
+    },
+    "Papillomaviridae": {
+      "priority_level": 4,
+      "intervention_type": "Review",
+      "timeline": "Q4 2025 - Schedule review within 9 months",
+      "resource_requirements": {
+        "committee_time": "8-12 hours over 3-6 months",
+        "expert_taxonomists": "3-4 committee members + 2 external experts",
+        "administrative_support": "Moderate (documentation, coordination)",
+        "timeline": "3-6 months for complete review",
+        "budget_estimate": "$15,000-25,000"
+      },
+      "implementation_steps": [
+        "Form review committee (3-4 members + external experts)",
+        "Conduct comprehensive phylogenetic analysis",
+        "Analyze host range patterns and geographic distribution",
+        "Identify potential natural subdivision criteria",
+        "Prepare preliminary recommendations report",
+        "Conduct stakeholder consultation (30-day period)",
+        "Finalize review report with action recommendations",
+        "Present findings to full ICTV committee"
+      ],
+      "success_criteria": [
+        "Complete phylogenetic analysis completed",
+        "Natural subdivision points identified",
+        "Stakeholder consensus on family boundaries",
+        "Clear recommendations for future action"
+      ],
+      "risk_mitigation": [
+        "Coordinate with major databases (NCBI, EMBL-EBI) before implementation",
+        "Prepare database migration scripts and validation procedures",
+        "Establish rollback procedures in case of implementation problems",
+        "Create user communication and support plan for transition period"
+      ],
+      "expected_outcomes": {
+        "information_clarity": "Complete understanding of family structure and boundaries",
+        "decision_readiness": "Clear recommendations for future intervention needs",
+        "stakeholder_alignment": "Community consensus on family status and needs",
+        "proactive_planning": "Early identification of optimization opportunities"
+      },
+      "committee_recommendations": [
+        "ROUTINE: Include in annual family review cycle",
+        "Document all decisions and rationale for future reference",
+        "Maintain regular communication with affected research communities",
+        "Coordinate timing with major virology conferences for maximum input",
+        "Plan implementation to minimize disruption to ongoing research projects"
+      ]
+    },
+    "Coronaviridae": {
+      "priority_level": 4,
+      "intervention_type": "Review",
+      "timeline": "Q4 2025 - Schedule review within 9 months",
+      "resource_requirements": {
+        "committee_time": "8-12 hours over 3-6 months",
+        "expert_taxonomists": "3-4 committee members + 2 external experts",
+        "administrative_support": "Moderate (documentation, coordination)",
+        "timeline": "3-6 months for complete review",
+        "budget_estimate": "$15,000-25,000"
+      },
+      "implementation_steps": [
+        "Form review committee (3-4 members + external experts)",
+        "Conduct comprehensive phylogenetic analysis",
+        "Analyze host range patterns and geographic distribution",
+        "Identify potential natural subdivision criteria",
+        "Prepare preliminary recommendations report",
+        "Conduct stakeholder consultation (30-day period)",
+        "Finalize review report with action recommendations",
+        "Present findings to full ICTV committee"
+      ],
+      "success_criteria": [
+        "Complete phylogenetic analysis completed",
+        "Natural subdivision points identified",
+        "Stakeholder consensus on family boundaries",
+        "Clear recommendations for future action"
+      ],
+      "risk_mitigation": [
+        "Coordinate with major databases (NCBI, EMBL-EBI) before implementation",
+        "Prepare database migration scripts and validation procedures",
+        "Establish rollback procedures in case of implementation problems",
+        "Create user communication and support plan for transition period"
+      ],
+      "expected_outcomes": {
+        "information_clarity": "Complete understanding of family structure and boundaries",
+        "decision_readiness": "Clear recommendations for future intervention needs",
+        "stakeholder_alignment": "Community consensus on family status and needs",
+        "proactive_planning": "Early identification of optimization opportunities"
+      },
+      "committee_recommendations": [
+        "ROUTINE: Include in annual family review cycle",
+        "Document all decisions and rationale for future reference",
+        "Maintain regular communication with affected research communities",
+        "Coordinate timing with major virology conferences for maximum input",
+        "Plan implementation to minimize disruption to ongoing research projects"
+      ]
+    },
+    "Flaviviridae": {
+      "priority_level": 4,
+      "intervention_type": "Review",
+      "timeline": "Q4 2025 - Schedule review within 9 months",
+      "resource_requirements": {
+        "committee_time": "8-12 hours over 3-6 months",
+        "expert_taxonomists": "3-4 committee members + 2 external experts",
+        "administrative_support": "Moderate (documentation, coordination)",
+        "timeline": "3-6 months for complete review",
+        "budget_estimate": "$15,000-25,000"
+      },
+      "implementation_steps": [
+        "Form review committee (3-4 members + external experts)",
+        "Conduct comprehensive phylogenetic analysis",
+        "Analyze host range patterns and geographic distribution",
+        "Identify potential natural subdivision criteria",
+        "Prepare preliminary recommendations report",
+        "Conduct stakeholder consultation (30-day period)",
+        "Finalize review report with action recommendations",
+        "Present findings to full ICTV committee"
+      ],
+      "success_criteria": [
+        "Complete phylogenetic analysis completed",
+        "Natural subdivision points identified",
+        "Stakeholder consensus on family boundaries",
+        "Clear recommendations for future action"
+      ],
+      "risk_mitigation": [
+        "Coordinate with major databases (NCBI, EMBL-EBI) before implementation",
+        "Prepare database migration scripts and validation procedures",
+        "Establish rollback procedures in case of implementation problems",
+        "Create user communication and support plan for transition period"
+      ],
+      "expected_outcomes": {
+        "information_clarity": "Complete understanding of family structure and boundaries",
+        "decision_readiness": "Clear recommendations for future intervention needs",
+        "stakeholder_alignment": "Community consensus on family status and needs",
+        "proactive_planning": "Early identification of optimization opportunities"
+      },
+      "committee_recommendations": [
+        "ROUTINE: Include in annual family review cycle",
+        "Ensure international expert representation on committee",
+        "Document all decisions and rationale for future reference",
+        "Maintain regular communication with affected research communities",
+        "Coordinate timing with major virology conferences for maximum input",
+        "Plan implementation to minimize disruption to ongoing research projects"
+      ]
+    },
+    "Hepadnaviridae": {
+      "priority_level": 4,
+      "intervention_type": "Review",
+      "timeline": "Q4 2025 - Schedule review within 9 months",
+      "resource_requirements": {
+        "committee_time": "8-12 hours over 3-6 months",
+        "expert_taxonomists": "3-4 committee members + 2 external experts",
+        "administrative_support": "Moderate (documentation, coordination)",
+        "timeline": "3-6 months for complete review",
+        "budget_estimate": "$15,000-25,000"
+      },
+      "implementation_steps": [
+        "Form review committee (3-4 members + external experts)",
+        "Conduct comprehensive phylogenetic analysis",
+        "Analyze host range patterns and geographic distribution",
+        "Identify potential natural subdivision criteria",
+        "Prepare preliminary recommendations report",
+        "Conduct stakeholder consultation (30-day period)",
+        "Finalize review report with action recommendations",
+        "Present findings to full ICTV committee"
+      ],
+      "success_criteria": [
+        "Complete phylogenetic analysis completed",
+        "Natural subdivision points identified",
+        "Stakeholder consensus on family boundaries",
+        "Clear recommendations for future action"
+      ],
+      "risk_mitigation": [
+        "Coordinate with major databases (NCBI, EMBL-EBI) before implementation",
+        "Prepare database migration scripts and validation procedures",
+        "Establish rollback procedures in case of implementation problems",
+        "Create user communication and support plan for transition period"
+      ],
+      "expected_outcomes": {
+        "information_clarity": "Complete understanding of family structure and boundaries",
+        "decision_readiness": "Clear recommendations for future intervention needs",
+        "stakeholder_alignment": "Community consensus on family status and needs",
+        "proactive_planning": "Early identification of optimization opportunities"
+      },
+      "committee_recommendations": [
+        "ROUTINE: Include in annual family review cycle",
+        "Include experts in complex genome architectures (RT viruses)",
+        "Document all decisions and rationale for future reference",
+        "Maintain regular communication with affected research communities",
+        "Coordinate timing with major virology conferences for maximum input",
+        "Plan implementation to minimize disruption to ongoing research projects"
+      ]
+    }
+  },
+  "recommendations_for_committee": [
+    "Adopt quarterly family monitoring schedule to identify issues early",
+    "Allocate resources for proactive interventions to prevent crisis situations",
+    "Establish dedicated reorganization project management capabilities",
+    "Consider staggered reorganization timeline to manage committee workload",
+    "Recruit additional expert committee members for reorganization support",
+    "Implement automated monitoring system for real-time family risk assessment",
+    "Develop standardized reorganization procedures based on evidence-based practices",
+    "Coordinate with international databases for seamless implementation of changes"
+  ]
+}
