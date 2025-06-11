@@ -1,5 +1,14 @@
 # ICTV-git: Git-based Viral Taxonomy Management
 
+![ICTV-GIT Logo](ICTV-GIT.png)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Data: ICTV MSL](https://img.shields.io/badge/data-ICTV%20MSL-green.svg)](https://ictv.global/msl)
+[![Research: Virology](https://img.shields.io/badge/research-virology-red.svg)](https://ictv.global)
+[![Status: Active](https://img.shields.io/badge/status-active-success.svg)](https://github.com/shandley/ICTV-git)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+
 ## 🦠 Revolutionizing Viral Taxonomy with Version Control
 
 **ICTV-git** transforms the International Committee on Taxonomy of Viruses (ICTV) classification system into a transparent, versioned, and community-driven platform using git version control principles. This solves the reproducibility crisis in virology research by enabling researchers to track taxonomic changes, migrate datasets between versions, and cite specific taxonomy versions.
@@ -212,7 +221,7 @@ ICTV data is used under Creative Commons license as specified by ICTV.
 
 - Project Lead: Scott Handley
 - GitHub Issues: [https://github.com/shandley/ICTV-git/issues](https://github.com/shandley/ICTV-git/issues)
-- Email: [Contact information]
+- Email: handley.scott@gmail.com
 
 ## Acknowledgments
 

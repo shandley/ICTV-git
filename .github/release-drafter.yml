@@ -1,0 +1,133 @@
+# Release Drafter Configuration
+# This automatically generates release notes based on merged PRs
+
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+
+categories:
+  - title: '🚀 Features'
+    labels:
+      - 'feature'
+      - 'enhancement'
+      - 'feat'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'fix'
+      - 'bugfix'
+      - 'bug'
+  - title: '🔬 Research & Analysis'
+    labels:
+      - 'research'
+      - 'analysis'
+      - 'data'
+  - title: '📚 Documentation'
+    labels:
+      - 'documentation'
+      - 'docs'
+  - title: '🧰 Maintenance'
+    labels:
+      - 'chore'
+      - 'maintenance'
+      - 'refactor'
+  - title: '⚡ Performance'
+    labels:
+      - 'performance'
+      - 'optimization'
+  - title: '🔒 Security'
+    labels:
+      - 'security'
+      - 'vulnerability'
+  - title: '📊 Visualizations'
+    labels:
+      - 'visualization'
+      - 'plotting'
+      - 'charts'
+
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
+
+version-resolver:
+  major:
+    labels:
+      - 'major'
+      - 'breaking-change'
+  minor:
+    labels:
+      - 'minor'
+      - 'feature'
+      - 'enhancement'
+      - 'research'
+  patch:
+    labels:
+      - 'patch'
+      - 'bug'
+      - 'bugfix'
+      - 'fix'
+      - 'documentation'
+      - 'maintenance'
+  default: patch
+
+exclude-labels:
+  - 'skip-changelog'
+  - 'no-changelog'
+  - 'dependencies'
+
+autolabeler:
+  - label: 'documentation'
+    files:
+      - '*.md'
+      - 'docs/**/*'
+      - 'educational_materials/**/*'
+  - label: 'research'
+    files:
+      - 'research/**/*'
+      - 'scripts/*analysis*.py'
+  - label: 'visualization'
+    files:
+      - '**/visualizations.py'
+      - '**/create_*plots.py'
+      - 'manuscript_figures/**/*'
+  - label: 'chore'
+    files:
+      - '.github/**/*'
+      - 'requirements*.txt'
+      - 'setup.py'
+      - 'pyproject.toml'
+  - label: 'dashboard'
+    files:
+      - 'ictv_dashboard/**/*'
+  - label: 'api'
+    files:
+      - 'src/api/**/*'
+
+template: |
+  ## Changes
+
+  $CHANGES
+
+  ## 📊 Research Highlights
+
+  This release includes updates to our viral taxonomy evolution research:
+  - 20-year analysis of ICTV Master Species Lists (MSL23-MSL40)
+  - Family size optimization framework
+  - Temporal evolution patterns
+  - Discovery method impact analysis
+
+  ## 🔬 Key Metrics
+  - **Species Growth**: 14.8x increase (1,950 → 28,911 species)
+  - **Annual Growth Rate**: 15.2%
+  - **Caudovirales Impact**: 3,452 species reorganized
+  - **Prediction Accuracy**: 85% for taxonomic instability
+
+  ## 📚 Documentation
+  - [Research Findings](https://github.com/shandley/ICTV-git/tree/main/research)
+  - [Educational Materials](https://github.com/shandley/ICTV-git/tree/main/educational_materials)
+  - [API Documentation](https://github.com/shandley/ICTV-git/tree/main/docs)
+
+  ## 🙏 Contributors
+
+  $CONTRIBUTORS
+
+  ## 📝 Full Changelog
+
+  https://github.com/shandley/ICTV-git/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION

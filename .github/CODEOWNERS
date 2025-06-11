@@ -1,0 +1,34 @@
+# CODEOWNERS for ICTV-git
+# These owners will be the default owners for everything in the repo.
+# They will be requested for review when someone opens a pull request.
+
+# Global owners
+* @shandley
+
+# Research analysis modules
+/research/ @shandley
+/research/family_size_analysis/ @shandley
+/research/temporal_evolution_analysis/ @shandley
+/research/discovery_method_evolution/ @shandley
+
+# Core parsing and conversion tools
+/src/parsers/ @shandley
+/src/converters/ @shandley
+/src/api/ @shandley
+
+# Dashboard and visualization
+/ictv_dashboard/ @shandley
+/implementation/predictive_framework/ @shandley
+
+# Documentation
+/docs/ @shandley
+/educational_materials/ @shandley
+*.md @shandley
+
+# GitHub Actions and CI/CD
+/.github/ @shandley
+
+# Data files (require careful review)
+/data/ @shandley
+*.yaml @shandley
+*.yml @shandley

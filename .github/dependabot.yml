@@ -1,0 +1,47 @@
+# Dependabot configuration for automated dependency updates
+version: 2
+updates:
+  # Python dependencies
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 10
+    groups:
+      development-dependencies:
+        patterns:
+          - "pytest*"
+          - "flake8*"
+          - "mypy*"
+          - "black*"
+      research-dependencies:
+        patterns:
+          - "pandas*"
+          - "numpy*"
+          - "matplotlib*"
+          - "seaborn*"
+    
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 5
+
+  # Dashboard dependencies
+  - package-ecosystem: "pip"
+    directory: "/ictv_dashboard"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 5
+    groups:
+      dashboard-dependencies:
+        patterns:
+          - "streamlit*"
+          - "plotly*"
