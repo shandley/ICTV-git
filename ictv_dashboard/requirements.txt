@@ -4,7 +4,7 @@
 # Core dependencies
 streamlit==1.45.1
 pandas==2.3.0
-numpy==2.3.0
+numpy==2.3.3
 plotly==6.1.2
 
 # Data visualization
