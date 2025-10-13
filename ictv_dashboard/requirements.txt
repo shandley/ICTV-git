@@ -8,7 +8,7 @@ numpy==2.3.0
 plotly==6.1.2
 
 # Data visualization
-matplotlib==3.10.3
+matplotlib==3.10.7
 altair==5.5.0
 
 # Additional utilities
