@@ -9,7 +9,7 @@ plotly==6.1.2
 
 # Data visualization
 matplotlib==3.10.3
-altair==5.5.0
+altair==6.0.0
 
 # Additional utilities
 python-dateutil==2.9.0.post0
